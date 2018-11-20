@@ -1,0 +1,28 @@
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.dll
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.pdb
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.dll
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.dll
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.pdb
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.pdb
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csprojAssemblyReference.cache
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CoreCompileInputs.cache
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CopyComplete
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.dll
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\bin\Debug\Google.Protobuf.dll
+C:\Users\AEPIS01\Desktop\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.xml
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.pdb
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\bin\Debug\Google.Protobuf.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.pdb
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.pdb
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.xml
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csprojAssemblyReference.cache
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CoreCompileInputs.cache
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CopyComplete
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb
