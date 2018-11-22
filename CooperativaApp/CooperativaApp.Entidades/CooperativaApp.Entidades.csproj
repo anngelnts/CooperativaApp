@@ -41,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aporte.cs" />
+    <Compile Include="Beneficiario.cs" />
+    <Compile Include="Cronograma_De_Pagos.cs" />
     <Compile Include="DatoFinanciero.cs" />
+    <Compile Include="Datos_De_Cooperativa.cs" />
+    <Compile Include="Pago.cs" />
+    <Compile Include="Prestamo.cs" />
     <Compile Include="Socio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
