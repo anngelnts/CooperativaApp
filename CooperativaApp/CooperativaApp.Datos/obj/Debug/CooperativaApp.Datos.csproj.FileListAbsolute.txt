@@ -26,3 +26,25 @@ G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CopyComplete
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csprojAssemblyReference.cache
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CoreCompileInputs.cache
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CopyComplete
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csprojResolveAssemblyReference.cache
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb

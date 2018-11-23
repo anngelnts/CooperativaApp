@@ -1,5 +1,6 @@
 ﻿using CooperativaApp.Datos;
 using CooperativaApp.Entidades;
+using CooperativaApp.Presentacion.Acciones;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,32 +22,49 @@ namespace CooperativaApp.Presentacion
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            DatoFinanciero be = new DatoFinanciero
-            {
-                TEA = Convert.ToDouble(TxtTEA.Text),
-                TEM = Convert.ToDouble(TxtTEM.Text),
-                TED = Convert.ToDouble(TxtTED.Text),
-                SeguroDesgravamen = Convert.ToDouble(TxtSeguroDesgravamen.Text),
-                ITF = Convert.ToDouble(TxtITF.Text),
-                Otros = Convert.ToDouble(TxtOtros.Text),
-                FechaRegistro = DateTime.Now,
-                Estado = 1
-            };
-            DDatoFinanciero bo = new DDatoFinanciero();
-            if (bo.Agregar(be))
-            {
-                Listar();
-            }
+            
         }
         private void Listar()
         {
             DDatoFinanciero bo = new DDatoFinanciero();
-            DgvData.DataSource = bo.Listar();
+
+            //DataTable dtb = new DataTable();
+            //dtb = NProveedor.Listar();
+
+
+            //DgvDatosFinancieros.DataSource = bo.Listar();
+            //DgvDatosFinancieros.ColumnCount = 8;
+
+
+            foreach (DatoFinanciero item in bo.Listar())
+            {
+                DgvDatosFinancieros.Rows.Add(
+                   item.Id_Dato_Financiero.ToString(),
+                   item.TEA.ToString(),
+                   item.TEM.ToString(),
+                   item.TED.ToString(),
+                   item.ITF.ToString(),
+                   item.Seguro_Desgravamen.ToString(),
+                   item.Otros.ToString(),
+                   item.Estado.ToString(),
+                   item.FechaRegistro.ToString("dd-MM-yyyy")
+
+                   );
+            }
+
+        
         }
 
         private void FrmDatoFinaciero_Load(object sender, EventArgs e)
         {
             Listar();
+        }
+
+        private void BtnNuevo_Click(object sender, EventArgs e)
+        {
+            FrmNuevoDatoFinanciero frm = new FrmNuevoDatoFinanciero();
+            AddOwnedForm(frm);
+            frm.ShowDialog();
         }
     }
 }

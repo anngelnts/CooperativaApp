@@ -31,17 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.PanelTop = new System.Windows.Forms.Panel();
             this.PanelLeft = new System.Windows.Forms.Panel();
+            this.PanelNavegacion = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.PanelProfile = new System.Windows.Forms.Panel();
             this.LblUDescripcion = new System.Windows.Forms.Label();
             this.LblUNombre = new System.Windows.Forms.Label();
-            this.PanelNavegacion = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.PanelHeader = new System.Windows.Forms.Panel();
             this.LblFecha = new System.Windows.Forms.Label();
             this.LblHeaderTitle = new System.Windows.Forms.Label();
             this.PanelState = new System.Windows.Forms.Panel();
             this.LblMessage = new System.Windows.Forms.Label();
             this.PanelContainer = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.BtnPagos = new System.Windows.Forms.Button();
             this.BtnSocios = new System.Windows.Forms.Button();
             this.BtnPrestamos = new System.Windows.Forms.Button();
@@ -55,10 +59,11 @@
             this.PbbRestaurar = new System.Windows.Forms.PictureBox();
             this.PbbMinimizar = new System.Windows.Forms.PictureBox();
             this.PbbCerrar = new System.Windows.Forms.PictureBox();
+            this.btnDatosFinancieros = new System.Windows.Forms.Button();
             this.PanelTop.SuspendLayout();
             this.PanelLeft.SuspendLayout();
-            this.PanelProfile.SuspendLayout();
             this.PanelNavegacion.SuspendLayout();
+            this.PanelProfile.SuspendLayout();
             this.PanelHeader.SuspendLayout();
             this.PanelState.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbbSalir)).BeginInit();
@@ -95,8 +100,37 @@
             this.PanelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelLeft.Location = new System.Drawing.Point(0, 45);
             this.PanelLeft.Name = "PanelLeft";
-            this.PanelLeft.Size = new System.Drawing.Size(250, 655);
+            this.PanelLeft.Size = new System.Drawing.Size(250, 755);
             this.PanelLeft.TabIndex = 2;
+            // 
+            // PanelNavegacion
+            // 
+            this.PanelNavegacion.Controls.Add(this.btnDatosFinancieros);
+            this.PanelNavegacion.Controls.Add(this.button4);
+            this.PanelNavegacion.Controls.Add(this.button3);
+            this.PanelNavegacion.Controls.Add(this.button2);
+            this.PanelNavegacion.Controls.Add(this.button1);
+            this.PanelNavegacion.Controls.Add(this.BtnPagos);
+            this.PanelNavegacion.Controls.Add(this.BtnSocios);
+            this.PanelNavegacion.Controls.Add(this.BtnPrestamos);
+            this.PanelNavegacion.Controls.Add(this.BtnInicio);
+            this.PanelNavegacion.Controls.Add(this.label4);
+            this.PanelNavegacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelNavegacion.Location = new System.Drawing.Point(0, 130);
+            this.PanelNavegacion.Name = "PanelNavegacion";
+            this.PanelNavegacion.Size = new System.Drawing.Size(250, 625);
+            this.PanelNavegacion.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(12, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "NAVEGACIÓN PRINCIPAL";
             // 
             // PanelProfile
             // 
@@ -133,30 +167,6 @@
             this.LblUNombre.Size = new System.Drawing.Size(158, 18);
             this.LblUNombre.TabIndex = 1;
             this.LblUNombre.Text = "Luis Angel Moreno";
-            // 
-            // PanelNavegacion
-            // 
-            this.PanelNavegacion.Controls.Add(this.BtnPagos);
-            this.PanelNavegacion.Controls.Add(this.BtnSocios);
-            this.PanelNavegacion.Controls.Add(this.BtnPrestamos);
-            this.PanelNavegacion.Controls.Add(this.BtnInicio);
-            this.PanelNavegacion.Controls.Add(this.label4);
-            this.PanelNavegacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelNavegacion.Location = new System.Drawing.Point(0, 130);
-            this.PanelNavegacion.Name = "PanelNavegacion";
-            this.PanelNavegacion.Size = new System.Drawing.Size(250, 525);
-            this.PanelNavegacion.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(12, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "NAVEGACIÓN PRINCIPAL";
             // 
             // PanelHeader
             // 
@@ -197,7 +207,7 @@
             this.PanelState.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(194)))), ((int)(((byte)(199)))));
             this.PanelState.Controls.Add(this.LblMessage);
             this.PanelState.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PanelState.Location = new System.Drawing.Point(250, 660);
+            this.PanelState.Location = new System.Drawing.Point(250, 760);
             this.PanelState.Name = "PanelState";
             this.PanelState.Size = new System.Drawing.Size(1050, 40);
             this.PanelState.TabIndex = 4;
@@ -218,8 +228,92 @@
             this.PanelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelContainer.Location = new System.Drawing.Point(250, 95);
             this.PanelContainer.Name = "PanelContainer";
-            this.PanelContainer.Size = new System.Drawing.Size(1050, 565);
+            this.PanelContainer.Size = new System.Drawing.Size(1050, 665);
             this.PanelContainer.TabIndex = 5;
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_pagos_light;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(3, 435);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.button4.Size = new System.Drawing.Size(250, 50);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "  Egresos";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_pagos_light;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(3, 376);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.button3.Size = new System.Drawing.Size(250, 50);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "  Pagos";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_pagos_light;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 320);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.button2.Size = new System.Drawing.Size(250, 50);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "  Aportes";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_pagos_light;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 264);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.button1.Size = new System.Drawing.Size(250, 50);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "  Pagos";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // BtnPagos
             // 
@@ -238,7 +332,7 @@
             this.BtnPagos.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.BtnPagos.Size = new System.Drawing.Size(250, 50);
             this.BtnPagos.TabIndex = 7;
-            this.BtnPagos.Text = "  Pagos";
+            this.BtnPagos.Text = "  Prestamos";
             this.BtnPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnPagos.UseVisualStyleBackColor = true;
             // 
@@ -259,7 +353,7 @@
             this.BtnSocios.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.BtnSocios.Size = new System.Drawing.Size(250, 50);
             this.BtnSocios.TabIndex = 6;
-            this.BtnSocios.Text = "  Socios";
+            this.BtnSocios.Text = "  Simulador De Prestamos";
             this.BtnSocios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnSocios.UseVisualStyleBackColor = true;
             // 
@@ -280,7 +374,7 @@
             this.BtnPrestamos.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.BtnPrestamos.Size = new System.Drawing.Size(250, 50);
             this.BtnPrestamos.TabIndex = 5;
-            this.BtnPrestamos.Text = "  Préstamos";
+            this.BtnPrestamos.Text = "  Cierre De Caja";
             this.BtnPrestamos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnPrestamos.UseVisualStyleBackColor = true;
             this.BtnPrestamos.Click += new System.EventHandler(this.BtnPrestamos_Click);
@@ -340,6 +434,7 @@
             this.PbbConfiguracion.Size = new System.Drawing.Size(25, 25);
             this.PbbConfiguracion.TabIndex = 3;
             this.PbbConfiguracion.TabStop = false;
+            this.PbbConfiguracion.Click += new System.EventHandler(this.PbbConfiguracion_Click);
             // 
             // PbxUFoto
             // 
@@ -413,12 +508,34 @@
             this.PbbCerrar.TabStop = false;
             this.PbbCerrar.Click += new System.EventHandler(this.PbbCerrar_Click);
             // 
+            // btnDatosFinancieros
+            // 
+            this.btnDatosFinancieros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDatosFinancieros.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.btnDatosFinancieros.FlatAppearance.BorderSize = 0;
+            this.btnDatosFinancieros.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.btnDatosFinancieros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.btnDatosFinancieros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDatosFinancieros.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDatosFinancieros.ForeColor = System.Drawing.Color.White;
+            this.btnDatosFinancieros.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_pagos_light;
+            this.btnDatosFinancieros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDatosFinancieros.Location = new System.Drawing.Point(0, 491);
+            this.btnDatosFinancieros.Name = "btnDatosFinancieros";
+            this.btnDatosFinancieros.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnDatosFinancieros.Size = new System.Drawing.Size(250, 50);
+            this.btnDatosFinancieros.TabIndex = 12;
+            this.btnDatosFinancieros.Text = "  Datos Financieros";
+            this.btnDatosFinancieros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDatosFinancieros.UseVisualStyleBackColor = true;
+            this.btnDatosFinancieros.Click += new System.EventHandler(this.btnDatosFinancieros_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(227)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(1300, 700);
+            this.ClientSize = new System.Drawing.Size(1300, 800);
             this.Controls.Add(this.PanelContainer);
             this.Controls.Add(this.PanelState);
             this.Controls.Add(this.PanelHeader);
@@ -433,10 +550,10 @@
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.PanelTop.ResumeLayout(false);
             this.PanelLeft.ResumeLayout(false);
-            this.PanelProfile.ResumeLayout(false);
-            this.PanelProfile.PerformLayout();
             this.PanelNavegacion.ResumeLayout(false);
             this.PanelNavegacion.PerformLayout();
+            this.PanelProfile.ResumeLayout(false);
+            this.PanelProfile.PerformLayout();
             this.PanelHeader.ResumeLayout(false);
             this.PanelHeader.PerformLayout();
             this.PanelState.ResumeLayout(false);
@@ -482,5 +599,10 @@
         private System.Windows.Forms.Panel PanelState;
         private System.Windows.Forms.Label LblMessage;
         private System.Windows.Forms.Panel PanelContainer;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDatosFinancieros;
     }
 }

@@ -28,202 +28,299 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TxtTEA = new System.Windows.Forms.TextBox();
-            this.TxtTEM = new System.Windows.Forms.TextBox();
-            this.TxtTED = new System.Windows.Forms.TextBox();
-            this.TxtSeguroDesgravamen = new System.Windows.Forms.TextBox();
-            this.TxtITF = new System.Windows.Forms.TextBox();
-            this.TxtOtros = new System.Windows.Forms.TextBox();
-            this.TxtEstado = new System.Windows.Forms.TextBox();
-            this.BtnGuardar = new System.Windows.Forms.Button();
-            this.DgvData = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvData)).BeginInit();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.BtnListarTodo = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.TxtBusqueda = new System.Windows.Forms.TextBox();
+            this.DgvDatosFinancieros = new System.Windows.Forms.DataGridView();
+            this.PanelActions = new System.Windows.Forms.Panel();
+            this.BtnModificar = new System.Windows.Forms.Button();
+            this.BtnNuevo = new System.Windows.Forms.Button();
+            this.adasdasd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvDatosFinancieros)).BeginInit();
+            this.PanelActions.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TxtTEA
+            // BtnListarTodo
             // 
-            this.TxtTEA.Location = new System.Drawing.Point(76, 82);
-            this.TxtTEA.Name = "TxtTEA";
-            this.TxtTEA.Size = new System.Drawing.Size(200, 20);
-            this.TxtTEA.TabIndex = 0;
+            this.BtnListarTodo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnListarTodo.BackColor = System.Drawing.Color.DimGray;
+            this.BtnListarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnListarTodo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnListarTodo.FlatAppearance.BorderSize = 0;
+            this.BtnListarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnListarTodo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnListarTodo.ForeColor = System.Drawing.Color.White;
+            this.BtnListarTodo.Location = new System.Drawing.Point(278, 41);
+            this.BtnListarTodo.Name = "BtnListarTodo";
+            this.BtnListarTodo.Size = new System.Drawing.Size(81, 27);
+            this.BtnListarTodo.TabIndex = 30;
+            this.BtnListarTodo.Text = "Todos";
+            this.BtnListarTodo.UseVisualStyleBackColor = false;
             // 
-            // TxtTEM
+            // label8
             // 
-            this.TxtTEM.Location = new System.Drawing.Point(76, 129);
-            this.TxtTEM.Name = "TxtTEM";
-            this.TxtTEM.Size = new System.Drawing.Size(200, 20);
-            this.TxtTEM.TabIndex = 1;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(13, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(143, 14);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Búsqueda por Código";
             // 
-            // TxtTED
+            // BtnBuscar
             // 
-            this.TxtTED.Location = new System.Drawing.Point(76, 169);
-            this.TxtTED.Name = "TxtTED";
-            this.TxtTED.Size = new System.Drawing.Size(200, 20);
-            this.TxtTED.TabIndex = 2;
+            this.BtnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnBuscar.BackColor = System.Drawing.Color.Black;
+            this.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBuscar.FlatAppearance.BorderSize = 0;
+            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBuscar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscar.Location = new System.Drawing.Point(191, 41);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(81, 27);
+            this.BtnBuscar.TabIndex = 28;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = false;
             // 
-            // TxtSeguroDesgravamen
+            // TxtBusqueda
             // 
-            this.TxtSeguroDesgravamen.Location = new System.Drawing.Point(76, 215);
-            this.TxtSeguroDesgravamen.Name = "TxtSeguroDesgravamen";
-            this.TxtSeguroDesgravamen.Size = new System.Drawing.Size(200, 20);
-            this.TxtSeguroDesgravamen.TabIndex = 3;
+            this.TxtBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtBusqueda.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBusqueda.Location = new System.Drawing.Point(16, 41);
+            this.TxtBusqueda.Name = "TxtBusqueda";
+            this.TxtBusqueda.Size = new System.Drawing.Size(169, 27);
+            this.TxtBusqueda.TabIndex = 27;
             // 
-            // TxtITF
+            // DgvDatosFinancieros
             // 
-            this.TxtITF.Location = new System.Drawing.Point(76, 260);
-            this.TxtITF.Name = "TxtITF";
-            this.TxtITF.Size = new System.Drawing.Size(200, 20);
-            this.TxtITF.TabIndex = 4;
+            this.DgvDatosFinancieros.AllowUserToAddRows = false;
+            this.DgvDatosFinancieros.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(53)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.DgvDatosFinancieros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DgvDatosFinancieros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DgvDatosFinancieros.BackgroundColor = System.Drawing.Color.White;
+            this.DgvDatosFinancieros.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DgvDatosFinancieros.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DgvDatosFinancieros.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvDatosFinancieros.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DgvDatosFinancieros.ColumnHeadersHeight = 40;
+            this.DgvDatosFinancieros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DgvDatosFinancieros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.adasdasd,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column8,
+            this.Column7});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(53)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvDatosFinancieros.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DgvDatosFinancieros.EnableHeadersVisualStyles = false;
+            this.DgvDatosFinancieros.GridColor = System.Drawing.Color.White;
+            this.DgvDatosFinancieros.Location = new System.Drawing.Point(19, 87);
+            this.DgvDatosFinancieros.MultiSelect = false;
+            this.DgvDatosFinancieros.Name = "DgvDatosFinancieros";
+            this.DgvDatosFinancieros.ReadOnly = true;
+            this.DgvDatosFinancieros.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(81)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvDatosFinancieros.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DgvDatosFinancieros.RowHeadersVisible = false;
+            this.DgvDatosFinancieros.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.DgvDatosFinancieros.RowTemplate.Height = 30;
+            this.DgvDatosFinancieros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvDatosFinancieros.Size = new System.Drawing.Size(665, 522);
+            this.DgvDatosFinancieros.TabIndex = 26;
             // 
-            // TxtOtros
+            // PanelActions
             // 
-            this.TxtOtros.Location = new System.Drawing.Point(76, 302);
-            this.TxtOtros.Name = "TxtOtros";
-            this.TxtOtros.Size = new System.Drawing.Size(200, 20);
-            this.TxtOtros.TabIndex = 5;
+            this.PanelActions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.PanelActions.Controls.Add(this.BtnModificar);
+            this.PanelActions.Controls.Add(this.BtnNuevo);
+            this.PanelActions.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PanelActions.Location = new System.Drawing.Point(703, 0);
+            this.PanelActions.Name = "PanelActions";
+            this.PanelActions.Size = new System.Drawing.Size(200, 643);
+            this.PanelActions.TabIndex = 25;
             // 
-            // TxtEstado
+            // BtnModificar
             // 
-            this.TxtEstado.Location = new System.Drawing.Point(76, 352);
-            this.TxtEstado.Name = "TxtEstado";
-            this.TxtEstado.Size = new System.Drawing.Size(200, 20);
-            this.TxtEstado.TabIndex = 7;
+            this.BtnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
+            this.BtnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnModificar.FlatAppearance.BorderSize = 0;
+            this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnModificar.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnModificar.ForeColor = System.Drawing.Color.White;
+            this.BtnModificar.Location = new System.Drawing.Point(22, 87);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(160, 40);
+            this.BtnModificar.TabIndex = 3;
+            this.BtnModificar.Text = "MODIFICAR";
+            this.BtnModificar.UseVisualStyleBackColor = false;
             // 
-            // BtnGuardar
+            // BtnNuevo
             // 
-            this.BtnGuardar.Location = new System.Drawing.Point(76, 390);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(200, 23);
-            this.BtnGuardar.TabIndex = 8;
-            this.BtnGuardar.Text = "GUARDAR";
-            this.BtnGuardar.UseVisualStyleBackColor = true;
-            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            this.BtnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(35)))), ((int)(((byte)(126)))));
+            this.BtnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnNuevo.FlatAppearance.BorderSize = 0;
+            this.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNuevo.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNuevo.ForeColor = System.Drawing.Color.White;
+            this.BtnNuevo.Location = new System.Drawing.Point(22, 41);
+            this.BtnNuevo.Name = "BtnNuevo";
+            this.BtnNuevo.Size = new System.Drawing.Size(160, 40);
+            this.BtnNuevo.TabIndex = 1;
+            this.BtnNuevo.Text = "NUEVO";
+            this.BtnNuevo.UseVisualStyleBackColor = false;
+            this.BtnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
             // 
-            // DgvData
+            // adasdasd
             // 
-            this.DgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvData.Location = new System.Drawing.Point(306, 82);
-            this.DgvData.Name = "DgvData";
-            this.DgvData.Size = new System.Drawing.Size(773, 319);
-            this.DgvData.TabIndex = 9;
+            this.adasdasd.HeaderText = "Id_Dato_Financiero";
+            this.adasdasd.Name = "adasdasd";
+            this.adasdasd.ReadOnly = true;
+            this.adasdasd.Visible = false;
+            this.adasdasd.Width = 80;
             // 
-            // label1
+            // Column1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "TEA";
+            this.Column1.HeaderText = "TEA";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 80;
             // 
-            // label2
+            // Column2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "TEM";
+            this.Column2.HeaderText = "TEM";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 80;
             // 
-            // label3
+            // Column3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(73, 153);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "TED";
+            this.Column3.HeaderText = "TED";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 80;
             // 
-            // label4
+            // Column4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(73, 199);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Seguro Desgravamen";
+            this.Column4.HeaderText = "ITF";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 80;
             // 
-            // label5
+            // Column5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(73, 244);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(23, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "ITF";
+            this.Column5.HeaderText = "Seg. Desg.";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 87;
             // 
-            // label6
+            // Column6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(73, 286);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Otros";
+            this.Column6.HeaderText = "Otros";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 80;
             // 
-            // label7
+            // Column8
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(73, 336);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Estado";
+            this.Column8.HeaderText = "Estado";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 90;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Fecha De Registro";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 120;
             // 
             // FrmDatoFinaciero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 504);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.DgvData);
-            this.Controls.Add(this.BtnGuardar);
-            this.Controls.Add(this.TxtEstado);
-            this.Controls.Add(this.TxtOtros);
-            this.Controls.Add(this.TxtITF);
-            this.Controls.Add(this.TxtSeguroDesgravamen);
-            this.Controls.Add(this.TxtTED);
-            this.Controls.Add(this.TxtTEM);
-            this.Controls.Add(this.TxtTEA);
+            this.ClientSize = new System.Drawing.Size(903, 643);
+            this.Controls.Add(this.BtnListarTodo);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.BtnBuscar);
+            this.Controls.Add(this.TxtBusqueda);
+            this.Controls.Add(this.DgvDatosFinancieros);
+            this.Controls.Add(this.PanelActions);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDatoFinaciero";
             this.Text = "FrmDatoFinaciero";
             this.Load += new System.EventHandler(this.FrmDatoFinaciero_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvDatosFinancieros)).EndInit();
+            this.PanelActions.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox TxtTEA;
-        private System.Windows.Forms.TextBox TxtTEM;
-        private System.Windows.Forms.TextBox TxtTED;
-        private System.Windows.Forms.TextBox TxtSeguroDesgravamen;
-        private System.Windows.Forms.TextBox TxtITF;
-        private System.Windows.Forms.TextBox TxtOtros;
-        private System.Windows.Forms.TextBox TxtEstado;
-        private System.Windows.Forms.Button BtnGuardar;
-        private System.Windows.Forms.DataGridView DgvData;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button BtnListarTodo;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.TextBox TxtBusqueda;
+        private System.Windows.Forms.DataGridView DgvDatosFinancieros;
+        private System.Windows.Forms.Panel PanelActions;
+        private System.Windows.Forms.Button BtnModificar;
+        private System.Windows.Forms.Button BtnNuevo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adasdasd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

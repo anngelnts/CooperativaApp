@@ -10,3 +10,12 @@ G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csproj.CoreCompileInputs.cache
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb

@@ -17,3 +17,13 @@ G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csproj.CopyComplete
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.dll
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Comun\bin\Debug\CooperativaApp.Comun.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Comun\bin\Debug\CooperativaApp.Comun.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csproj.CoreCompileInputs.cache
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csproj.CopyComplete
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Comun\bin\Debug\CooperativaApp.Comun.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Comun\bin\Debug\CooperativaApp.Comun.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.pdb

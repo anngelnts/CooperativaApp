@@ -203,5 +203,20 @@ namespace CooperativaApp.Presentacion
             MenuActive(sender);
             OpenForm(new FrmPrestamos());
         }
+
+        private void PbbConfiguracion_Click(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Configuración");
+           
+            OpenForm(new FrmConfiguracion());
+
+        }
+
+        private void btnDatosFinancieros_Click(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Datos Financieros");
+            MenuActive(sender);
+            OpenForm(new FrmDatoFinaciero());
+        }
     }
 }

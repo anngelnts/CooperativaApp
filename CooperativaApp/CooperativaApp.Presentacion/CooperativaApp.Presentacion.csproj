@@ -68,11 +68,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acciones\FrmNuevoDatoFinanciero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmNuevoDatoFinanciero.Designer.cs">
+      <DependentUpon>FrmNuevoDatoFinanciero.cs</DependentUpon>
+    </Compile>
     <Compile Include="Acciones\FrmNuevoPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Acciones\FrmNuevoPrestamo.Designer.cs">
       <DependentUpon>FrmNuevoPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguracion.Designer.cs">
+      <DependentUpon>FrmConfiguracion.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDashboard.cs">
       <SubType>Form</SubType>
@@ -106,8 +118,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Acciones\FrmNuevoDatoFinanciero.resx">
+      <DependentUpon>FrmNuevoDatoFinanciero.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmNuevoPrestamo.resx">
       <DependentUpon>FrmNuevoPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguracion.resx">
+      <DependentUpon>FrmConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDashboard.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>

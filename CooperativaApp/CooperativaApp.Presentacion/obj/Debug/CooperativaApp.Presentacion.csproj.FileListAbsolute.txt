@@ -48,3 +48,59 @@ G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmDashboard.resources
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmPrestamos.resources
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoPrestamo.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Presentacion.exe.config
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Presentacion.exe
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Presentacion.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\es\CooperativaApp.Presentacion.resources.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Datos.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Entidades.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\MaterialSkin.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Comun.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\MySql.Data.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Datos.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Entidades.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Comun.pdb
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csprojAssemblyReference.cache
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoDatoFinanciero.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoPrestamo.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmConfiguracion.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmDashboard.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmDatoFinaciero.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmLogin.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmPrestamos.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmPrincipal.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Properties.Resources.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmLogin.es.resources
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csproj.GenerateResource.cache
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\es\CooperativaApp.Presentacion.resources.dll
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csproj.CopyComplete
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.exe
+C:\Users\AEPIS01\Source\Repos\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Presentacion.exe.config
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Presentacion.exe
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Presentacion.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\es\CooperativaApp.Presentacion.resources.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Datos.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Entidades.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\MaterialSkin.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Comun.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\MySql.Data.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Datos.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Entidades.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Comun.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csprojResolveAssemblyReference.cache
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoDatoFinanciero.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoPrestamo.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmConfiguracion.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmDashboard.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmDatoFinaciero.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmLogin.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmPrestamos.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmPrincipal.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Properties.Resources.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmLogin.es.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csproj.GenerateResource.Cache
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\es\CooperativaApp.Presentacion.resources.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.exe
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.pdb

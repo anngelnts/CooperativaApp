@@ -125,7 +125,7 @@
             this.DgvPrestamo.DefaultCellStyle = dataGridViewCellStyle3;
             this.DgvPrestamo.EnableHeadersVisualStyles = false;
             this.DgvPrestamo.GridColor = System.Drawing.Color.White;
-            this.DgvPrestamo.Location = new System.Drawing.Point(28, 74);
+            this.DgvPrestamo.Location = new System.Drawing.Point(28, 87);
             this.DgvPrestamo.MultiSelect = false;
             this.DgvPrestamo.Name = "DgvPrestamo";
             this.DgvPrestamo.ReadOnly = true;
