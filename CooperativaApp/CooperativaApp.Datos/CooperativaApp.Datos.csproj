@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="DCronogramaDePagos.cs" />
     <Compile Include="DDatoFinanciero.cs" />
+    <Compile Include="DEgreso.cs" />
     <Compile Include="DPrestamo.cs" />
     <Compile Include="DSocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -46,6 +46,7 @@
     <Compile Include="CronogramaDePagos.cs" />
     <Compile Include="DatoFinanciero.cs" />
     <Compile Include="DatosDeCooperativa.cs" />
+    <Compile Include="Egreso.cs" />
     <Compile Include="Pago.cs" />
     <Compile Include="Prestamo.cs" />
     <Compile Include="Socio.cs" />
