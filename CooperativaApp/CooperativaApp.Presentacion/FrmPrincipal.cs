@@ -197,13 +197,7 @@ namespace CooperativaApp.Presentacion
             OpenForm(new FrmDashboard());
         }
 
-        private void BtnPrestamos_Click(object sender, EventArgs e)
-        {
-            ChangeHeaderTitle("Préstamos");
-            MenuActive(sender);
-            OpenForm(new FrmPrestamos());
-        }
-
+ 
         private void PbbConfiguracion_Click(object sender, EventArgs e)
         {
             ChangeHeaderTitle("Configuración");
@@ -217,6 +211,34 @@ namespace CooperativaApp.Presentacion
             ChangeHeaderTitle("Datos Financieros");
             MenuActive(sender);
             OpenForm(new FrmDatoFinaciero());
+        }
+
+        private void BtnSocios_Click(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Socios");
+            MenuActive(sender);
+            OpenForm(new FrmSocio());
+        }
+
+        private void BtnPagos_Click(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Prestamos");
+            MenuActive(sender);
+            OpenForm(new FrmPrestamos());
+        }
+
+        private void BtnSimuladorDePrestamo_Click(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Simulador De Préstamo");
+            MenuActive(sender);
+            OpenForm(new FrmSimuladorDePrestamo());
+        }
+
+        private void btnPagos_Click_1(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Pagos De Préstamo");
+            MenuActive(sender);
+            OpenForm(new FrmPago());
         }
     }
 }

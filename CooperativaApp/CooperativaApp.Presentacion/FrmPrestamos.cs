@@ -26,8 +26,26 @@ namespace CooperativaApp.Presentacion
 
         public void Listar()
         {
-            DDatoFinanciero bo = new DDatoFinanciero();
-            DgvPrestamo.DataSource = bo.Listar();
+            DPrestamo boPrestamo = new DPrestamo();
+            
+            DgvPrestamo.Rows.Clear();
+            DgvPrestamo.ColumnCount = 8;
+
+
+            foreach (DataRow var in boPrestamo.Listar().Rows)
+            {
+                DgvPrestamo.Rows.Add(
+                   var[0].ToString(),
+                   var[6].ToString(),
+                   var[7].ToString(),
+                   var[8].ToString() +" " +var[9].ToString(),
+                   var[2].ToString(),
+                   var[3].ToString(),
+                   var[4].ToString(),
+                   var[5].ToString()
+                   );
+
+            }
         }
 
         private void Buscar(string KeyWoard)
@@ -51,6 +69,28 @@ namespace CooperativaApp.Presentacion
             FrmNuevoPrestamo frm = new FrmNuevoPrestamo();
             AddOwnedForm(frm);
             frm.ShowDialog();
+        }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+           
+
+            if (DgvPrestamo.SelectedRows.Count > 0)
+            {
+                int rowindex = DgvPrestamo.CurrentRow.Index;
+                if (rowindex != -1)
+                {
+                    FrmEditarPrestamo.Id_Prestamo = Convert.ToInt32(DgvPrestamo.CurrentRow.Cells[0].Value);
+                    FrmEditarPrestamo frm = new FrmEditarPrestamo();
+                    AddOwnedForm(frm);
+                    frm.ShowDialog();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro");
+            }
         }
     }
 }

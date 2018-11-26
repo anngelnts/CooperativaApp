@@ -104,3 +104,10 @@ D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacio
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\es\CooperativaApp.Presentacion.resources.dll
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.exe
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoSocio.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmSocio.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmSimuladorDePrestamo.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmEditarPrestamo.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmCronogramaDePago.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoPago.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmPago.resources

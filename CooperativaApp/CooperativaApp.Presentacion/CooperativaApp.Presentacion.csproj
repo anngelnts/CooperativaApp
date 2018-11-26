@@ -68,17 +68,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acciones\FrmCronogramaDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmCronogramaDePago.Designer.cs">
+      <DependentUpon>FrmCronogramaDePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\FrmEditarPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmEditarPrestamo.Designer.cs">
+      <DependentUpon>FrmEditarPrestamo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Acciones\FrmNuevoDatoFinanciero.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Acciones\FrmNuevoDatoFinanciero.Designer.cs">
       <DependentUpon>FrmNuevoDatoFinanciero.cs</DependentUpon>
     </Compile>
+    <Compile Include="Acciones\FrmNuevoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmNuevoPago.Designer.cs">
+      <DependentUpon>FrmNuevoPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Acciones\FrmNuevoPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Acciones\FrmNuevoPrestamo.Designer.cs">
       <DependentUpon>FrmNuevoPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\FrmNuevoSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmNuevoSocio.Designer.cs">
+      <DependentUpon>FrmNuevoSocio.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmConfiguracion.cs">
       <SubType>Form</SubType>
@@ -104,6 +128,12 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPago.Designer.cs">
+      <DependentUpon>FrmPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrestamos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,13 +146,37 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSimuladorDePrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSimuladorDePrestamo.Designer.cs">
+      <DependentUpon>FrmSimuladorDePrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSocio.Designer.cs">
+      <DependentUpon>FrmSocio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Acciones\FrmCronogramaDePago.resx">
+      <DependentUpon>FrmCronogramaDePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmEditarPrestamo.resx">
+      <DependentUpon>FrmEditarPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmNuevoDatoFinanciero.resx">
       <DependentUpon>FrmNuevoDatoFinanciero.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmNuevoPago.resx">
+      <DependentUpon>FrmNuevoPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmNuevoPrestamo.resx">
       <DependentUpon>FrmNuevoPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmNuevoSocio.resx">
+      <DependentUpon>FrmNuevoSocio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConfiguracion.resx">
       <DependentUpon>FrmConfiguracion.cs</DependentUpon>
@@ -139,11 +193,20 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPago.resx">
+      <DependentUpon>FrmPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrestamos.resx">
       <DependentUpon>FrmPrestamos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSimuladorDePrestamo.resx">
+      <DependentUpon>FrmSimuladorDePrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSocio.resx">
+      <DependentUpon>FrmSocio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

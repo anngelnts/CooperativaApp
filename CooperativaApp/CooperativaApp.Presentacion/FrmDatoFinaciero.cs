@@ -33,7 +33,7 @@ namespace CooperativaApp.Presentacion
 
 
             //DgvDatosFinancieros.DataSource = bo.Listar();
-            //DgvDatosFinancieros.ColumnCount = 8;
+            DgvDatosFinancieros.ColumnCount = 8;
 
 
             foreach (DatoFinanciero item in bo.Listar())
@@ -41,18 +41,18 @@ namespace CooperativaApp.Presentacion
                 DgvDatosFinancieros.Rows.Add(
                    item.Id_Dato_Financiero.ToString(),
                    item.TEA.ToString(),
-                   item.TEM.ToString(),
-                   item.TED.ToString(),
-                   item.ITF.ToString(),
-                   item.Seguro_Desgravamen.ToString(),
-                   item.Otros.ToString(),
+                   (item.TEM*100).ToString("N3"),
+                   (item.TED*100).ToString("N3"),
+                   (item.ITF).ToString("N3"),
+                   item.Seguro_Desgravamen.ToString("N3"),
+                   item.Otros.ToString("N3"),
                    item.Estado.ToString(),
                    item.FechaRegistro.ToString("dd-MM-yyyy")
 
                    );
             }
 
-        
+
         }
 
         private void FrmDatoFinaciero_Load(object sender, EventArgs e)

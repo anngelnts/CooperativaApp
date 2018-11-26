@@ -22,7 +22,7 @@ namespace CooperativaApp.Presentacion.Acciones
         {
             double cTEA = Convert.ToDouble(TxtTEA.Text);
             double cTEM = (Math.Pow((1 + (cTEA/100)),(1/(double)12)) -1);
-            double cTED = (Math.Pow((1 + (cTEM)), (1 /(double)30)) - 1) * 100;
+            double cTED = (Math.Pow((1 + (cTEM)), (1 /(double)30)) - 1);
 
             
 

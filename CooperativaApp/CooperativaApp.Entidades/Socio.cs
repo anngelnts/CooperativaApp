@@ -16,6 +16,8 @@ namespace CooperativaApp.Entidades
         public DateTime Fecha_De_Nacimiento { get; set; }
         public string Sexo { get; set; }
         public string Estado_Civil { get; set; }
+        public string Profesion { get; set; }
+        public string Nivel_De_Instruccion { get; set; }
         public string Direccion { get; set; }
         public string Distrito { get; set; }
         public string Provincia { get; set; }
@@ -38,6 +40,7 @@ namespace CooperativaApp.Entidades
         public string Telefono_De_Empresa { get; set; }
         public string Modalidad_De_Contratacion { get; set; }
         public string Centro_De_Trabajo { get; set; }
+        public string Nivel { get; set; }
         public decimal Monto_Acumulado { get; set; }
         public string Estado { get; set; }
         public DateTime Fecha_De_Registro { get; set; }

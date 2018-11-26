@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CooperativaApp.Entidades
 {
-    class Cronograma_De_Pagos
+    public class CronogramaDePagos
     {
         public int Id_Cronograma { get; set; }
         public int Id_Prestamo { get; set; }
