@@ -38,7 +38,7 @@
             this.PanelLeft = new System.Windows.Forms.Panel();
             this.PanelNavegacion = new System.Windows.Forms.Panel();
             this.btnDatosFinancieros = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnEgresos = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnPagos = new System.Windows.Forms.Button();
@@ -168,7 +168,7 @@
             // PanelNavegacion
             // 
             this.PanelNavegacion.Controls.Add(this.btnDatosFinancieros);
-            this.PanelNavegacion.Controls.Add(this.button4);
+            this.PanelNavegacion.Controls.Add(this.BtnEgresos);
             this.PanelNavegacion.Controls.Add(this.button3);
             this.PanelNavegacion.Controls.Add(this.button2);
             this.PanelNavegacion.Controls.Add(this.btnPagos);
@@ -205,26 +205,27 @@
             this.btnDatosFinancieros.UseVisualStyleBackColor = true;
             this.btnDatosFinancieros.Click += new System.EventHandler(this.btnDatosFinancieros_Click);
             // 
-            // button4
+            // BtnEgresos
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_pagos_light;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 435);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.button4.Size = new System.Drawing.Size(250, 50);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "  Egresos";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnEgresos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEgresos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.BtnEgresos.FlatAppearance.BorderSize = 0;
+            this.BtnEgresos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.BtnEgresos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.BtnEgresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEgresos.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEgresos.ForeColor = System.Drawing.Color.White;
+            this.BtnEgresos.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_pagos_light;
+            this.BtnEgresos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEgresos.Location = new System.Drawing.Point(3, 435);
+            this.BtnEgresos.Name = "BtnEgresos";
+            this.BtnEgresos.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.BtnEgresos.Size = new System.Drawing.Size(250, 50);
+            this.BtnEgresos.TabIndex = 11;
+            this.BtnEgresos.Text = "  Egresos";
+            this.BtnEgresos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnEgresos.UseVisualStyleBackColor = true;
+            this.BtnEgresos.Click += new System.EventHandler(this.BtnEgresos_Click);
             // 
             // button3
             // 
@@ -602,7 +603,7 @@
         private System.Windows.Forms.Panel PanelState;
         private System.Windows.Forms.Label LblMessage;
         private System.Windows.Forms.Panel PanelContainer;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnEgresos;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnPagos;

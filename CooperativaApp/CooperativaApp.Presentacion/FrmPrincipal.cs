@@ -240,5 +240,12 @@ namespace CooperativaApp.Presentacion
             MenuActive(sender);
             OpenForm(new FrmPago());
         }
+
+        private void BtnEgresos_Click(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Egresos");
+            MenuActive(sender);
+            OpenForm(new FrmEgresos());
+        }
     }
 }

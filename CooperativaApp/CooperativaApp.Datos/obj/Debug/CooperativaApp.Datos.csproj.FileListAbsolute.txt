@@ -48,3 +48,17 @@ D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\D
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csprojResolveAssemblyReference.cache
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.dll
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.pdb
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.dll
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.dll
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.dll
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\bin\Debug\Google.Protobuf.dll
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.pdb
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.pdb
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.xml
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csprojAssemblyReference.cache
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CoreCompileInputs.cache
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CopyComplete
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb

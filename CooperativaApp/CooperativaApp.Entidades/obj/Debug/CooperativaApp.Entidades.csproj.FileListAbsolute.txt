@@ -20,3 +20,9 @@ D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\b
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csprojResolveAssemblyReference.cache
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.dll
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.pdb
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csprojAssemblyReference.cache
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csproj.CoreCompileInputs.cache
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
+E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb
