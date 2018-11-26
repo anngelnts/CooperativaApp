@@ -27,3 +27,4 @@ D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Comun\bin\D
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Comun\bin\Debug\CooperativaApp.Comun.pdb
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.dll
 D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csprojResolveAssemblyReference.cache
