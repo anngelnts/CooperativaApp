@@ -62,3 +62,15 @@ E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\Co
 E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CopyComplete
 E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
 E:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\Google.Protobuf.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.xml
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csprojResolveAssemblyReference.cache
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb

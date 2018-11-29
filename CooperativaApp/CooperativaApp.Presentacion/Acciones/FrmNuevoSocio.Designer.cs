@@ -31,7 +31,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.tab_DatosPersonales = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.txtFecha_Nacimiento = new System.Windows.Forms.MaskedTextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.txtProfesion = new System.Windows.Forms.TextBox();
             this.cbxNivel_De_Instruccion = new System.Windows.Forms.ComboBox();
@@ -65,7 +64,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.txtFecha_De_Ingreso = new System.Windows.Forms.MaskedTextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.txtCargo = new System.Windows.Forms.TextBox();
             this.cbxCentro_De_Trabajo = new System.Windows.Forms.ComboBox();
@@ -90,7 +88,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.txtDireccion_Empresa = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.txtFecha_De_Registro = new System.Windows.Forms.MaskedTextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.cbxEstado = new System.Windows.Forms.ComboBox();
             this.cbxNivel = new System.Windows.Forms.ComboBox();
@@ -99,6 +96,9 @@
             this.txtMonto_Total_Acumulado = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.BtnGuardar = new System.Windows.Forms.Button();
+            this.txtFecha_Nacimiento = new System.Windows.Forms.DateTimePicker();
+            this.txtFecha_De_Ingreso = new System.Windows.Forms.DateTimePicker();
+            this.txtFecha_De_Registro = new System.Windows.Forms.DateTimePicker();
             this.tab_DatosPersonales.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -155,16 +155,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "DATOS PERSONALES";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // txtFecha_Nacimiento
-            // 
-            this.txtFecha_Nacimiento.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_Nacimiento.Location = new System.Drawing.Point(391, 113);
-            this.txtFecha_Nacimiento.Mask = "00/00/0000";
-            this.txtFecha_Nacimiento.Name = "txtFecha_Nacimiento";
-            this.txtFecha_Nacimiento.Size = new System.Drawing.Size(120, 26);
-            this.txtFecha_Nacimiento.TabIndex = 115;
-            this.txtFecha_Nacimiento.ValidatingType = typeof(System.DateTime);
             // 
             // label27
             // 
@@ -545,16 +535,6 @@
             this.tabPage3.Text = "DATOS LABORALES";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // txtFecha_De_Ingreso
-            // 
-            this.txtFecha_De_Ingreso.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_De_Ingreso.Location = new System.Drawing.Point(465, 52);
-            this.txtFecha_De_Ingreso.Mask = "00/00/0000";
-            this.txtFecha_De_Ingreso.Name = "txtFecha_De_Ingreso";
-            this.txtFecha_De_Ingreso.Size = new System.Drawing.Size(199, 26);
-            this.txtFecha_De_Ingreso.TabIndex = 114;
-            this.txtFecha_De_Ingreso.ValidatingType = typeof(System.DateTime);
-            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -647,6 +627,8 @@
             this.txtIngreso_Mensual_Neto.Name = "txtIngreso_Mensual_Neto";
             this.txtIngreso_Mensual_Neto.Size = new System.Drawing.Size(193, 27);
             this.txtIngreso_Mensual_Neto.TabIndex = 106;
+            this.txtIngreso_Mensual_Neto.Text = "0.00";
+            this.txtIngreso_Mensual_Neto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label22
             // 
@@ -802,16 +784,6 @@
             this.tabPage4.Text = "DATOS DE COOPERATIVA";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // txtFecha_De_Registro
-            // 
-            this.txtFecha_De_Registro.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_De_Registro.Location = new System.Drawing.Point(33, 48);
-            this.txtFecha_De_Registro.Mask = "00/00/0000";
-            this.txtFecha_De_Registro.Name = "txtFecha_De_Registro";
-            this.txtFecha_De_Registro.Size = new System.Drawing.Size(174, 26);
-            this.txtFecha_De_Registro.TabIndex = 115;
-            this.txtFecha_De_Registro.ValidatingType = typeof(System.DateTime);
-            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -883,6 +855,8 @@
             this.txtMonto_Total_Acumulado.Name = "txtMonto_Total_Acumulado";
             this.txtMonto_Total_Acumulado.Size = new System.Drawing.Size(193, 27);
             this.txtMonto_Total_Acumulado.TabIndex = 108;
+            this.txtMonto_Total_Acumulado.Text = "0.00";
+            this.txtMonto_Total_Acumulado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label29
             // 
@@ -910,6 +884,33 @@
             this.BtnGuardar.UseVisualStyleBackColor = false;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
+            // txtFecha_Nacimiento
+            // 
+            this.txtFecha_Nacimiento.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_Nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_Nacimiento.Location = new System.Drawing.Point(391, 114);
+            this.txtFecha_Nacimiento.Name = "txtFecha_Nacimiento";
+            this.txtFecha_Nacimiento.Size = new System.Drawing.Size(120, 27);
+            this.txtFecha_Nacimiento.TabIndex = 117;
+            // 
+            // txtFecha_De_Ingreso
+            // 
+            this.txtFecha_De_Ingreso.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_De_Ingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_De_Ingreso.Location = new System.Drawing.Point(474, 52);
+            this.txtFecha_De_Ingreso.Name = "txtFecha_De_Ingreso";
+            this.txtFecha_De_Ingreso.Size = new System.Drawing.Size(120, 27);
+            this.txtFecha_De_Ingreso.TabIndex = 118;
+            // 
+            // txtFecha_De_Registro
+            // 
+            this.txtFecha_De_Registro.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_De_Registro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_De_Registro.Location = new System.Drawing.Point(33, 46);
+            this.txtFecha_De_Registro.Name = "txtFecha_De_Registro";
+            this.txtFecha_De_Registro.Size = new System.Drawing.Size(114, 27);
+            this.txtFecha_De_Registro.TabIndex = 119;
+            // 
             // FrmNuevoSocio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -918,6 +919,7 @@
             this.Controls.Add(this.tab_DatosPersonales);
             this.Controls.Add(this.BtnGuardar);
             this.Name = "FrmNuevoSocio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNuevoSocio";
             this.Load += new System.EventHandler(this.FrmNuevoSocio_Load);
             this.tab_DatosPersonales.ResumeLayout(false);
@@ -1002,8 +1004,8 @@
         public System.Windows.Forms.TextBox txtMonto_Total_Acumulado;
         private System.Windows.Forms.Label label29;
         public System.Windows.Forms.Button BtnGuardar;
-        private System.Windows.Forms.MaskedTextBox txtFecha_De_Ingreso;
-        private System.Windows.Forms.MaskedTextBox txtFecha_Nacimiento;
-        private System.Windows.Forms.MaskedTextBox txtFecha_De_Registro;
+        private System.Windows.Forms.DateTimePicker txtFecha_Nacimiento;
+        private System.Windows.Forms.DateTimePicker txtFecha_De_Ingreso;
+        private System.Windows.Forms.DateTimePicker txtFecha_De_Registro;
     }
 }

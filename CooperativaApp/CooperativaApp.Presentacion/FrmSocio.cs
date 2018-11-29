@@ -24,11 +24,13 @@ namespace CooperativaApp.Presentacion
         {
             FrmNuevoSocio frm = new FrmNuevoSocio();
             AddOwnedForm(frm);
+            frm.Text = "NUEVO SOCIO";
             frm.ShowDialog();
         }
         public void Listar()
         {
             DSocio boSobio = new DSocio();
+            DgvSocios.Rows.Clear();
             DgvSocios.ColumnCount = 9;
 
             foreach (Socio item in boSobio.Listar())
@@ -52,6 +54,57 @@ namespace CooperativaApp.Presentacion
         private void FrmSocio_Load(object sender, EventArgs e)
         {
             Listar();
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            string Num_Documento = TxtBusqueda.Text;
+
+            DSocio boSobio = new DSocio();
+            DgvSocios.Rows.Clear();
+            DgvSocios.ColumnCount = 9;
+
+            foreach (Socio item in boSobio.Buscar_Socio(Num_Documento))
+            {
+                DgvSocios.Rows.Add(
+                   item.Id_Socio.ToString(),
+                   item.Tipo_De_Documento.ToString(),
+                   item.Num_Documento.ToString(),
+                   item.Apellidos.ToString(),
+                   item.Nombres.ToString(),
+                   item.Celular.ToString(),
+                   item.Email.ToString(),
+                   item.Estado.ToString(),
+                   item.Fecha_De_Registro.ToString("dd-MM-yyyy")
+
+                   );
+            }
+        }
+
+        private void BtnListarTodo_Click(object sender, EventArgs e)
+        {
+            Listar();
+        }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+            if (DgvSocios.SelectedRows.Count > 0)
+            {
+                int rowindex = DgvSocios.CurrentRow.Index;
+                if (rowindex != -1)
+                {
+                    FrmNuevoSocio.F_Id_Socio = Convert.ToInt32(DgvSocios.CurrentRow.Cells[0].Value);
+                    FrmNuevoSocio frm = new FrmNuevoSocio();
+                    frm.Text = "MODIFICAR SOCIO";
+                    AddOwnedForm(frm);
+                    frm.ShowDialog();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro");
+            }
         }
     }
 }

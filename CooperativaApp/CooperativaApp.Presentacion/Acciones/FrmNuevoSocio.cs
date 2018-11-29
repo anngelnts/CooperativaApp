@@ -18,24 +18,79 @@ namespace CooperativaApp.Presentacion.Acciones
         {
             InitializeComponent();
         }
-
+        public static int F_Id_Socio = 0;
         private void FrmNuevoSocio_Load(object sender, EventArgs e)
         {
-            cbxTipo_Documento.SelectedIndex = 1;
-            cbxSexo.SelectedIndex = 0;
-            cbxEstado_Civil.SelectedIndex = 0;
-            cbxNivel_De_Instruccion.SelectedIndex = 1;
-            cbxModalidad_De_Contratacion.SelectedIndex = 0;
-            cbxCentro_De_Trabajo.SelectedIndex = 0;
-            cbxEstado.SelectedIndex = 0;
+            if (F_Id_Socio == 0)
+            {
+                cbxTipo_Documento.SelectedIndex = 1;
+                cbxSexo.SelectedIndex = 0;
+                cbxEstado_Civil.SelectedIndex = 0;
+                cbxNivel_De_Instruccion.SelectedIndex = 1;
+                cbxModalidad_De_Contratacion.SelectedIndex = 0;
+                cbxCentro_De_Trabajo.SelectedIndex = 0;
+                cbxEstado.SelectedIndex = 0;
+                cbxNivel.SelectedIndex = 0;
+            }
+            else
+            {
+                Cargar_Datos();
+            }
+           
         }
 
+        public void Cargar_Datos()
+        {
+            Socio beSocio = new Socio();
+            DSocio boSocio = new DSocio();
+            beSocio = boSocio.Obtener_Por_Id(FrmNuevoSocio.F_Id_Socio);
+            
+            cbxTipo_Documento.SelectedItem = beSocio.Tipo_De_Documento;
+            txtNum_Documento.Text = beSocio.Num_Documento;
+            txtNombres.Text = beSocio.Nombres;
+            txtApellidos.Text = beSocio.Apellidos;
+            txtFecha_Nacimiento.Text = beSocio.Fecha_De_Nacimiento.ToString(); ;
+            cbxSexo.SelectedItem = beSocio.Sexo;
+            cbxEstado_Civil.SelectedItem = beSocio.Estado_Civil;
+            txtProfesion.Text = beSocio.Profesion;
+            cbxNivel_De_Instruccion.SelectedItem = beSocio.Nivel_De_Instruccion;
+            txtDireccion.Text = beSocio.Direccion;
+            txtDistrito.Text = beSocio.Distrito;
+            txtProvincia.Text = beSocio.Provincia;
+            txtDepartamento.Text = beSocio.Departamento;
+            txtReferencia.Text = beSocio.Referencia;
+            txtCelular.Text = beSocio.Celular;
+            txtEmail.Text = beSocio.Email;
+            //"1" = beSocio.Envio_De_Cronogramas_De_Pago;
+            txtNombreDeLaEmpresa.Text = beSocio.Nombre_De_Empresa;
+            txtFecha_De_Ingreso.Text = beSocio.Fecha_De_Ingreso.ToString();
+            txtIngreso_Mensual_Neto.Text = beSocio.Ingreso_Mensual_Neto.ToString();
+            cbxModalidad_De_Contratacion.SelectedItem = beSocio.Modalidad_De_Contratacion;
+            txtCargo.Text = beSocio.Cargo;
+            cbxCentro_De_Trabajo.SelectedItem = beSocio.Centro_De_Trabajo;
+            txtDireccion_Empresa.Text = beSocio.Direccion_De_Empresa;
+            txtDireccion_Empresa.Text = beSocio.Distrito_De_Empresa;
+            txtProvinciaEmpresa.Text = beSocio.Provincia_De_Empresa;
+            txtDepartamento_Empresa.Text = beSocio.Departamento_De_Empresa;
+            txtReferencia_Empresa.Text = beSocio.Referencia_De_Empresa;
+            txtTelefono_Empresa.Text = beSocio.Telefono_De_Empresa;
+            txtFecha_De_Registro.Text = beSocio.Fecha_De_Registro.ToString();
+            txtMonto_Total_Acumulado.Text = beSocio.Monto_Acumulado.ToString();
+            cbxEstado.SelectedItem = beSocio.Estado;
+            cbxNivel.SelectedItem = beSocio.Nivel;
+        }
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-
+            switch (cbxTipo_Documento.SelectedItem.ToString())
+            {
+                case "DNI": if (txtNum_Documento.Text.Length != 8) { MessageBox.Show("El Documento Ingresado Requiere 8 Digitos."); return; } break;
+                case "RUC": if (txtNum_Documento.Text.Length != 11) { MessageBox.Show("El Documento Ingresado Requiere 11 Digitos."); return; } break;
+                default: MessageBox.Show("Seleccione un Tipo de Documento"); return; break;
+            }
 
             Socio beSocio = new Socio();
             DSocio boSocio = new DSocio();
+            beSocio.Id_Socio = FrmNuevoSocio.F_Id_Socio;
             beSocio.Tipo_De_Documento = cbxTipo_Documento.SelectedItem.ToString();
             beSocio.Num_Documento = txtNum_Documento.Text;
             beSocio.Nombres = txtNombres.Text;
@@ -71,14 +126,36 @@ namespace CooperativaApp.Presentacion.Acciones
             beSocio.Estado = cbxEstado.SelectedItem.ToString();
             beSocio.Nivel = cbxNivel.SelectedItem.ToString();
 
-            if (boSocio.Agregar(beSocio))
+            if (F_Id_Socio == 0)
             {
-                MessageBox.Show("registrado");
+                if (boSocio.Agregar(beSocio))
+                {
+                    FrmPrincipal.Main.ChangeMessage("Se ha Registrado Exitasamente el Socio.", "Success");
+                    FrmSocio frmSocio = Owner as FrmSocio;
+                    frmSocio.Listar();
+                    this.Close();
+                }
+                else
+                {
+                    FrmPrincipal.Main.ChangeMessage("A Ocurrido un Error.", "Failed");
+                }
             }
             else
             {
-                MessageBox.Show("erroe");
+                if (boSocio.Actualizar(beSocio))
+                {
+                    FrmPrincipal.Main.ChangeMessage("Se ha Modificado Exitasamente el Socio.", "Success");
+                    FrmSocio frmSocio = Owner as FrmSocio;
+                    frmSocio.Listar();
+                    this.Close();
+                }
+                else
+                {
+                    FrmPrincipal.Main.ChangeMessage("A Ocurrido un Error.", "Failed");
+                }
             }
+
+            
 
 
         }
