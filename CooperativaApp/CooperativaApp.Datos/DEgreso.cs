@@ -15,38 +15,37 @@ namespace CooperativaApp.Datos
         protected bool Response = false;
         public bool Agregar(Egreso obj)
         {
-            MYSQLParameter[] parameters = new MYSQLParameter[6];
-            parameters[0] = new MYSQLParameter("@Descripcion", obj.Descripcion, MySqlDbType.VarChar);
-            parameters[1] = new MYSQLParameter("@Observacion", obj.Observacion, MySqlDbType.VarChar);
-            parameters[2] = new MYSQLParameter("@Monto", obj.Monto, MySqlDbType.Decimal);
-            parameters[3] = new MYSQLParameter("@Estado", obj.Estado, MySqlDbType.VarChar);
-            parameters[4] = new MYSQLParameter("@Id_Usuario", obj.Estado, MySqlDbType.Int32);
-            parameters[5] = new MYSQLParameter("@Fecha_De_Registro", obj.Id_Usuario, MySqlDbType.Date);
+            MYSQLParameter[] parameters = new MYSQLParameter[5];
+            parameters[0] = new MYSQLParameter("@Descripcion_", obj.Descripcion, MySqlDbType.VarChar);
+            parameters[1] = new MYSQLParameter("@Observacion_", obj.Observacion, MySqlDbType.VarChar);
+            parameters[2] = new MYSQLParameter("@Monto_", obj.Monto, MySqlDbType.Decimal);
+            parameters[3] = new MYSQLParameter("@Estado_", obj.Estado, MySqlDbType.VarChar);
+            parameters[4] = new MYSQLParameter("@Id_Usuario_", obj.Estado, MySqlDbType.Int32);
             Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Add_Egreso", parameters);
             return Response;
         }
 
-        public List<Egreso> Listar()
+        public bool Modificar(Egreso obj)
         {
-            List<Egreso> List = new List<Egreso>();
+            MYSQLParameter[] parameters = new MYSQLParameter[2];
+            parameters[0] = new MYSQLParameter("@Observacion_", obj.Observacion, MySqlDbType.VarChar);
+            parameters[1] = new MYSQLParameter("@Id_Usuario_", obj.Estado, MySqlDbType.Int32);
+            Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Modify_Egreso", parameters);
+            return Response;
+        }
+
+        public DataTable Listar()
+        {
+            DataTable data = new DataTable();
             try
             {
-                DataTable data = new DataTable();
-                data = ConexionMySql.ExecuteProcedureData("USP_ToList_Egresos");
-                foreach (DataRow row in data.Rows)
-                {
-                    Egreso be = new Egreso
-                    {
-
-                    };
-                    List.Add(be);
-                }
+                return data = ConexionMySql.ExecuteProcedureData("USP_ToList_Egresos");
             }
             catch
             {
                 Console.WriteLine("No se encontro Procedimiento Almacenado");
             }
-            return List;
+            return data;
         }
 
         public Egreso Seleccionar(int Identificador)
@@ -54,10 +53,17 @@ namespace CooperativaApp.Datos
             try
             {
                 MYSQLParameter[] parameters = new MYSQLParameter[1];
-                parameters[0] = new MYSQLParameter("@Tipo_Documento", Identificador, MySqlDbType.Int32);
+                parameters[0] = new MYSQLParameter("@Id_Usuario_", Identificador, MySqlDbType.Int32);
                 DataRow row = ConexionMySql.ExecuteProcedureData("USP_Select_Egreso", parameters).Rows[0];
                 Egreso be = new Egreso
                 {
+                    Id_Egreso = Convert.ToInt32(row["Id_Egreso"]),
+                    Descripcion = row["Descripcion"].ToString(),
+                    Observacion = row["Observacion"].ToString(),
+                    Monto = Convert.ToDouble(row["Monto"]),
+                    Estado = row["Estado"].ToString(),
+                    Id_Usuario = Convert.ToInt32(row["Id_Usuario"]),
+                    Fecha_De_Registro = Convert.ToDateTime(row["Fecha_De_Registro"])
                 };
                 return be;
             }
@@ -66,6 +72,22 @@ namespace CooperativaApp.Datos
                 Egreso be = new Egreso();
                 return be;
             }
+        }
+
+        public DataTable Buscar(int Identificador)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                MYSQLParameter[] parameters = new MYSQLParameter[1];
+                parameters[0] = new MYSQLParameter("@ID", Identificador, MySqlDbType.Int32);
+                return data = ConexionMySql.ExecuteProcedureData("USP_Search_Egresos", parameters);
+            }
+            catch
+            {
+                Console.WriteLine("No se encontro Procedimiento Almacenado");
+            }
+            return data;
         }
     }
 }

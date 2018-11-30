@@ -106,7 +106,7 @@ namespace CooperativaApp.Presentacion.Acciones
             beSocio.Num_Documento = txtNum_Documento.Text;
             beSocio.Nombres = txtNombres.Text;
             beSocio.Apellidos = txtApellidos.Text;
-            beSocio.Fecha_De_Nacimiento = Convert.ToDateTime(txtFecha_Nacimiento.Text);
+            beSocio.Fecha_De_Nacimiento = Convert.ToDateTime(txtFecha_Nacimiento.Value);
             beSocio.Sexo = cbxSexo.SelectedItem.ToString();
             beSocio.Estado_Civil = cbxEstado_Civil.SelectedItem.ToString();
             beSocio.Profesion = txtProfesion.Text;
@@ -120,7 +120,7 @@ namespace CooperativaApp.Presentacion.Acciones
             beSocio.Email = txtEmail.Text;
             beSocio.Envio_De_Cronogramas_De_Pago = "1";
             beSocio.Nombre_De_Empresa = txtNombreDeLaEmpresa.Text;
-            beSocio.Fecha_De_Ingreso = Convert.ToDateTime(txtFecha_De_Ingreso.Text);
+            beSocio.Fecha_De_Ingreso = Convert.ToDateTime(txtFecha_De_Ingreso.Value);
             beSocio.Ingreso_Mensual_Neto = Convert.ToDecimal(txtIngreso_Mensual_Neto.Text);
             beSocio.Modalidad_De_Contratacion = cbxModalidad_De_Contratacion.SelectedItem.ToString();
             beSocio.Cargo = txtCargo.Text;
@@ -132,7 +132,7 @@ namespace CooperativaApp.Presentacion.Acciones
             beSocio.Referencia_De_Empresa = txtReferencia_Empresa.Text;
             beSocio.Telefono_De_Empresa = txtTelefono_Empresa.Text;
        
-            beSocio.Fecha_De_Registro = Convert.ToDateTime(txtFecha_De_Registro.Text);
+            beSocio.Fecha_De_Registro = Convert.ToDateTime(txtFecha_De_Registro.Value);
             beSocio.Monto_Acumulado = Convert.ToDecimal(txtMonto_Total_Acumulado.Text);
             beSocio.Estado = cbxEstado.SelectedItem.ToString();
             beSocio.Nivel = cbxNivel.SelectedItem.ToString();
