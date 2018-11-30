@@ -43,10 +43,6 @@
             this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.DgvPrestamo = new System.Windows.Forms.DataGridView();
-            this.BtnListarTodo = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BtnBuscar = new System.Windows.Forms.Button();
-            this.TxtBusqueda = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +51,11 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnListarTodo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.TxtBusqueda = new System.Windows.Forms.TextBox();
+            this.btnCronogramaDePagos = new System.Windows.Forms.Button();
             this.PanelActions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvPrestamo)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +63,7 @@
             // PanelActions
             // 
             this.PanelActions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.PanelActions.Controls.Add(this.btnCronogramaDePagos);
             this.PanelActions.Controls.Add(this.BtnModificar);
             this.PanelActions.Controls.Add(this.BtnNuevo);
             this.PanelActions.Dock = System.Windows.Forms.DockStyle.Right;
@@ -168,62 +170,7 @@
             this.DgvPrestamo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvPrestamo.Size = new System.Drawing.Size(550, 378);
             this.DgvPrestamo.TabIndex = 17;
-            // 
-            // BtnListarTodo
-            // 
-            this.BtnListarTodo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnListarTodo.BackColor = System.Drawing.Color.DimGray;
-            this.BtnListarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnListarTodo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnListarTodo.FlatAppearance.BorderSize = 0;
-            this.BtnListarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnListarTodo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnListarTodo.ForeColor = System.Drawing.Color.White;
-            this.BtnListarTodo.Location = new System.Drawing.Point(497, 41);
-            this.BtnListarTodo.Name = "BtnListarTodo";
-            this.BtnListarTodo.Size = new System.Drawing.Size(81, 27);
-            this.BtnListarTodo.TabIndex = 24;
-            this.BtnListarTodo.Text = "Todos";
-            this.BtnListarTodo.UseVisualStyleBackColor = false;
-            this.BtnListarTodo.Click += new System.EventHandler(this.BtnListarTodo_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 14);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Búsqueda por Código";
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnBuscar.BackColor = System.Drawing.Color.Black;
-            this.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBuscar.FlatAppearance.BorderSize = 0;
-            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBuscar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
-            this.BtnBuscar.Location = new System.Drawing.Point(410, 41);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(81, 27);
-            this.BtnBuscar.TabIndex = 22;
-            this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.UseVisualStyleBackColor = false;
-            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
-            // 
-            // TxtBusqueda
-            // 
-            this.TxtBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtBusqueda.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBusqueda.Location = new System.Drawing.Point(28, 41);
-            this.TxtBusqueda.Name = "TxtBusqueda";
-            this.TxtBusqueda.Size = new System.Drawing.Size(376, 27);
-            this.TxtBusqueda.TabIndex = 21;
+            this.DgvPrestamo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Validar_Cronograma);
             // 
             // Column1
             // 
@@ -294,6 +241,79 @@
             this.Column7.ReadOnly = true;
             this.Column7.Width = 120;
             // 
+            // BtnListarTodo
+            // 
+            this.BtnListarTodo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnListarTodo.BackColor = System.Drawing.Color.DimGray;
+            this.BtnListarTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnListarTodo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnListarTodo.FlatAppearance.BorderSize = 0;
+            this.BtnListarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnListarTodo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnListarTodo.ForeColor = System.Drawing.Color.White;
+            this.BtnListarTodo.Location = new System.Drawing.Point(497, 41);
+            this.BtnListarTodo.Name = "BtnListarTodo";
+            this.BtnListarTodo.Size = new System.Drawing.Size(81, 27);
+            this.BtnListarTodo.TabIndex = 24;
+            this.BtnListarTodo.Text = "Todos";
+            this.BtnListarTodo.UseVisualStyleBackColor = false;
+            this.BtnListarTodo.Click += new System.EventHandler(this.BtnListarTodo_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(25, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(143, 14);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Búsqueda por Código";
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnBuscar.BackColor = System.Drawing.Color.Black;
+            this.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBuscar.FlatAppearance.BorderSize = 0;
+            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBuscar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscar.Location = new System.Drawing.Point(410, 41);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(81, 27);
+            this.BtnBuscar.TabIndex = 22;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
+            // TxtBusqueda
+            // 
+            this.TxtBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtBusqueda.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBusqueda.Location = new System.Drawing.Point(28, 41);
+            this.TxtBusqueda.Name = "TxtBusqueda";
+            this.TxtBusqueda.Size = new System.Drawing.Size(376, 27);
+            this.TxtBusqueda.TabIndex = 21;
+            // 
+            // btnCronogramaDePagos
+            // 
+            this.btnCronogramaDePagos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
+            this.btnCronogramaDePagos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCronogramaDePagos.Enabled = false;
+            this.btnCronogramaDePagos.FlatAppearance.BorderSize = 0;
+            this.btnCronogramaDePagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCronogramaDePagos.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCronogramaDePagos.ForeColor = System.Drawing.Color.White;
+            this.btnCronogramaDePagos.Location = new System.Drawing.Point(22, 133);
+            this.btnCronogramaDePagos.Name = "btnCronogramaDePagos";
+            this.btnCronogramaDePagos.Size = new System.Drawing.Size(160, 55);
+            this.btnCronogramaDePagos.TabIndex = 4;
+            this.btnCronogramaDePagos.Text = "CRONOGRAMA DE PAGOS";
+            this.btnCronogramaDePagos.UseVisualStyleBackColor = false;
+            this.btnCronogramaDePagos.Click += new System.EventHandler(this.btnCronogramaDePagos_Click);
+            // 
             // FrmPrestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,5 +356,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.Button btnCronogramaDePagos;
     }
 }

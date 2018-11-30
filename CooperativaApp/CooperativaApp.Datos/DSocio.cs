@@ -119,8 +119,8 @@ namespace CooperativaApp.Datos
             try
             {
                 MYSQLParameter[] parameters = new MYSQLParameter[2];
-                parameters[0] = new MYSQLParameter("@Tipo_Documento", Tipo_Documento, MySqlDbType.VarChar);
-                parameters[1] = new MYSQLParameter("@Num_Documento", Num_Documento, MySqlDbType.VarChar);
+                parameters[0] = new MYSQLParameter("@Tipo_De_Documento_", Tipo_Documento, MySqlDbType.VarChar);
+                parameters[1] = new MYSQLParameter("@Num_Documento_", Num_Documento, MySqlDbType.VarChar);
                 DataRow row = ConexionMySql.ExecuteProcedureData("USP_Select_Socio_Por_Num_Documento", parameters).Rows[0];
                 Socio be = new Socio
                 {

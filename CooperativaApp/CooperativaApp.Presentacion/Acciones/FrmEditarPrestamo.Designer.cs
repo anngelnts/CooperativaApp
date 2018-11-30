@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtFecha_De_Registro = new System.Windows.Forms.DateTimePicker();
+            this.txtFecha_De_Pago = new System.Windows.Forms.DateTimePicker();
+            this.txtFecha_Desembolso = new System.Windows.Forms.DateTimePicker();
             this.txtDias_De_Gracia = new System.Windows.Forms.TextBox();
             this.txtInteres_Diferido = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSaldo_Capital = new System.Windows.Forms.TextBox();
-            this.txtFecha_De_Registro = new System.Windows.Forms.MaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
@@ -43,8 +45,6 @@
             this.txtInteres = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCuota_Base = new System.Windows.Forms.TextBox();
-            this.txtFecha_De_Pago = new System.Windows.Forms.MaskedTextBox();
-            this.txtFecha_Desembolso = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -83,7 +83,6 @@
             this.label21 = new System.Windows.Forms.Label();
             this.BtnGenerarPrestamo = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCronogramaDePagos = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -92,11 +91,13 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox4.Controls.Add(this.txtFecha_De_Registro);
+            this.groupBox4.Controls.Add(this.txtFecha_De_Pago);
+            this.groupBox4.Controls.Add(this.txtFecha_Desembolso);
             this.groupBox4.Controls.Add(this.txtDias_De_Gracia);
             this.groupBox4.Controls.Add(this.txtInteres_Diferido);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.txtSaldo_Capital);
-            this.groupBox4.Controls.Add(this.txtFecha_De_Registro);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.txtEstado);
@@ -106,8 +107,6 @@
             this.groupBox4.Controls.Add(this.txtInteres);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.txtCuota_Base);
-            this.groupBox4.Controls.Add(this.txtFecha_De_Pago);
-            this.groupBox4.Controls.Add(this.txtFecha_Desembolso);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.label1);
@@ -126,12 +125,40 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "DATOS DE PRESTAMO";
             // 
+            // txtFecha_De_Registro
+            // 
+            this.txtFecha_De_Registro.Enabled = false;
+            this.txtFecha_De_Registro.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_De_Registro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_De_Registro.Location = new System.Drawing.Point(694, 53);
+            this.txtFecha_De_Registro.Name = "txtFecha_De_Registro";
+            this.txtFecha_De_Registro.Size = new System.Drawing.Size(120, 27);
+            this.txtFecha_De_Registro.TabIndex = 160;
+            // 
+            // txtFecha_De_Pago
+            // 
+            this.txtFecha_De_Pago.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_De_Pago.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_De_Pago.Location = new System.Drawing.Point(150, 120);
+            this.txtFecha_De_Pago.Name = "txtFecha_De_Pago";
+            this.txtFecha_De_Pago.Size = new System.Drawing.Size(120, 27);
+            this.txtFecha_De_Pago.TabIndex = 159;
+            // 
+            // txtFecha_Desembolso
+            // 
+            this.txtFecha_Desembolso.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_Desembolso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_Desembolso.Location = new System.Drawing.Point(27, 120);
+            this.txtFecha_Desembolso.Name = "txtFecha_Desembolso";
+            this.txtFecha_Desembolso.Size = new System.Drawing.Size(120, 27);
+            this.txtFecha_Desembolso.TabIndex = 158;
+            // 
             // txtDias_De_Gracia
             // 
             this.txtDias_De_Gracia.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDias_De_Gracia.Location = new System.Drawing.Point(517, 143);
+            this.txtDias_De_Gracia.Location = new System.Drawing.Point(535, 143);
             this.txtDias_De_Gracia.Name = "txtDias_De_Gracia";
-            this.txtDias_De_Gracia.Size = new System.Drawing.Size(111, 27);
+            this.txtDias_De_Gracia.Size = new System.Drawing.Size(130, 27);
             this.txtDias_De_Gracia.TabIndex = 157;
             this.txtDias_De_Gracia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtDias_De_Gracia.Visible = false;
@@ -139,7 +166,7 @@
             // txtInteres_Diferido
             // 
             this.txtInteres_Diferido.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInteres_Diferido.Location = new System.Drawing.Point(405, 143);
+            this.txtInteres_Diferido.Location = new System.Drawing.Point(405, 145);
             this.txtInteres_Diferido.Name = "txtInteres_Diferido";
             this.txtInteres_Diferido.Size = new System.Drawing.Size(111, 27);
             this.txtInteres_Diferido.TabIndex = 156;
@@ -165,16 +192,6 @@
             this.txtSaldo_Capital.Size = new System.Drawing.Size(130, 27);
             this.txtSaldo_Capital.TabIndex = 154;
             this.txtSaldo_Capital.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtFecha_De_Registro
-            // 
-            this.txtFecha_De_Registro.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_De_Registro.Location = new System.Drawing.Point(687, 55);
-            this.txtFecha_De_Registro.Mask = "00/00/0000";
-            this.txtFecha_De_Registro.Name = "txtFecha_De_Registro";
-            this.txtFecha_De_Registro.Size = new System.Drawing.Size(137, 26);
-            this.txtFecha_De_Registro.TabIndex = 153;
-            this.txtFecha_De_Registro.ValidatingType = typeof(System.DateTime);
             // 
             // label8
             // 
@@ -239,7 +256,7 @@
             // 
             this.txtInteres.Enabled = false;
             this.txtInteres.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInteres.Location = new System.Drawing.Point(405, 116);
+            this.txtInteres.Location = new System.Drawing.Point(405, 117);
             this.txtInteres.Name = "txtInteres";
             this.txtInteres.Size = new System.Drawing.Size(111, 27);
             this.txtInteres.TabIndex = 146;
@@ -259,31 +276,11 @@
             // 
             this.txtCuota_Base.Enabled = false;
             this.txtCuota_Base.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCuota_Base.Location = new System.Drawing.Point(276, 116);
+            this.txtCuota_Base.Location = new System.Drawing.Point(276, 119);
             this.txtCuota_Base.Name = "txtCuota_Base";
             this.txtCuota_Base.Size = new System.Drawing.Size(121, 27);
             this.txtCuota_Base.TabIndex = 144;
             this.txtCuota_Base.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtFecha_De_Pago
-            // 
-            this.txtFecha_De_Pago.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_De_Pago.Location = new System.Drawing.Point(152, 117);
-            this.txtFecha_De_Pago.Mask = "00/00/0000";
-            this.txtFecha_De_Pago.Name = "txtFecha_De_Pago";
-            this.txtFecha_De_Pago.Size = new System.Drawing.Size(111, 26);
-            this.txtFecha_De_Pago.TabIndex = 143;
-            this.txtFecha_De_Pago.ValidatingType = typeof(System.DateTime);
-            // 
-            // txtFecha_Desembolso
-            // 
-            this.txtFecha_Desembolso.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_Desembolso.Location = new System.Drawing.Point(24, 117);
-            this.txtFecha_Desembolso.Mask = "00/00/0000";
-            this.txtFecha_Desembolso.Name = "txtFecha_Desembolso";
-            this.txtFecha_Desembolso.Size = new System.Drawing.Size(111, 26);
-            this.txtFecha_Desembolso.TabIndex = 142;
-            this.txtFecha_Desembolso.ValidatingType = typeof(System.DateTime);
             // 
             // label12
             // 
@@ -684,7 +681,7 @@
             this.BtnGenerarPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGenerarPrestamo.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGenerarPrestamo.ForeColor = System.Drawing.Color.White;
-            this.BtnGenerarPrestamo.Location = new System.Drawing.Point(220, 540);
+            this.BtnGenerarPrestamo.Location = new System.Drawing.Point(282, 552);
             this.BtnGenerarPrestamo.Name = "BtnGenerarPrestamo";
             this.BtnGenerarPrestamo.Size = new System.Drawing.Size(150, 40);
             this.BtnGenerarPrestamo.TabIndex = 134;
@@ -700,7 +697,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(383, 540);
+            this.btnGuardar.Location = new System.Drawing.Point(440, 552);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(150, 40);
             this.btnGuardar.TabIndex = 135;
@@ -708,28 +705,11 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnCronogramaDePagos
-            // 
-            this.btnCronogramaDePagos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
-            this.btnCronogramaDePagos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCronogramaDePagos.FlatAppearance.BorderSize = 0;
-            this.btnCronogramaDePagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCronogramaDePagos.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCronogramaDePagos.ForeColor = System.Drawing.Color.White;
-            this.btnCronogramaDePagos.Location = new System.Drawing.Point(543, 540);
-            this.btnCronogramaDePagos.Name = "btnCronogramaDePagos";
-            this.btnCronogramaDePagos.Size = new System.Drawing.Size(150, 40);
-            this.btnCronogramaDePagos.TabIndex = 136;
-            this.btnCronogramaDePagos.Text = "VER CRONOGRAMA DE PAGOS";
-            this.btnCronogramaDePagos.UseVisualStyleBackColor = false;
-            this.btnCronogramaDePagos.Click += new System.EventHandler(this.btnCronogramaDePagos_Click);
-            // 
             // FrmEditarPrestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(911, 665);
-            this.Controls.Add(this.btnCronogramaDePagos);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.BtnGenerarPrestamo);
             this.Controls.Add(this.groupBox1);
@@ -771,8 +751,6 @@
         private System.Windows.Forms.Label label15;
         public System.Windows.Forms.TextBox txtNum_Documento;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.MaskedTextBox txtFecha_De_Pago;
-        private System.Windows.Forms.MaskedTextBox txtFecha_Desembolso;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label13;
@@ -783,7 +761,6 @@
         public System.Windows.Forms.TextBox txtInteres;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtSaldo_Capital;
-        private System.Windows.Forms.MaskedTextBox txtFecha_De_Registro;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtEstado;
@@ -807,8 +784,10 @@
         public System.Windows.Forms.TextBox txtTipo_De_Documento;
         public System.Windows.Forms.Button BtnGenerarPrestamo;
         public System.Windows.Forms.Button btnGuardar;
-        public System.Windows.Forms.Button btnCronogramaDePagos;
         public System.Windows.Forms.TextBox txtInteres_Diferido;
         public System.Windows.Forms.TextBox txtDias_De_Gracia;
+        private System.Windows.Forms.DateTimePicker txtFecha_De_Registro;
+        private System.Windows.Forms.DateTimePicker txtFecha_De_Pago;
+        private System.Windows.Forms.DateTimePicker txtFecha_Desembolso;
     }
 }

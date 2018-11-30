@@ -22,7 +22,7 @@ namespace CooperativaApp.Presentacion.Acciones
         {
             Listar();
         }
-
+        public static int Id_Prestamo = 0;
         public void Listar()
         {
             DCronogramaDePagos boCronograma = new DCronogramaDePagos();
@@ -31,7 +31,7 @@ namespace CooperativaApp.Presentacion.Acciones
             DgvCronogramaDePago.ColumnCount = 19;
 
 
-            foreach (DataRow var in boCronograma.Listar(FrmEditarPrestamo.Id_Prestamo).Rows)
+            foreach (DataRow var in boCronograma.Listar(FrmCronogramaDePago.Id_Prestamo).Rows)
             {
                 DgvCronogramaDePago.Rows.Add(
                    var[0].ToString(),

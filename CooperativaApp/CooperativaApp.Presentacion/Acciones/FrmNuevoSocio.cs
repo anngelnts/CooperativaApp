@@ -85,11 +85,22 @@ namespace CooperativaApp.Presentacion.Acciones
             {
                 case "DNI": if (txtNum_Documento.Text.Length != 8) { MessageBox.Show("El Documento Ingresado Requiere 8 Digitos."); return; } break;
                 case "RUC": if (txtNum_Documento.Text.Length != 11) { MessageBox.Show("El Documento Ingresado Requiere 11 Digitos."); return; } break;
-                default: MessageBox.Show("Seleccione un Tipo de Documento"); return; break;
+                default: MessageBox.Show("Seleccione un Tipo de Documento"); return;
+                    
             }
 
+            Socio beSocio1 = new Socio();
             Socio beSocio = new Socio();
             DSocio boSocio = new DSocio();
+
+            beSocio1 = boSocio.Buscar_Socio_Por_Num_Documento(cbxTipo_Documento.SelectedItem.ToString(), txtNum_Documento.Text);
+
+            if (beSocio1.Id_Socio != 0)
+            {
+                FrmPrincipal.Main.ChangeMessage("El Numero de documento ya se encuentra registrado.", "Failed");
+                return;
+            }
+           
             beSocio.Id_Socio = FrmNuevoSocio.F_Id_Socio;
             beSocio.Tipo_De_Documento = cbxTipo_Documento.SelectedItem.ToString();
             beSocio.Num_Documento = txtNum_Documento.Text;

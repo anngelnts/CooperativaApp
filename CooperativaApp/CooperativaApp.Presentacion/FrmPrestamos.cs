@@ -48,15 +48,34 @@ namespace CooperativaApp.Presentacion
             }
         }
 
-        private void Buscar(string KeyWoard)
+        private void Buscar(string Num_Documento)
         {
-            DDatoFinanciero bo = new DDatoFinanciero();
-            DgvPrestamo.DataSource = bo.Buscar(KeyWoard);
+            
+            DPrestamo boPrestamo = new DPrestamo();            
+            DgvPrestamo.Rows.Clear();
+            DgvPrestamo.ColumnCount = 8;
+
+
+            foreach (DataRow var in boPrestamo.Buscar_Prestamo(Num_Documento).Rows)
+            {
+                DgvPrestamo.Rows.Add(
+                   var[0].ToString(),
+                   var[6].ToString(),
+                   var[7].ToString(),
+                   var[8].ToString() + " " + var[9].ToString(),
+                   var[2].ToString(),
+                   var[3].ToString(),
+                   var[4].ToString(),
+                   var[5].ToString()
+                   );
+
+            }
         }
 
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
             Buscar(TxtBusqueda.Text);
+            
         }
 
         private void BtnListarTodo_Click(object sender, EventArgs e)
@@ -91,6 +110,41 @@ namespace CooperativaApp.Presentacion
             {
                 MessageBox.Show("Seleccione un registro");
             }
+        }
+
+        private void Validar_Cronograma(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice = e.RowIndex;
+            if (DgvPrestamo.Rows[indice].Cells[6].Value.ToString() == "APROBADO")
+            {
+                btnCronogramaDePagos.Enabled = true;
+            }
+            else
+            {
+                btnCronogramaDePagos.Enabled = false;
+            }
+        }
+
+        private void btnCronogramaDePagos_Click(object sender, EventArgs e)
+        {
+
+            if (DgvPrestamo.SelectedRows.Count > 0)
+            {
+                int rowindex = DgvPrestamo.CurrentRow.Index;
+                if (rowindex != -1)
+                {
+                    FrmCronogramaDePago.Id_Prestamo = Convert.ToInt32(DgvPrestamo.CurrentRow.Cells[0].Value);
+                    FrmCronogramaDePago Frm = new FrmCronogramaDePago();
+                    AddOwnedForm(Frm);
+                    Frm.ShowDialog();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro");
+            }
+            
         }
     }
 }

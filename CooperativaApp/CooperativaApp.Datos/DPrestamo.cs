@@ -82,6 +82,40 @@ namespace CooperativaApp.Datos
             return data;
 
         }
+        public DataTable Validar_Prestamo(string Tipo_De_Documento, string Num_Documento)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                MYSQLParameter[] parameters = new MYSQLParameter[2];
+                parameters[0] = new MYSQLParameter("@Tipo_De_Documento_", Tipo_De_Documento, MySqlDbType.VarChar);
+                parameters[1] = new MYSQLParameter("@Num_Documento_", Num_Documento, MySqlDbType.VarChar);
+                data = ConexionMySql.ExecuteProcedureData("USP_Validar_Prestamo", parameters);
+            }
+            catch
+            {
+                Console.WriteLine("No se encontro Procedimiento Almacenado.");
+            }
+            return data;
+
+        }
+        public DataTable Buscar_Prestamo(string Num_Documento)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                MYSQLParameter[] parameters = new MYSQLParameter[1];
+                parameters[0] = new MYSQLParameter("@Num_Documento_", Num_Documento, MySqlDbType.VarChar);
+                data = ConexionMySql.ExecuteProcedureData("USP_Search_Prestamos", parameters);
+            }
+            catch
+            {
+                Console.WriteLine("No se encontro Procedimiento Almacenado");
+            }
+            return data;
+
+        }
+        
         //public Prestamo Buscar_Prestamo_Por_Num_Documento(string Tipo_Documento, string Num_Documento)
         //{
         //    try

@@ -64,6 +64,11 @@ namespace CooperativaApp.Presentacion.Acciones
                 txtInteres.Text = row["Interes"].ToString();
                 txtCuota_Fija.Text = row["Cuota_Fija"].ToString();
                 txtSaldo_Capital.Text = row["Saldo_Capital"].ToString();
+
+                if (true)
+                {
+
+                }
             }
             else
             {
@@ -376,12 +381,6 @@ namespace CooperativaApp.Presentacion.Acciones
 
         }
 
-        private void btnCronogramaDePagos_Click(object sender, EventArgs e)
-        {
-            FrmCronogramaDePago Frm = new FrmCronogramaDePago();
-            AddOwnedForm(Frm);
-            Frm.ShowDialog();
-
-        }
+       
     }
 }

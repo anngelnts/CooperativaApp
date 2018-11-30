@@ -22,6 +22,8 @@ namespace CooperativaApp.Presentacion.Acciones
         private void FrmNuevoPrestamo_Load(object sender, EventArgs e)
         {
             Dato_Financiero();
+            cbxTipo_Documento.SelectedIndex = 0;
+            cbxNum_De_Cuotas.SelectedIndex = 1;
         }
         public void Dato_Financiero()
         {
@@ -41,9 +43,21 @@ namespace CooperativaApp.Presentacion.Acciones
             //    {
             //        Guardar();
             //    }
+            if (txtId_Socio.Text == "")
+            {
+                FrmPrincipal.Main.ChangeMessage("Ingrese Un Socio.", "Failed");
+                return;
+            }
+
+            if (txtMonto.Text == "")
+            {
+                FrmPrincipal.Main.ChangeMessage("Ingrese Un Monto.", "Failed");
+                return;
+            }
+
 
             Prestamo bePrestamo = new Prestamo();
-            DPrestamo boPrestamo = new DPrestamo();
+            DPrestamo boPrestamo = new DPrestamo();     
             bePrestamo.Id_Socio = Convert.ToInt32(txtId_Socio.Text);
             bePrestamo.Id_Dato_Financiero = Convert.ToInt32(txtId_Dato_Financiero.Text);
             bePrestamo.Monto = Convert.ToDecimal(txtMonto.Text);
@@ -53,15 +67,39 @@ namespace CooperativaApp.Presentacion.Acciones
             bePrestamo.Estado = "PENDIENTE";
             bePrestamo.Observaciones = txtDescripcion.Text;
             bePrestamo.Anexos = "aaa";
-            if(boPrestamo.Agregar(bePrestamo)){
-                MessageBox.Show("registrado");
-                //FrmPrincipal.Main.ChangeMessage("Préstamo agregado correctamente", "Success");
+            ////ESTADOS POSIBLES DE UN PRESTAMO
+            ////PENDIENTE
+            ////APROBADO
+            ////RECHAZADO
+            ////PAGADO
 
+
+
+            ///VALIDAR PRESTAMO
+            DataTable DataPrestamos = new DataTable();
+            DataPrestamos = boPrestamo.Validar_Prestamo(cbxTipo_Documento.SelectedItem.ToString(), txtNum_Documento.Text);
+            if (DataPrestamos.Rows.Count > 0)
+            {
+                MessageBox.Show("El Socio Ingresado cuenta con un prestamo pendiente.");
+                return;
             }
             else
             {
-                MessageBox.Show("error");
-                //FrmPrincipal.Main.ChangeMessage("Ha Ocurrido un error", "Failed");
+                if (boPrestamo.Agregar(bePrestamo))
+                {
+                   
+                    FrmPrestamos Frm = Owner as FrmPrestamos;
+                    Frm.Listar();
+                    this.Close();
+                    FrmPrincipal.Main.ChangeMessage("Se ha registrado la solicitud de prestamo exitasamente.", "Success");
+
+                }
+                else
+                {
+                    MessageBox.Show("A Ocurrido un Error.");
+                    //FrmPrincipal.Main.ChangeMessage("Ha Ocurrido un error", "Failed");
+                }
+
             }
 
         }
@@ -87,6 +125,14 @@ namespace CooperativaApp.Presentacion.Acciones
 
         private void btnBuscarSocio_Click(object sender, EventArgs e)
         {
+            switch (cbxTipo_Documento.SelectedItem.ToString())
+            {
+                case "DNI": if (txtNum_Documento.Text.Length != 8) { FrmPrincipal.Main.ChangeMessage("El Documento Ingresado Requiere 8 Digitos.", "Failed"); return; } break;
+                case "RUC": if (txtNum_Documento.Text.Length != 11) { FrmPrincipal.Main.ChangeMessage("El Documento Ingresado Requiere 11 Digitos.", "Failed"); return; } break;
+                default: FrmPrincipal.Main.ChangeMessage("Seleccione un Tipo de Documento.", "Failed"); return;
+
+            }
+
             DSocio boSocio = new DSocio();
             Socio beSocio = new Socio();
             string Tipo_Documento = cbxTipo_Documento.SelectedItem.ToString();

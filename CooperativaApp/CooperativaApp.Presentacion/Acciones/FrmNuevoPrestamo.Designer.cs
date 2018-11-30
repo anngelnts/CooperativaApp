@@ -109,6 +109,7 @@
             this.txtId_Dato_Financiero.Name = "txtId_Dato_Financiero";
             this.txtId_Dato_Financiero.Size = new System.Drawing.Size(81, 27);
             this.txtId_Dato_Financiero.TabIndex = 129;
+            this.txtId_Dato_Financiero.Visible = false;
             // 
             // txtId_Socio
             // 
@@ -117,6 +118,7 @@
             this.txtId_Socio.Name = "txtId_Socio";
             this.txtId_Socio.Size = new System.Drawing.Size(150, 27);
             this.txtId_Socio.TabIndex = 128;
+            this.txtId_Socio.Visible = false;
             // 
             // label11
             // 
@@ -130,6 +132,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Enabled = false;
             this.txtEmail.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(668, 116);
             this.txtEmail.Name = "txtEmail";
@@ -148,6 +151,7 @@
             // 
             // txtCelular
             // 
+            this.txtCelular.Enabled = false;
             this.txtCelular.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCelular.Location = new System.Drawing.Point(461, 116);
             this.txtCelular.Name = "txtCelular";
@@ -192,6 +196,7 @@
             // 
             // txtApellidos
             // 
+            this.txtApellidos.Enabled = false;
             this.txtApellidos.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidos.Location = new System.Drawing.Point(444, 55);
             this.txtApellidos.Name = "txtApellidos";
@@ -200,6 +205,7 @@
             // 
             // txtNombres
             // 
+            this.txtNombres.Enabled = false;
             this.txtNombres.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombres.Location = new System.Drawing.Point(26, 116);
             this.txtNombres.Name = "txtNombres";
@@ -225,12 +231,8 @@
             this.cbxTipo_Documento.FormattingEnabled = true;
             this.cbxTipo_Documento.IntegralHeight = false;
             this.cbxTipo_Documento.Items.AddRange(new object[] {
-            "OTROS",
             "DNI",
-            "CAR. DE EXTRANJ.",
-            "RUC",
-            "PASAPORTE",
-            "CÉD. DIPL. DE IDEN."});
+            "RUC"});
             this.cbxTipo_Documento.Location = new System.Drawing.Point(26, 55);
             this.cbxTipo_Documento.Name = "cbxTipo_Documento";
             this.cbxTipo_Documento.Size = new System.Drawing.Size(150, 26);
@@ -256,6 +258,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Controls.Add(this.textBox1);
             this.groupBox4.Controls.Add(this.label3);
@@ -312,7 +315,6 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(797, 90);
             this.txtDescripcion.TabIndex = 132;
-            this.txtDescripcion.Text = "20000";
             // 
             // label2
             // 
@@ -389,7 +391,8 @@
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(150, 27);
             this.txtMonto.TabIndex = 24;
-            this.txtMonto.Text = "20000";
+            this.txtMonto.Text = "0.00";
+            this.txtMonto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // FrmNuevoPrestamo
             // 

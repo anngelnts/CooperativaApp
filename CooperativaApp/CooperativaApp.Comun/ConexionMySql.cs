@@ -11,7 +11,7 @@ namespace CooperativaApp.Comun
         {
             try
             {
-                Connection = new MySqlConnection("Server=127.0.0.1;Database=bd_cooperativa_app;Uid=root;Pwd=admin123;SslMode=none;Allow Zero Datetime=False;Convert Zero Datetime=True;");
+                Connection = new MySqlConnection("Server=coopacsalud.com;Database=wwwcoopa_cooperativa_app;Uid=wwwcoopa_admin;Pwd=admin123;SslMode=none;Allow Zero Datetime=False;Convert Zero Datetime=True;");
                 if (Connection.State == ConnectionState.Broken || Connection.State == ConnectionState.Closed)
                 {
                     Connection.Open();

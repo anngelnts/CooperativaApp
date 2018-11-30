@@ -66,5 +66,35 @@ namespace CooperativaApp.Datos
             return data;
 
         }
+
+        public DataTable Seleccionar(int Id_Cronograma)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                MYSQLParameter[] parameters = new MYSQLParameter[1];
+                parameters[0] = new MYSQLParameter("@Id_Cronograma_", Id_Cronograma, MySqlDbType.Int32);
+                data = ConexionMySql.ExecuteProcedureData("USP_Select_Cronograma_De_Pago", parameters);
+
+                return data;
+            }
+            catch
+            {
+                return data;
+            }
+        }
+        public bool Actualizar(CronogramaDePagos obj)
+        {
+            MYSQLParameter[] parameters = new MYSQLParameter[6];
+            parameters[0] = new MYSQLParameter("@Id_Cronograma_", obj.Id_Cronograma, MySqlDbType.Int32);
+            parameters[1] = new MYSQLParameter("@Dias_Morosidad_", obj.Dias_Morosidad, MySqlDbType.Int32);
+            parameters[2] = new MYSQLParameter("@Monto_Morosidad_", obj.Monto_Morosidad, MySqlDbType.Decimal);
+            parameters[3] = new MYSQLParameter("@Cuota_Total_", obj.Cuota_Total, MySqlDbType.Decimal);
+            parameters[4] = new MYSQLParameter("@Estado_", obj.Estado, MySqlDbType.VarChar);
+            parameters[5] = new MYSQLParameter("@Fecha_De_Pago_", obj.Fecha_De_Pago, MySqlDbType.DateTime);
+            Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Update_Cronograma_De_Pago", parameters);
+            return Response;
+        }
+        
     }
 }
