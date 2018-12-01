@@ -133,6 +133,46 @@ namespace CooperativaApp.Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_xs_aportes_light {
+            get {
+                object obj = ResourceManager.GetObject("icon-xs-aportes-light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_xs_datos_light {
+            get {
+                object obj = ResourceManager.GetObject("icon-xs-datos-light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_xs_egreso_light {
+            get {
+                object obj = ResourceManager.GetObject("icon-xs-egreso-light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_xs_h_pagos_light {
+            get {
+                object obj = ResourceManager.GetObject("icon-xs-h-pagos-light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_xs_home_light {
             get {
                 object obj = ResourceManager.GetObject("icon-xs-home-light", resourceCulture);

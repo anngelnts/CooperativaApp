@@ -45,3 +45,12 @@ D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\Cooperat
 D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csprojResolveAssemblyReference.cache
 D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.dll
 D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.pdb
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Comun\bin\Debug\CooperativaApp.Comun.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Comun\bin\Debug\CooperativaApp.Comun.pdb
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Comun\bin\Debug\Google.Protobuf.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Comun\bin\Debug\MySql.Data.xml
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csprojAssemblyReference.cache
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csproj.CoreCompileInputs.cache
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csproj.CopyComplete
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.pdb

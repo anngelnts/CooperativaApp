@@ -20,7 +20,7 @@ namespace CooperativaApp.Datos
             parameters[1] = new MYSQLParameter("@Observacion_", obj.Observacion, MySqlDbType.VarChar);
             parameters[2] = new MYSQLParameter("@Monto_", obj.Monto, MySqlDbType.Decimal);
             parameters[3] = new MYSQLParameter("@Estado_", obj.Estado, MySqlDbType.VarChar);
-            parameters[4] = new MYSQLParameter("@Id_Usuario_", obj.Estado, MySqlDbType.Int32);
+            parameters[4] = new MYSQLParameter("@Id_Usuario_", obj.Id_Usuario, MySqlDbType.Int32);
             Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Add_Egreso", parameters);
             return Response;
         }
@@ -29,7 +29,7 @@ namespace CooperativaApp.Datos
         {
             MYSQLParameter[] parameters = new MYSQLParameter[2];
             parameters[0] = new MYSQLParameter("@Observacion_", obj.Observacion, MySqlDbType.VarChar);
-            parameters[1] = new MYSQLParameter("@Id_Usuario_", obj.Estado, MySqlDbType.Int32);
+            parameters[1] = new MYSQLParameter("@Id_Egreso_", obj.Id_Egreso, MySqlDbType.Int32);
             Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Modify_Egreso", parameters);
             return Response;
         }
@@ -53,7 +53,7 @@ namespace CooperativaApp.Datos
             try
             {
                 MYSQLParameter[] parameters = new MYSQLParameter[1];
-                parameters[0] = new MYSQLParameter("@Id_Usuario_", Identificador, MySqlDbType.Int32);
+                parameters[0] = new MYSQLParameter("@ID", Identificador, MySqlDbType.Int32);
                 DataRow row = ConexionMySql.ExecuteProcedureData("USP_Select_Egreso", parameters).Rows[0];
                 Egreso be = new Egreso
                 {
@@ -88,6 +88,15 @@ namespace CooperativaApp.Datos
                 Console.WriteLine("No se encontro Procedimiento Almacenado");
             }
             return data;
+        }
+
+        public bool CambiarEstado(int id, string estado)
+        {
+            MYSQLParameter[] parameters = new MYSQLParameter[2];
+            parameters[0] = new MYSQLParameter("@Id_Egreso_", id, MySqlDbType.Int32);
+            parameters[1] = new MYSQLParameter("@Estado_", estado, MySqlDbType.VarChar);
+            Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Cambiar_Estado_Egreso", parameters);
+            return Response;
         }
     }
 }

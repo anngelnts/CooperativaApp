@@ -27,6 +27,9 @@ namespace CooperativaApp.Presentacion
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
         }
 
+        public static string AccesoUsername = "admin";
+        public static int AccesoUsernameID = 1;
+
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
             BtnInicio.BackColor = Color.FromArgb(2, 136, 209);

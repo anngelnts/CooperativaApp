@@ -80,6 +80,12 @@
     <Compile Include="Acciones\FrmEditarPrestamo.Designer.cs">
       <DependentUpon>FrmEditarPrestamo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Acciones\FrmEgresoCU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmEgresoCU.Designer.cs">
+      <DependentUpon>FrmEgresoCU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Acciones\FrmNuevoDatoFinanciero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmEditarPrestamo.resx">
       <DependentUpon>FrmEditarPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmEgresoCU.resx">
+      <DependentUpon>FrmEgresoCU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmNuevoDatoFinanciero.resx">
       <DependentUpon>FrmNuevoDatoFinanciero.cs</DependentUpon>
@@ -295,6 +304,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="IconC.ico" />
+    <None Include="Resources\icon-xs-h-pagos-light.png" />
+    <None Include="Resources\icon-xs-aportes-light.png" />
+    <None Include="Resources\icon-xs-datos-light.png" />
+    <None Include="Resources\icon-xs-egreso-light.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

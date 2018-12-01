@@ -187,3 +187,43 @@ D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\Cooperat
 D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\es\CooperativaApp.Presentacion.resources.dll
 D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.exe
 D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.pdb
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Presentacion.exe.config
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Presentacion.exe
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Presentacion.pdb
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\es\CooperativaApp.Presentacion.resources.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Datos.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Entidades.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\MaterialSkin.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Comun.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\MySql.Data.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\Google.Protobuf.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Datos.pdb
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Entidades.pdb
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\CooperativaApp.Comun.pdb
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\bin\Debug\MySql.Data.xml
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csprojAssemblyReference.cache
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmCronogramaDePago.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmEditarPrestamo.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmEgresoCU.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoDatoFinanciero.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoPago.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoPrestamo.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoSocio.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmConfiguracion.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmDashboard.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmDatoFinaciero.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmEgresos.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmLogin.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmPago.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmPrestamos.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmPrincipal.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmSimuladorDePrestamo.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmSocio.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Properties.Resources.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmLogin.es.resources
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csproj.GenerateResource.cache
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csproj.CoreCompileInputs.cache
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\es\CooperativaApp.Presentacion.resources.dll
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csproj.CopyComplete
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.exe
+G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.pdb
