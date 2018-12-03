@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CooperativaApp.Entidades
 {
-    class DatosDeCooperativa
+    public class DatosDeCooperativa
     {
         public int Id_Dato_Cooperativa { get; set; }
         public decimal Fondo_De_Sepelio { get; set; }

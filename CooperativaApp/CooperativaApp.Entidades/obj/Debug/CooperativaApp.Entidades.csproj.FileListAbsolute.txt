@@ -37,3 +37,9 @@ G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\Co
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csproj.CoreCompileInputs.cache
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
 G:\KUN\UPT\Quinto Ciclo\Programacion II\Unidad III\Cooperativa\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb
+E:\UPT\CICLO_6\PROGRAMACION 2\UNIDAD 03\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.dll
+E:\UPT\CICLO_6\PROGRAMACION 2\UNIDAD 03\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.pdb
+E:\UPT\CICLO_6\PROGRAMACION 2\UNIDAD 03\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csprojAssemblyReference.cache
+E:\UPT\CICLO_6\PROGRAMACION 2\UNIDAD 03\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csproj.CoreCompileInputs.cache
+E:\UPT\CICLO_6\PROGRAMACION 2\UNIDAD 03\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
+E:\UPT\CICLO_6\PROGRAMACION 2\UNIDAD 03\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb

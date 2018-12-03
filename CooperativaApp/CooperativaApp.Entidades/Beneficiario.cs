@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CooperativaApp.Entidades
 {
-    class Beneficiario
+    public class Beneficiario
     {
         public int Id_Beneficiario { get; set; }
         public int Id_Socio { get; set; }

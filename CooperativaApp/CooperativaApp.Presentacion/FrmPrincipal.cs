@@ -250,5 +250,19 @@ namespace CooperativaApp.Presentacion
             MenuActive(sender);
             OpenForm(new FrmEgresos());
         }
+
+        private void BtnDatosCooperativa_Click(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Datos de Cooperativa");
+            MenuActive(sender);
+            OpenForm(new FrmDatosCooperativa());
+        }
+
+        private void BtnBeneficiario_Click(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Beneficiarios");
+            MenuActive(sender);
+            OpenForm(new FrmBeneficiario());
+        }
     }
 }

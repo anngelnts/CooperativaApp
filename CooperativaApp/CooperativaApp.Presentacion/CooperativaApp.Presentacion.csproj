@@ -74,6 +74,18 @@
     <Compile Include="Acciones\FrmCronogramaDePago.Designer.cs">
       <DependentUpon>FrmCronogramaDePago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Acciones\FrmEditarBeneficiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmEditarBeneficiario.designer.cs">
+      <DependentUpon>FrmEditarBeneficiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\FrmEditarDatosCooperativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmEditarDatosCooperativa.designer.cs">
+      <DependentUpon>FrmEditarDatosCooperativa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Acciones\FrmEditarPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,18 @@
     </Compile>
     <Compile Include="Acciones\FrmEgresoCU.Designer.cs">
       <DependentUpon>FrmEgresoCU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\FrmNuevoBeneficiaro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmNuevoBeneficiaro.designer.cs">
+      <DependentUpon>FrmNuevoBeneficiaro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\FrmNuevoDatoCooperativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmNuevoDatoCooperativa.designer.cs">
+      <DependentUpon>FrmNuevoDatoCooperativa.cs</DependentUpon>
     </Compile>
     <Compile Include="Acciones\FrmNuevoDatoFinanciero.cs">
       <SubType>Form</SubType>
@@ -110,6 +134,12 @@
     <Compile Include="Acciones\FrmNuevoSocio.Designer.cs">
       <DependentUpon>FrmNuevoSocio.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBeneficiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBeneficiario.designer.cs">
+      <DependentUpon>FrmBeneficiario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConfiguracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +157,12 @@
     </Compile>
     <Compile Include="FrmDatoFinaciero.Designer.cs">
       <DependentUpon>FrmDatoFinaciero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosCooperativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosCooperativa.designer.cs">
+      <DependentUpon>FrmDatosCooperativa.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEgresos.cs">
       <SubType>Form</SubType>
@@ -172,14 +208,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requerido.cs" />
     <EmbeddedResource Include="Acciones\FrmCronogramaDePago.resx">
       <DependentUpon>FrmCronogramaDePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmEditarBeneficiario.resx">
+      <DependentUpon>FrmEditarBeneficiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmEditarDatosCooperativa.resx">
+      <DependentUpon>FrmEditarDatosCooperativa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmEditarPrestamo.resx">
       <DependentUpon>FrmEditarPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmEgresoCU.resx">
       <DependentUpon>FrmEgresoCU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmNuevoBeneficiaro.resx">
+      <DependentUpon>FrmNuevoBeneficiaro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmNuevoDatoCooperativa.resx">
+      <DependentUpon>FrmNuevoDatoCooperativa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmNuevoDatoFinanciero.resx">
       <DependentUpon>FrmNuevoDatoFinanciero.cs</DependentUpon>
@@ -193,6 +242,9 @@
     <EmbeddedResource Include="Acciones\FrmNuevoSocio.resx">
       <DependentUpon>FrmNuevoSocio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBeneficiario.resx">
+      <DependentUpon>FrmBeneficiario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmConfiguracion.resx">
       <DependentUpon>FrmConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDatoFinaciero.resx">
       <DependentUpon>FrmDatoFinaciero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosCooperativa.resx">
+      <DependentUpon>FrmDatosCooperativa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEgresos.resx">
       <DependentUpon>FrmEgresos.cs</DependentUpon>
