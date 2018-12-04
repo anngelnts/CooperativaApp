@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAportes.cs" />
     <Compile Include="DBeneficiario.cs" />
     <Compile Include="DCronogramaDePagos.cs" />
     <Compile Include="DDatoFinanciero.cs" />

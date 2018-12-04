@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CooperativaApp.Entidades
 {
-    class Aporte
+    public class Aporte
     {
         public int Id_Aporte { get; set; }
         public string Num_Boleta { get; set; }

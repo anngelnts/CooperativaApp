@@ -25,37 +25,25 @@ namespace CooperativaApp.Datos
                 return Response;
         }
 
-        //public List<DatoFinanciero> Listar()
-        //{
-        //    List<DatoFinanciero> List = new List<DatoFinanciero>();
-        //    try
-        //    {
-        //        DataTable data = new DataTable();
-        //        data = ConexionMySql.ExecuteProcedureData("USP_ToList_Datos_Financieros");
-        //        foreach (DataRow row in data.Rows)
-        //        {
-        //            DatoFinanciero be = new DatoFinanciero
-        //            {
-        //                Id_Dato_Financiero = Convert.ToInt32(row["Id_Dato_Financiero"]),
-        //                TEA = Convert.ToDouble(row["TEA"]),
-        //                TEM = Convert.ToDouble(row["TEM"]),
-        //                TED = Convert.ToDouble(row["TED"]),
-        //                Seguro_Desgravamen = Convert.ToDouble(row["Seguro_Desgravamen"]),
-        //                Seguro_Multiriesgo = Convert.ToDouble(row["Seguro_Multiriesgo"]),
-        //                ITF = Convert.ToDouble(row["ITF"]),
-        //                Otros = Convert.ToDouble(row["Otros"]),
-        //                FechaRegistro = Convert.ToDateTime(row["Fecha_Registro"]),
-        //                Estado = row["Estado"].ToString()
-        //            };
-        //            List.Add(be);
-        //        }
-        //    }
-        //    catch
-        //    {
-        //        Console.WriteLine("No se encontro Procedimiento Almacenado");
-        //    }
-        //    return List;
-        //}
+        public DatosDeCooperativa ObtenerDatoCooperativaActivo()
+        {
+            try
+            {
+                DataRow Fila = ConexionMySql.ExecuteProcedureData("USP_Select_Datos_De_Cooperativa_Activo").Rows[0];
+                DatosDeCooperativa obj = new DatosDeCooperativa();
+                obj.Id_Dato_Cooperativa = Convert.ToInt32(Fila["Id_Dato_Cooperativa"]);
+                obj.Fondo_De_Sepelio = Convert.ToDecimal(Fila["Fondo_De_Sepelio"]);
+                obj.Aportacion = Convert.ToDecimal(Fila["Aportacion"]);
+                obj.Sepelio_Titular = Convert.ToDecimal(Fila["Sepelio_Titular"]);
+                obj.Sepelio_Familiar = Convert.ToDecimal(Fila["Sepelio_Familiar"]);
+                return obj;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("[MESSAGE EXCEPTION OBTENER DATO COOPERATIVA ACTIVO] " + e.Message);
+                return null;
+            }
+        }
 
         public DataTable Listar()
         {

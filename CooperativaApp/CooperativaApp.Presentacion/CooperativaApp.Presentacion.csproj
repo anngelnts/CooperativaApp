@@ -74,6 +74,12 @@
     <Compile Include="Acciones\FrmCronogramaDePago.Designer.cs">
       <DependentUpon>FrmCronogramaDePago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Acciones\FrmEditarAporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmEditarAporte.designer.cs">
+      <DependentUpon>FrmEditarAporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Acciones\FrmEditarBeneficiario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="Acciones\FrmEgresoCU.Designer.cs">
       <DependentUpon>FrmEgresoCU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones\FrmNuevoAporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmNuevoAporte.designer.cs">
+      <DependentUpon>FrmNuevoAporte.cs</DependentUpon>
     </Compile>
     <Compile Include="Acciones\FrmNuevoBeneficiaro.cs">
       <SubType>Form</SubType>
@@ -139,6 +151,12 @@
     </Compile>
     <Compile Include="Acciones\FrmVerPago.Designer.cs">
       <DependentUpon>FrmVerPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAportes.designer.cs">
+      <DependentUpon>FrmAportes.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmBeneficiario.cs">
       <SubType>Form</SubType>
@@ -218,6 +236,9 @@
     <EmbeddedResource Include="Acciones\FrmCronogramaDePago.resx">
       <DependentUpon>FrmCronogramaDePago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmEditarAporte.resx">
+      <DependentUpon>FrmEditarAporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmEditarBeneficiario.resx">
       <DependentUpon>FrmEditarBeneficiario.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmEgresoCU.resx">
       <DependentUpon>FrmEgresoCU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmNuevoAporte.resx">
+      <DependentUpon>FrmNuevoAporte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmNuevoBeneficiaro.resx">
       <DependentUpon>FrmNuevoBeneficiaro.cs</DependentUpon>
@@ -250,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmVerPago.resx">
       <DependentUpon>FrmVerPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAportes.resx">
+      <DependentUpon>FrmAportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBeneficiario.resx">
       <DependentUpon>FrmBeneficiario.cs</DependentUpon>

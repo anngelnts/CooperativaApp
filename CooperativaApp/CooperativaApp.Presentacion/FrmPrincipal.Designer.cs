@@ -37,10 +37,12 @@
             this.PbbCerrar = new System.Windows.Forms.PictureBox();
             this.PanelLeft = new System.Windows.Forms.Panel();
             this.PanelNavegacion = new System.Windows.Forms.Panel();
+            this.BtnBeneficiario = new System.Windows.Forms.Button();
+            this.BtnDatosCooperativa = new System.Windows.Forms.Button();
             this.btnDatosFinancieros = new System.Windows.Forms.Button();
             this.BtnEgresos = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnAporte = new System.Windows.Forms.Button();
             this.btnPagos = new System.Windows.Forms.Button();
             this.BtnPrestamos = new System.Windows.Forms.Button();
             this.BtnSocios = new System.Windows.Forms.Button();
@@ -60,8 +62,6 @@
             this.PanelState = new System.Windows.Forms.Panel();
             this.LblMessage = new System.Windows.Forms.Label();
             this.PanelContainer = new System.Windows.Forms.Panel();
-            this.BtnDatosCooperativa = new System.Windows.Forms.Button();
-            this.BtnBeneficiario = new System.Windows.Forms.Button();
             this.PanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbbMaximizar)).BeginInit();
@@ -175,7 +175,7 @@
             this.PanelNavegacion.Controls.Add(this.btnDatosFinancieros);
             this.PanelNavegacion.Controls.Add(this.BtnEgresos);
             this.PanelNavegacion.Controls.Add(this.button3);
-            this.PanelNavegacion.Controls.Add(this.button2);
+            this.PanelNavegacion.Controls.Add(this.BtnAporte);
             this.PanelNavegacion.Controls.Add(this.btnPagos);
             this.PanelNavegacion.Controls.Add(this.BtnPrestamos);
             this.PanelNavegacion.Controls.Add(this.BtnSocios);
@@ -187,6 +187,50 @@
             this.PanelNavegacion.Name = "PanelNavegacion";
             this.PanelNavegacion.Size = new System.Drawing.Size(250, 525);
             this.PanelNavegacion.TabIndex = 2;
+            // 
+            // BtnBeneficiario
+            // 
+            this.BtnBeneficiario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBeneficiario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.BtnBeneficiario.FlatAppearance.BorderSize = 0;
+            this.BtnBeneficiario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.BtnBeneficiario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.BtnBeneficiario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBeneficiario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBeneficiario.ForeColor = System.Drawing.Color.White;
+            this.BtnBeneficiario.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_datos_light;
+            this.BtnBeneficiario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBeneficiario.Location = new System.Drawing.Point(0, 645);
+            this.BtnBeneficiario.Name = "BtnBeneficiario";
+            this.BtnBeneficiario.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.BtnBeneficiario.Size = new System.Drawing.Size(250, 50);
+            this.BtnBeneficiario.TabIndex = 14;
+            this.BtnBeneficiario.Text = "  Beneficiarios";
+            this.BtnBeneficiario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnBeneficiario.UseVisualStyleBackColor = true;
+            this.BtnBeneficiario.Click += new System.EventHandler(this.BtnBeneficiario_Click);
+            // 
+            // BtnDatosCooperativa
+            // 
+            this.BtnDatosCooperativa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDatosCooperativa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.BtnDatosCooperativa.FlatAppearance.BorderSize = 0;
+            this.BtnDatosCooperativa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.BtnDatosCooperativa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.BtnDatosCooperativa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDatosCooperativa.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDatosCooperativa.ForeColor = System.Drawing.Color.White;
+            this.BtnDatosCooperativa.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_datos_light;
+            this.BtnDatosCooperativa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDatosCooperativa.Location = new System.Drawing.Point(1, 588);
+            this.BtnDatosCooperativa.Name = "BtnDatosCooperativa";
+            this.BtnDatosCooperativa.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.BtnDatosCooperativa.Size = new System.Drawing.Size(250, 50);
+            this.BtnDatosCooperativa.TabIndex = 13;
+            this.BtnDatosCooperativa.Text = "  Datos Cooperativa";
+            this.BtnDatosCooperativa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnDatosCooperativa.UseVisualStyleBackColor = true;
+            this.BtnDatosCooperativa.Click += new System.EventHandler(this.BtnDatosCooperativa_Click);
             // 
             // btnDatosFinancieros
             // 
@@ -253,26 +297,27 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnAporte
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_aportes_light;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 357);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.button2.Size = new System.Drawing.Size(250, 50);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "  Aportes";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnAporte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAporte.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.BtnAporte.FlatAppearance.BorderSize = 0;
+            this.BtnAporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.BtnAporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.BtnAporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAporte.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAporte.ForeColor = System.Drawing.Color.White;
+            this.BtnAporte.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_aportes_light;
+            this.BtnAporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAporte.Location = new System.Drawing.Point(0, 357);
+            this.BtnAporte.Name = "BtnAporte";
+            this.BtnAporte.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.BtnAporte.Size = new System.Drawing.Size(250, 50);
+            this.BtnAporte.TabIndex = 9;
+            this.BtnAporte.Text = "  Aportes";
+            this.BtnAporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAporte.UseVisualStyleBackColor = true;
+            this.BtnAporte.Click += new System.EventHandler(this.BtnAporte_Click);
             // 
             // btnPagos
             // 
@@ -540,50 +585,6 @@
             this.PanelContainer.Size = new System.Drawing.Size(1050, 565);
             this.PanelContainer.TabIndex = 5;
             // 
-            // BtnDatosCooperativa
-            // 
-            this.BtnDatosCooperativa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnDatosCooperativa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
-            this.BtnDatosCooperativa.FlatAppearance.BorderSize = 0;
-            this.BtnDatosCooperativa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
-            this.BtnDatosCooperativa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
-            this.BtnDatosCooperativa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDatosCooperativa.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDatosCooperativa.ForeColor = System.Drawing.Color.White;
-            this.BtnDatosCooperativa.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_datos_light;
-            this.BtnDatosCooperativa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDatosCooperativa.Location = new System.Drawing.Point(1, 588);
-            this.BtnDatosCooperativa.Name = "BtnDatosCooperativa";
-            this.BtnDatosCooperativa.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.BtnDatosCooperativa.Size = new System.Drawing.Size(250, 50);
-            this.BtnDatosCooperativa.TabIndex = 13;
-            this.BtnDatosCooperativa.Text = "  Datos Cooperativa";
-            this.BtnDatosCooperativa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnDatosCooperativa.UseVisualStyleBackColor = true;
-            this.BtnDatosCooperativa.Click += new System.EventHandler(this.BtnDatosCooperativa_Click);
-            // 
-            // BtnBeneficiario
-            // 
-            this.BtnBeneficiario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBeneficiario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
-            this.BtnBeneficiario.FlatAppearance.BorderSize = 0;
-            this.BtnBeneficiario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
-            this.BtnBeneficiario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
-            this.BtnBeneficiario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBeneficiario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBeneficiario.ForeColor = System.Drawing.Color.White;
-            this.BtnBeneficiario.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_datos_light;
-            this.BtnBeneficiario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBeneficiario.Location = new System.Drawing.Point(0, 645);
-            this.BtnBeneficiario.Name = "BtnBeneficiario";
-            this.BtnBeneficiario.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.BtnBeneficiario.Size = new System.Drawing.Size(250, 50);
-            this.BtnBeneficiario.TabIndex = 14;
-            this.BtnBeneficiario.Text = "  Beneficiarios";
-            this.BtnBeneficiario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnBeneficiario.UseVisualStyleBackColor = true;
-            this.BtnBeneficiario.Click += new System.EventHandler(this.BtnBeneficiario_Click);
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -655,7 +656,7 @@
         private System.Windows.Forms.Panel PanelContainer;
         private System.Windows.Forms.Button BtnEgresos;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnAporte;
         private System.Windows.Forms.Button btnPagos;
         private System.Windows.Forms.Button btnDatosFinancieros;
         private System.Windows.Forms.Button BtnDatosCooperativa;
