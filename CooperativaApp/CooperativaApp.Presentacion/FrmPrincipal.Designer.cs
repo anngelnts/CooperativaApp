@@ -37,7 +37,7 @@
             this.PbbCerrar = new System.Windows.Forms.PictureBox();
             this.PanelLeft = new System.Windows.Forms.Panel();
             this.PanelNavegacion = new System.Windows.Forms.Panel();
-            this.BtnBeneficiario = new System.Windows.Forms.Button();
+            this.BtnCierreCaja = new System.Windows.Forms.Button();
             this.BtnDatosCooperativa = new System.Windows.Forms.Button();
             this.btnDatosFinancieros = new System.Windows.Forms.Button();
             this.BtnEgresos = new System.Windows.Forms.Button();
@@ -170,7 +170,7 @@
             // PanelNavegacion
             // 
             this.PanelNavegacion.AutoScroll = true;
-            this.PanelNavegacion.Controls.Add(this.BtnBeneficiario);
+            this.PanelNavegacion.Controls.Add(this.BtnCierreCaja);
             this.PanelNavegacion.Controls.Add(this.BtnDatosCooperativa);
             this.PanelNavegacion.Controls.Add(this.btnDatosFinancieros);
             this.PanelNavegacion.Controls.Add(this.BtnEgresos);
@@ -188,27 +188,27 @@
             this.PanelNavegacion.Size = new System.Drawing.Size(250, 525);
             this.PanelNavegacion.TabIndex = 2;
             // 
-            // BtnBeneficiario
+            // BtnCierreCaja
             // 
-            this.BtnBeneficiario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBeneficiario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
-            this.BtnBeneficiario.FlatAppearance.BorderSize = 0;
-            this.BtnBeneficiario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
-            this.BtnBeneficiario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
-            this.BtnBeneficiario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBeneficiario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBeneficiario.ForeColor = System.Drawing.Color.White;
-            this.BtnBeneficiario.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_datos_light;
-            this.BtnBeneficiario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBeneficiario.Location = new System.Drawing.Point(0, 645);
-            this.BtnBeneficiario.Name = "BtnBeneficiario";
-            this.BtnBeneficiario.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.BtnBeneficiario.Size = new System.Drawing.Size(250, 50);
-            this.BtnBeneficiario.TabIndex = 14;
-            this.BtnBeneficiario.Text = "  Beneficiarios";
-            this.BtnBeneficiario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnBeneficiario.UseVisualStyleBackColor = true;
-            this.BtnBeneficiario.Click += new System.EventHandler(this.BtnBeneficiario_Click);
+            this.BtnCierreCaja.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCierreCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.BtnCierreCaja.FlatAppearance.BorderSize = 0;
+            this.BtnCierreCaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(34)))), ((int)(((byte)(43)))));
+            this.BtnCierreCaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.BtnCierreCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCierreCaja.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCierreCaja.ForeColor = System.Drawing.Color.White;
+            this.BtnCierreCaja.Image = global::CooperativaApp.Presentacion.Properties.Resources.icon_xs_datos_light;
+            this.BtnCierreCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCierreCaja.Location = new System.Drawing.Point(0, 645);
+            this.BtnCierreCaja.Name = "BtnCierreCaja";
+            this.BtnCierreCaja.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.BtnCierreCaja.Size = new System.Drawing.Size(250, 50);
+            this.BtnCierreCaja.TabIndex = 14;
+            this.BtnCierreCaja.Text = "  Cierre de Caja";
+            this.BtnCierreCaja.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnCierreCaja.UseVisualStyleBackColor = true;
+            this.BtnCierreCaja.Click += new System.EventHandler(this.BtnBeneficiario_Click);
             // 
             // BtnDatosCooperativa
             // 
@@ -660,6 +660,6 @@
         private System.Windows.Forms.Button btnPagos;
         private System.Windows.Forms.Button btnDatosFinancieros;
         private System.Windows.Forms.Button BtnDatosCooperativa;
-        private System.Windows.Forms.Button BtnBeneficiario;
+        private System.Windows.Forms.Button BtnCierreCaja;
     }
 }

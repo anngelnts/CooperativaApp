@@ -37,7 +37,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TxtDocumentoSocio = new System.Windows.Forms.TextBox();
             this.BtnGuardar = new System.Windows.Forms.Button();
-            this.BtnBuscarSocio = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.TxtTelefonoBeneficiario = new System.Windows.Forms.TextBox();
@@ -74,6 +73,7 @@
             // 
             this.TxtNombreBeneficiario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombreBeneficiario.Location = new System.Drawing.Point(16, 104);
+            this.TxtNombreBeneficiario.MaxLength = 50;
             this.TxtNombreBeneficiario.Name = "TxtNombreBeneficiario";
             this.TxtNombreBeneficiario.Size = new System.Drawing.Size(233, 27);
             this.TxtNombreBeneficiario.TabIndex = 52;
@@ -92,6 +92,7 @@
             // 
             this.TxtCelularBeneficiario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCelularBeneficiario.Location = new System.Drawing.Point(16, 164);
+            this.TxtCelularBeneficiario.MaxLength = 9;
             this.TxtCelularBeneficiario.Name = "TxtCelularBeneficiario";
             this.TxtCelularBeneficiario.Size = new System.Drawing.Size(147, 27);
             this.TxtCelularBeneficiario.TabIndex = 50;
@@ -110,6 +111,7 @@
             // 
             this.TxtApellidoBeneficiario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtApellidoBeneficiario.Location = new System.Drawing.Point(265, 104);
+            this.TxtApellidoBeneficiario.MaxLength = 50;
             this.TxtApellidoBeneficiario.Name = "TxtApellidoBeneficiario";
             this.TxtApellidoBeneficiario.Size = new System.Drawing.Size(256, 27);
             this.TxtApellidoBeneficiario.TabIndex = 48;
@@ -129,7 +131,7 @@
             this.TxtDocumentoSocio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDocumentoSocio.Location = new System.Drawing.Point(9, 54);
             this.TxtDocumentoSocio.Name = "TxtDocumentoSocio";
-            this.TxtDocumentoSocio.Size = new System.Drawing.Size(141, 27);
+            this.TxtDocumentoSocio.Size = new System.Drawing.Size(119, 27);
             this.TxtDocumentoSocio.TabIndex = 44;
             // 
             // BtnGuardar
@@ -140,29 +142,13 @@
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuardar.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardar.Location = new System.Drawing.Point(13, 468);
+            this.BtnGuardar.Location = new System.Drawing.Point(12, 392);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(150, 40);
             this.BtnGuardar.TabIndex = 43;
             this.BtnGuardar.Text = "GUARDAR";
             this.BtnGuardar.UseVisualStyleBackColor = false;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
-            // 
-            // BtnBuscarSocio
-            // 
-            this.BtnBuscarSocio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
-            this.BtnBuscarSocio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBuscarSocio.FlatAppearance.BorderSize = 0;
-            this.BtnBuscarSocio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBuscarSocio.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscarSocio.ForeColor = System.Drawing.Color.White;
-            this.BtnBuscarSocio.Location = new System.Drawing.Point(147, 54);
-            this.BtnBuscarSocio.Name = "BtnBuscarSocio";
-            this.BtnBuscarSocio.Size = new System.Drawing.Size(88, 27);
-            this.BtnBuscarSocio.TabIndex = 54;
-            this.BtnBuscarSocio.Text = "Buscar";
-            this.BtnBuscarSocio.UseVisualStyleBackColor = false;
-            this.BtnBuscarSocio.Click += new System.EventHandler(this.BtnBuscarSocio_Click);
             // 
             // label6
             // 
@@ -188,6 +174,7 @@
             // 
             this.TxtTelefonoBeneficiario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTelefonoBeneficiario.Location = new System.Drawing.Point(183, 164);
+            this.TxtTelefonoBeneficiario.MaxLength = 9;
             this.TxtTelefonoBeneficiario.Name = "TxtTelefonoBeneficiario";
             this.TxtTelefonoBeneficiario.Size = new System.Drawing.Size(174, 27);
             this.TxtTelefonoBeneficiario.TabIndex = 57;
@@ -201,12 +188,8 @@
             this.CmbTipoDocumentoBeneficiario.FormattingEnabled = true;
             this.CmbTipoDocumentoBeneficiario.IntegralHeight = false;
             this.CmbTipoDocumentoBeneficiario.Items.AddRange(new object[] {
-            "OTROS",
             "DNI",
-            "CAR. DE EXTRANJ.",
-            "RUC",
-            "PASAPORTE",
-            "CÉD. DIPL. DE IDEN."});
+            "RUC"});
             this.CmbTipoDocumentoBeneficiario.Location = new System.Drawing.Point(15, 49);
             this.CmbTipoDocumentoBeneficiario.Name = "CmbTipoDocumentoBeneficiario";
             this.CmbTipoDocumentoBeneficiario.Size = new System.Drawing.Size(150, 26);
@@ -233,9 +216,9 @@
             this.groupBox1.Controls.Add(this.TxtNombreBeneficiario);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.groupBox1.Location = new System.Drawing.Point(13, 196);
+            this.groupBox1.Location = new System.Drawing.Point(12, 120);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(551, 266);
+            this.groupBox1.Size = new System.Drawing.Size(561, 266);
             this.groupBox1.TabIndex = 120;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Beneficiario";
@@ -254,6 +237,7 @@
             // 
             this.TxtParentescoBeneficiario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtParentescoBeneficiario.Location = new System.Drawing.Point(18, 221);
+            this.TxtParentescoBeneficiario.MaxLength = 100;
             this.TxtParentescoBeneficiario.Name = "TxtParentescoBeneficiario";
             this.TxtParentescoBeneficiario.Size = new System.Drawing.Size(503, 27);
             this.TxtParentescoBeneficiario.TabIndex = 127;
@@ -324,6 +308,7 @@
             // 
             this.TxtDocumentoBeneficiario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDocumentoBeneficiario.Location = new System.Drawing.Point(183, 49);
+            this.TxtDocumentoBeneficiario.MaxLength = 11;
             this.TxtDocumentoBeneficiario.Name = "TxtDocumentoBeneficiario";
             this.TxtDocumentoBeneficiario.Size = new System.Drawing.Size(150, 27);
             this.TxtDocumentoBeneficiario.TabIndex = 121;
@@ -336,11 +321,10 @@
             this.groupBox2.Controls.Add(this.TxtNombreSocio);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.BtnBuscarSocio);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.groupBox2.Location = new System.Drawing.Point(13, 32);
+            this.groupBox2.Location = new System.Drawing.Point(13, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(551, 158);
+            this.groupBox2.Size = new System.Drawing.Size(561, 102);
             this.groupBox2.TabIndex = 121;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de Socio";
@@ -348,16 +332,16 @@
             // TxtApellidoSocio
             // 
             this.TxtApellidoSocio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApellidoSocio.Location = new System.Drawing.Point(9, 110);
+            this.TxtApellidoSocio.Location = new System.Drawing.Point(339, 54);
             this.TxtApellidoSocio.Name = "TxtApellidoSocio";
-            this.TxtApellidoSocio.Size = new System.Drawing.Size(256, 27);
+            this.TxtApellidoSocio.Size = new System.Drawing.Size(206, 27);
             this.TxtApellidoSocio.TabIndex = 127;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 89);
+            this.label10.Location = new System.Drawing.Point(336, 33);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(72, 18);
             this.label10.TabIndex = 130;
@@ -366,16 +350,16 @@
             // TxtNombreSocio
             // 
             this.TxtNombreSocio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreSocio.Location = new System.Drawing.Point(257, 54);
+            this.TxtNombreSocio.Location = new System.Drawing.Point(134, 54);
             this.TxtNombreSocio.Name = "TxtNombreSocio";
-            this.TxtNombreSocio.Size = new System.Drawing.Size(233, 27);
+            this.TxtNombreSocio.Size = new System.Drawing.Size(199, 27);
             this.TxtNombreSocio.TabIndex = 128;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(254, 33);
+            this.label11.Location = new System.Drawing.Point(131, 33);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(76, 18);
             this.label11.TabIndex = 129;
@@ -385,7 +369,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 520);
+            this.ClientSize = new System.Drawing.Size(586, 446);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnGuardar);
@@ -412,7 +396,6 @@
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox TxtDocumentoSocio;
         public System.Windows.Forms.Button BtnGuardar;
-        public System.Windows.Forms.Button BtnBuscarSocio;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox TxtTelefonoBeneficiario;

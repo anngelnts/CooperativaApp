@@ -18,37 +18,36 @@ namespace CooperativaApp.Presentacion.Acciones
         public FrmNuevoBeneficiaro()
         {
             InitializeComponent();
+            TxtDocumentoSocio.Text = FrmBeneficiario.NumeroDocumentoSocio;
         }
 
-        private void BtnBuscarSocio_Click(object sender, EventArgs e)
+
+        private void CargarDatosPrincipalesSocio()
         {
-            if (Requerido.MostrarMensaje(Requerido.EsEnteroValido(TxtDocumentoSocio.Text, new int[] { 8, 11 }), "El Numero de documento puede ser de 8 u 11 digitos segun corresponda el tipo de documento."))
+            //if (Requerido.MostrarMensaje(Requerido.EsEnteroValido(TxtDocumentoSocio.Text, new int[] { 8, 11 }), "El Numero de documento puede ser de 8 u 11 digitos segun corresponda el tipo de documento."))
+            //{
+            DBeneficiario BoSocio = new DBeneficiario();
+            Socio BeSocio = new Socio();
+            if (TxtDocumentoSocio.Text.Length == 11)
             {
-                DBeneficiario BoSocio = new DBeneficiario();
-                Socio BeSocio = new Socio();
-                if (TxtDocumentoSocio.Text.Length == 11)
-                {
-                    BeSocio = BoSocio.ObtenerSocioAfiliado("RUC", TxtDocumentoSocio.Text);
-                }
-                if (TxtDocumentoSocio.Text.Length == 8)
-                {
-                    BeSocio = BoSocio.ObtenerSocioAfiliado("DNI", TxtDocumentoSocio.Text);
-                }
-                if (BeSocio != null)
-                {
-                    IdSocio = BeSocio.Id_Socio;
-                    TxtNombreSocio.Text = BeSocio.Nombres;
-                    TxtApellidoSocio.Text = BeSocio.Apellidos;
-                }
-                else
-                {
-                    MessageBox.Show("No se encontro un socio con este numero de documento ["+TxtDocumentoSocio.Text+"]");
-                }
+                BeSocio = BoSocio.ObtenerSocioAfiliado("RUC", TxtDocumentoSocio.Text);
             }
-            
-
+            if (TxtDocumentoSocio.Text.Length == 8)
+            {
+                BeSocio = BoSocio.ObtenerSocioAfiliado("DNI", TxtDocumentoSocio.Text);
+            }
+            if (BeSocio != null)
+            {
+                IdSocio = BeSocio.Id_Socio;
+                TxtNombreSocio.Text = BeSocio.Nombres;
+                TxtApellidoSocio.Text = BeSocio.Apellidos;
+            }
+            else
+            {
+                MessageBox.Show("No se encontro un socio con este numero de documento [" + TxtDocumentoSocio.Text + "]");
+            }
+            //}
         }
-
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             if (
@@ -86,6 +85,7 @@ namespace CooperativaApp.Presentacion.Acciones
             CmbEstadoBeneficiario.SelectedIndex = 0;
             CmbTipoBeneficiario.SelectedIndex = 0;
             CmbTipoDocumentoBeneficiario.SelectedIndex = 0;
+            CargarDatosPrincipalesSocio();
         }
     }
 }

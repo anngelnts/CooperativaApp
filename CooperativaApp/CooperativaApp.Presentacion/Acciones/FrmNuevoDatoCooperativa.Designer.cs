@@ -55,6 +55,7 @@
             // 
             this.TxtSepelioTitular.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSepelioTitular.Location = new System.Drawing.Point(12, 154);
+            this.TxtSepelioTitular.MaxLength = 10;
             this.TxtSepelioTitular.Name = "TxtSepelioTitular";
             this.TxtSepelioTitular.Size = new System.Drawing.Size(150, 27);
             this.TxtSepelioTitular.TabIndex = 52;
@@ -73,6 +74,7 @@
             // 
             this.TxtSepelioFamiliar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSepelioFamiliar.Location = new System.Drawing.Point(12, 205);
+            this.TxtSepelioFamiliar.MaxLength = 10;
             this.TxtSepelioFamiliar.Name = "TxtSepelioFamiliar";
             this.TxtSepelioFamiliar.Size = new System.Drawing.Size(150, 27);
             this.TxtSepelioFamiliar.TabIndex = 50;
@@ -91,6 +93,7 @@
             // 
             this.TxtFondoSepelio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFondoSepelio.Location = new System.Drawing.Point(15, 39);
+            this.TxtFondoSepelio.MaxLength = 10;
             this.TxtFondoSepelio.Name = "TxtFondoSepelio";
             this.TxtFondoSepelio.Size = new System.Drawing.Size(150, 27);
             this.TxtFondoSepelio.TabIndex = 48;
@@ -109,6 +112,7 @@
             // 
             this.TxtAportacion.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtAportacion.Location = new System.Drawing.Point(12, 98);
+            this.TxtAportacion.MaxLength = 10;
             this.TxtAportacion.Name = "TxtAportacion";
             this.TxtAportacion.Size = new System.Drawing.Size(150, 27);
             this.TxtAportacion.TabIndex = 46;

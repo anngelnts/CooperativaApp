@@ -164,6 +164,12 @@
     <Compile Include="FrmBeneficiario.designer.cs">
       <DependentUpon>FrmBeneficiario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCierreCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCierreCaja.Designer.cs">
+      <DependentUpon>FrmCierreCaja.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConfiguracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBeneficiario.resx">
       <DependentUpon>FrmBeneficiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCierreCaja.resx">
+      <DependentUpon>FrmCierreCaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConfiguracion.resx">
       <DependentUpon>FrmConfiguracion.cs</DependentUpon>

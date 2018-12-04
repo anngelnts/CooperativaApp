@@ -260,9 +260,9 @@ namespace CooperativaApp.Presentacion
 
         private void BtnBeneficiario_Click(object sender, EventArgs e)
         {
-            ChangeHeaderTitle("Beneficiarios");
+            ChangeHeaderTitle("Cierre de Caja");
             MenuActive(sender);
-            OpenForm(new FrmBeneficiario());
+            OpenForm(new FrmCierreCaja());
         }
 
         private void BtnAporte_Click(object sender, EventArgs e)

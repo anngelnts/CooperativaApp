@@ -106,5 +106,27 @@ namespace CooperativaApp.Presentacion
                 MessageBox.Show("Seleccione un registro");
             }
         }
+
+        private void BtnVerBeneficiarios_Click(object sender, EventArgs e)
+        {
+            if (DgvSocios.SelectedRows.Count > 0)
+            {
+                int rowindex = DgvSocios.CurrentRow.Index;
+                if (rowindex != -1)
+                {
+                    int Id_Socio = Convert.ToInt32(DgvSocios.CurrentRow.Cells[0].Value);
+                    string NumeroDocumentoSocio = (DgvSocios.CurrentRow.Cells[2].Value).ToString();
+                    FrmBeneficiario frm = new FrmBeneficiario(Id_Socio,NumeroDocumentoSocio);
+                    frm.Text = "VER BENEFICIARIOS DE UN SOCIO";
+                    AddOwnedForm(frm);
+                    frm.ShowDialog();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro");
+            }
+        }
     }
 }

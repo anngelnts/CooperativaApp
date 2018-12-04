@@ -331,3 +331,4 @@ C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.P
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csproj.CopyComplete
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.exe
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.pdb
+C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmCierreCaja.resources

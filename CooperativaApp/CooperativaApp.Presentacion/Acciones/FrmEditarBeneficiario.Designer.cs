@@ -35,7 +35,6 @@
             this.TxtNombreSocio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.BtnBuscarSocio = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.TxtParentescoBeneficiario = new System.Windows.Forms.TextBox();
@@ -68,11 +67,10 @@
             this.groupBox2.Controls.Add(this.TxtNombreSocio);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.BtnBuscarSocio);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 11.25F);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(551, 158);
+            this.groupBox2.Size = new System.Drawing.Size(566, 102);
             this.groupBox2.TabIndex = 124;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de Socio";
@@ -80,16 +78,16 @@
             // TxtApellidoSocio
             // 
             this.TxtApellidoSocio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApellidoSocio.Location = new System.Drawing.Point(9, 110);
+            this.TxtApellidoSocio.Location = new System.Drawing.Point(340, 54);
             this.TxtApellidoSocio.Name = "TxtApellidoSocio";
-            this.TxtApellidoSocio.Size = new System.Drawing.Size(256, 27);
+            this.TxtApellidoSocio.Size = new System.Drawing.Size(220, 27);
             this.TxtApellidoSocio.TabIndex = 127;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 89);
+            this.label10.Location = new System.Drawing.Point(337, 33);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(72, 18);
             this.label10.TabIndex = 130;
@@ -106,9 +104,9 @@
             // TxtNombreSocio
             // 
             this.TxtNombreSocio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreSocio.Location = new System.Drawing.Point(257, 54);
+            this.TxtNombreSocio.Location = new System.Drawing.Point(156, 54);
             this.TxtNombreSocio.Name = "TxtNombreSocio";
-            this.TxtNombreSocio.Size = new System.Drawing.Size(233, 27);
+            this.TxtNombreSocio.Size = new System.Drawing.Size(178, 27);
             this.TxtNombreSocio.TabIndex = 128;
             // 
             // label2
@@ -125,27 +123,11 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(254, 33);
+            this.label11.Location = new System.Drawing.Point(153, 33);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(76, 18);
             this.label11.TabIndex = 129;
             this.label11.Text = "Nombres";
-            // 
-            // BtnBuscarSocio
-            // 
-            this.BtnBuscarSocio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
-            this.BtnBuscarSocio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBuscarSocio.FlatAppearance.BorderSize = 0;
-            this.BtnBuscarSocio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBuscarSocio.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscarSocio.ForeColor = System.Drawing.Color.White;
-            this.BtnBuscarSocio.Location = new System.Drawing.Point(147, 54);
-            this.BtnBuscarSocio.Name = "BtnBuscarSocio";
-            this.BtnBuscarSocio.Size = new System.Drawing.Size(88, 27);
-            this.BtnBuscarSocio.TabIndex = 54;
-            this.BtnBuscarSocio.Text = "Buscar";
-            this.BtnBuscarSocio.UseVisualStyleBackColor = false;
-            this.BtnBuscarSocio.Click += new System.EventHandler(this.BtnBuscarSocio_Click);
             // 
             // groupBox1
             // 
@@ -168,9 +150,9 @@
             this.groupBox1.Controls.Add(this.TxtNombreBeneficiario);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.groupBox1.Location = new System.Drawing.Point(12, 176);
+            this.groupBox1.Location = new System.Drawing.Point(12, 120);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(551, 266);
+            this.groupBox1.Size = new System.Drawing.Size(566, 266);
             this.groupBox1.TabIndex = 123;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Beneficiario";
@@ -373,7 +355,7 @@
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuardar.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardar.Location = new System.Drawing.Point(12, 448);
+            this.BtnGuardar.Location = new System.Drawing.Point(12, 392);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(150, 40);
             this.BtnGuardar.TabIndex = 122;
@@ -385,7 +367,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 504);
+            this.ClientSize = new System.Drawing.Size(590, 445);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnGuardar);
@@ -410,7 +392,6 @@
         public System.Windows.Forms.TextBox TxtNombreSocio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label11;
-        public System.Windows.Forms.Button BtnBuscarSocio;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label12;
         public System.Windows.Forms.TextBox TxtParentescoBeneficiario;

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnListarTodo = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.BtnBuscar = new System.Windows.Forms.Button();
@@ -46,11 +46,12 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PanelActions = new System.Windows.Forms.Panel();
+            this.PanelAction1 = new System.Windows.Forms.Panel();
+            this.BtnVerBeneficiarios = new System.Windows.Forms.Button();
             this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnNuevo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSocios)).BeginInit();
-            this.PanelActions.SuspendLayout();
+            this.PanelAction1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnListarTodo
@@ -113,12 +114,12 @@
             // 
             this.DgvSocios.AllowUserToAddRows = false;
             this.DgvSocios.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(53)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.DgvSocios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(53)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.DgvSocios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DgvSocios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -126,14 +127,14 @@
             this.DgvSocios.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DgvSocios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DgvSocios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvSocios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvSocios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DgvSocios.ColumnHeadersHeight = 40;
             this.DgvSocios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DgvSocios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -146,15 +147,15 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(53)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvSocios.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(53)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvSocios.DefaultCellStyle = dataGridViewCellStyle7;
             this.DgvSocios.EnableHeadersVisualStyles = false;
             this.DgvSocios.GridColor = System.Drawing.Color.White;
             this.DgvSocios.Location = new System.Drawing.Point(12, 86);
@@ -162,15 +163,15 @@
             this.DgvSocios.Name = "DgvSocios";
             this.DgvSocios.ReadOnly = true;
             this.DgvSocios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(81)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvSocios.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(81)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvSocios.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.DgvSocios.RowHeadersVisible = false;
             this.DgvSocios.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.DgvSocios.RowTemplate.Height = 30;
@@ -235,16 +236,33 @@
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             // 
-            // PanelActions
+            // PanelAction1
             // 
-            this.PanelActions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.PanelActions.Controls.Add(this.BtnModificar);
-            this.PanelActions.Controls.Add(this.BtnNuevo);
-            this.PanelActions.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelActions.Location = new System.Drawing.Point(717, 0);
-            this.PanelActions.Name = "PanelActions";
-            this.PanelActions.Size = new System.Drawing.Size(200, 607);
-            this.PanelActions.TabIndex = 31;
+            this.PanelAction1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.PanelAction1.Controls.Add(this.BtnVerBeneficiarios);
+            this.PanelAction1.Controls.Add(this.BtnModificar);
+            this.PanelAction1.Controls.Add(this.BtnNuevo);
+            this.PanelAction1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PanelAction1.Location = new System.Drawing.Point(717, 0);
+            this.PanelAction1.Name = "PanelAction1";
+            this.PanelAction1.Size = new System.Drawing.Size(200, 607);
+            this.PanelAction1.TabIndex = 31;
+            // 
+            // BtnVerBeneficiarios
+            // 
+            this.BtnVerBeneficiarios.BackColor = System.Drawing.Color.Black;
+            this.BtnVerBeneficiarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnVerBeneficiarios.FlatAppearance.BorderSize = 0;
+            this.BtnVerBeneficiarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVerBeneficiarios.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVerBeneficiarios.ForeColor = System.Drawing.Color.White;
+            this.BtnVerBeneficiarios.Location = new System.Drawing.Point(22, 133);
+            this.BtnVerBeneficiarios.Name = "BtnVerBeneficiarios";
+            this.BtnVerBeneficiarios.Size = new System.Drawing.Size(160, 62);
+            this.BtnVerBeneficiarios.TabIndex = 4;
+            this.BtnVerBeneficiarios.Text = "VER BENEFICIARIOS";
+            this.BtnVerBeneficiarios.UseVisualStyleBackColor = false;
+            this.BtnVerBeneficiarios.Click += new System.EventHandler(this.BtnVerBeneficiarios_Click);
             // 
             // BtnModificar
             // 
@@ -288,13 +306,13 @@
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.TxtBusqueda);
             this.Controls.Add(this.DgvSocios);
-            this.Controls.Add(this.PanelActions);
+            this.Controls.Add(this.PanelAction1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmSocio";
             this.Text = "FrmSocio";
             this.Load += new System.EventHandler(this.FrmSocio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvSocios)).EndInit();
-            this.PanelActions.ResumeLayout(false);
+            this.PanelAction1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,7 +325,7 @@
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.TextBox TxtBusqueda;
         private System.Windows.Forms.DataGridView DgvSocios;
-        private System.Windows.Forms.Panel PanelActions;
+        private System.Windows.Forms.Panel PanelAction1;
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnNuevo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -319,5 +337,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.Button BtnVerBeneficiarios;
     }
 }

@@ -103,11 +103,13 @@ namespace CooperativaApp.Datos
             }
         }
 
-        public DataTable Listar()
+        public DataTable Listar(int IdSocio)
         {
             try
             {
-                return ConexionMySql.ExecuteProcedureData("USP_ToList_Beneficiario");
+                MYSQLParameter[] parameters = new MYSQLParameter[1];
+                parameters[0] = new MYSQLParameter("@Id_Socio_",IdSocio, MySqlDbType.Int32);
+                return ConexionMySql.ExecuteProcedureData("USP_ToList_Beneficiario", parameters);
             }
             catch (Exception)
             {

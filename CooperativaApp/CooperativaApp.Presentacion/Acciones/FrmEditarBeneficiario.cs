@@ -23,7 +23,12 @@ namespace CooperativaApp.Presentacion.Acciones
 
         private void BtnBuscarSocio_Click(object sender, EventArgs e)
         {
-            
+           
+        }
+
+
+        private void CargarDatosPrincipalesSocio()
+        {
             DBeneficiario BoSocio = new DBeneficiario();
             Socio BeSocio = new Socio();
             if (TxtDocumentoSocio.Text.Length == 11)
@@ -76,8 +81,11 @@ namespace CooperativaApp.Presentacion.Acciones
         private void FrmEditarBeneficiario_Load(object sender, EventArgs e)
         {
             DSocio BoSocio = new DSocio();
-            TxtDocumentoSocio.Text = BoSocio.Obtener_Por_Id(BeBeneficiario.Id_Socio).Num_Documento;
-            BtnBuscarSocio.PerformClick();
+            Socio BeSocio = new Socio();
+            BeSocio = BoSocio.Obtener_Por_Id(BeBeneficiario.Id_Socio);
+            TxtDocumentoSocio.Text = BeSocio.Num_Documento;
+            TxtNombreSocio.Text = BeSocio.Nombres;
+            TxtApellidoSocio.Text = BeSocio.Apellidos;
             TxtParentescoBeneficiario.Text = BeBeneficiario.Parentesco;
             int indiceTipoDocumento = 0;
             foreach (object Item in CmbTipoDocumentoBeneficiario.Items)
