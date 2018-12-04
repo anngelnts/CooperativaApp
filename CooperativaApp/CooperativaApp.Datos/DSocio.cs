@@ -13,7 +13,7 @@ namespace CooperativaApp.Datos
         protected bool Response = false;
         public bool Agregar(Socio obj)
         {
-            MYSQLParameter[] parameters = new MYSQLParameter[35];
+            MYSQLParameter[] parameters = new MYSQLParameter[37];
             //parameters[0] = new MYSQLParameter("@Id_Socio", obj.Id_Socio, MySqlDbType.VarChar);
             parameters[0] = new MYSQLParameter("@Tipo_De_Documento", obj.Tipo_De_Documento, MySqlDbType.VarChar);
             parameters[1] = new MYSQLParameter("@Num_Documento", obj.Num_Documento, MySqlDbType.VarChar);
@@ -50,6 +50,8 @@ namespace CooperativaApp.Datos
             parameters[32] = new MYSQLParameter("@Estado", obj.Estado, MySqlDbType.VarChar);
             parameters[33] = new MYSQLParameter("@Nivel", obj.Nivel, MySqlDbType.VarChar);
             parameters[34] = new MYSQLParameter("@Fecha_De_Registro", obj.Fecha_De_Registro, MySqlDbType.Date);
+            parameters[35] = new MYSQLParameter("@Usuario_", obj.Usuario, MySqlDbType.VarChar);
+            parameters[36] = new MYSQLParameter("@Clave_", obj.Clave, MySqlDbType.VarChar);
             Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Add_Socio", parameters);
             return Response;
         }
@@ -101,6 +103,8 @@ namespace CooperativaApp.Datos
                         Monto_Acumulado = Convert.ToDecimal(row["Monto_Acumulado"]),
                         Estado = (row["Estado"]).ToString(),
                         Nivel = (row["Nivel"]).ToString(),
+                        Usuario = (row["Usuario"]).ToString(),
+                        Clave = (row["Clave"]).ToString(),
                         Fecha_De_Registro = Convert.ToDateTime(row["Fecha_De_Registro"])
 
 
@@ -250,6 +254,8 @@ namespace CooperativaApp.Datos
                     Monto_Acumulado = Convert.ToDecimal(row["Monto_Acumulado"]),
                     Estado = (row["Estado"]).ToString(),
                     Nivel = (row["Nivel"]).ToString(),
+                    Usuario = (row["Usuario"]).ToString(),
+                    Clave = (row["Clave"]).ToString(),
                     Fecha_De_Registro = Convert.ToDateTime(row["Fecha_De_Registro"])
                 };
                 return be;
@@ -264,7 +270,7 @@ namespace CooperativaApp.Datos
 
         public bool Actualizar(Socio obj)
         {
-            MYSQLParameter[] parameters = new MYSQLParameter[36];
+            MYSQLParameter[] parameters = new MYSQLParameter[38];
 
             parameters[0] = new MYSQLParameter("@Tipo_De_Documento_", obj.Tipo_De_Documento, MySqlDbType.VarChar);
             parameters[1] = new MYSQLParameter("@Num_Documento_", obj.Num_Documento, MySqlDbType.VarChar);
@@ -302,6 +308,8 @@ namespace CooperativaApp.Datos
             parameters[33] = new MYSQLParameter("@Nivel_", obj.Nivel, MySqlDbType.VarChar);
             parameters[34] = new MYSQLParameter("@Fecha_De_Registro_", obj.Fecha_De_Registro, MySqlDbType.Date);
             parameters[35] = new MYSQLParameter("@Id_Socio_", obj.Id_Socio, MySqlDbType.Int32);
+            parameters[36] = new MYSQLParameter("@Usuario_", obj.Usuario, MySqlDbType.VarChar);
+            parameters[37] = new MYSQLParameter("@Clave_", obj.Clave, MySqlDbType.VarChar);
             Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Update_Socio", parameters);
             return Response;
         }

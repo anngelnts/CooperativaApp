@@ -64,5 +64,32 @@ namespace CooperativaApp.Presentacion
         {
 
         }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            if (DgvPrestamo.SelectedRows.Count > 0)
+            {
+                int rowindex = DgvPrestamo.CurrentRow.Index;
+                if (rowindex != -1)
+                {
+                    FrmVerPago.Id_Pago = Convert.ToInt32(DgvPrestamo.CurrentRow.Cells[0].Value);
+                    FrmVerPago frm = new FrmVerPago();
+                    frm.Text = "VER PAGO";
+                    AddOwnedForm(frm);
+                    frm.ShowDialog();
+                    
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro");
+            }
+            
+        }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

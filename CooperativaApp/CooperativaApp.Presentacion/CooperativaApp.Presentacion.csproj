@@ -134,6 +134,12 @@
     <Compile Include="Acciones\FrmNuevoSocio.Designer.cs">
       <DependentUpon>FrmNuevoSocio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Acciones\FrmVerPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmVerPago.Designer.cs">
+      <DependentUpon>FrmVerPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBeneficiario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     <EmbeddedResource Include="Acciones\FrmNuevoSocio.resx">
       <DependentUpon>FrmNuevoSocio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmVerPago.resx">
+      <DependentUpon>FrmVerPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBeneficiario.resx">
       <DependentUpon>FrmBeneficiario.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,6 +315,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CooperativaApp.Comun\CooperativaApp.Comun.csproj">
+      <Project>{8b9f2c9b-06a0-411f-9a60-7f579a2a2030}</Project>
+      <Name>CooperativaApp.Comun</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CooperativaApp.Datos\CooperativaApp.Datos.csproj">
       <Project>{923E1A92-67C1-4321-B556-BFC6909CF97D}</Project>
       <Name>CooperativaApp.Datos</Name>

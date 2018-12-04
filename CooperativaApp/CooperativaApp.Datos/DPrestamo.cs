@@ -15,7 +15,7 @@ namespace CooperativaApp.Datos
         {
             MYSQLParameter[] parameters = new MYSQLParameter[9];
             parameters[0] = new MYSQLParameter("@Id_Socio", obj.Id_Socio, MySqlDbType.Int32);
-            parameters[1] = new MYSQLParameter("@Monto", obj.Monto, MySqlDbType.Int32);
+            parameters[1] = new MYSQLParameter("@Monto", obj.Monto, MySqlDbType.Decimal);
             parameters[2] = new MYSQLParameter("@Num_De_Cuotas", obj.Num_De_Cuotas, MySqlDbType.Int32);
             parameters[3] = new MYSQLParameter("@Observaciones", obj.Observaciones, MySqlDbType.VarChar);
             parameters[4] = new MYSQLParameter("@Anexos", obj.Anexos, MySqlDbType.VarChar);
@@ -115,7 +115,24 @@ namespace CooperativaApp.Datos
             return data;
 
         }
-        
+
+
+        public bool Actualizar_Saldo_Capital(Prestamo obj)
+        {
+            MYSQLParameter[] parameters = new MYSQLParameter[2];
+            parameters[0] = new MYSQLParameter("@Id_Prestamo_", obj.Id_Prestamo, MySqlDbType.Int32);
+            parameters[1] = new MYSQLParameter("@Saldo_Capital_", obj.Saldo_Capital, MySqlDbType.Decimal);
+            Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Update_SaldoCapital_Prestamo", parameters);
+            return Response;
+        }
+
+        public bool Actualizar_Estado(Prestamo obj)
+        {
+            MYSQLParameter[] parameters = new MYSQLParameter[1];
+            parameters[0] = new MYSQLParameter("@Id_Prestamo_", obj.Id_Prestamo, MySqlDbType.Int32);
+            Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Update_Estado_Prestamo", parameters);
+            return Response;
+        }
         //public Prestamo Buscar_Prestamo_Por_Num_Documento(string Tipo_Documento, string Num_Documento)
         //{
         //    try

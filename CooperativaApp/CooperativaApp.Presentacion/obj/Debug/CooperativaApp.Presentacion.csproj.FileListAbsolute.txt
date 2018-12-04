@@ -273,3 +273,11 @@ E:\UPT\CICLO_6\PROGRAMACION 2\UNIDAD 03\CooperativaApp\CooperativaApp\Cooperativ
 E:\UPT\CICLO_6\PROGRAMACION 2\UNIDAD 03\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.csproj.CopyComplete
 E:\UPT\CICLO_6\PROGRAMACION 2\UNIDAD 03\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.exe
 E:\UPT\CICLO_6\PROGRAMACION 2\UNIDAD 03\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.pdb
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmEditarBeneficiario.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmEditarDatosCooperativa.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmEgresoCU.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoBeneficiaro.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmNuevoDatoCooperativa.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmBeneficiario.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.FrmDatosCooperativa.resources
+D:\UPT\PROYECTOS GITHUB\CooperativaApp V2\CooperativaApp\CooperativaApp\CooperativaApp.Presentacion\obj\Debug\CooperativaApp.Presentacion.Acciones.FrmVerPago.resources

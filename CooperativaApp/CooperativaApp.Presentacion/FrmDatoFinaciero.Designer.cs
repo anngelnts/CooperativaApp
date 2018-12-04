@@ -37,9 +37,6 @@
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.TxtBusqueda = new System.Windows.Forms.TextBox();
             this.DgvDatosFinancieros = new System.Windows.Forms.DataGridView();
-            this.PanelActions = new System.Windows.Forms.Panel();
-            this.BtnModificar = new System.Windows.Forms.Button();
-            this.BtnNuevo = new System.Windows.Forms.Button();
             this.adasdasd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +46,9 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PanelActions = new System.Windows.Forms.Panel();
+            this.BtnActivar = new System.Windows.Forms.Button();
+            this.BtnNuevo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDatosFinancieros)).BeginInit();
             this.PanelActions.SuspendLayout();
             this.SuspendLayout();
@@ -176,48 +176,6 @@
             this.DgvDatosFinancieros.Size = new System.Drawing.Size(665, 522);
             this.DgvDatosFinancieros.TabIndex = 26;
             // 
-            // PanelActions
-            // 
-            this.PanelActions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.PanelActions.Controls.Add(this.BtnModificar);
-            this.PanelActions.Controls.Add(this.BtnNuevo);
-            this.PanelActions.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelActions.Location = new System.Drawing.Point(703, 0);
-            this.PanelActions.Name = "PanelActions";
-            this.PanelActions.Size = new System.Drawing.Size(200, 643);
-            this.PanelActions.TabIndex = 25;
-            // 
-            // BtnModificar
-            // 
-            this.BtnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
-            this.BtnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnModificar.FlatAppearance.BorderSize = 0;
-            this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnModificar.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnModificar.ForeColor = System.Drawing.Color.White;
-            this.BtnModificar.Location = new System.Drawing.Point(22, 87);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(160, 40);
-            this.BtnModificar.TabIndex = 3;
-            this.BtnModificar.Text = "MODIFICAR";
-            this.BtnModificar.UseVisualStyleBackColor = false;
-            // 
-            // BtnNuevo
-            // 
-            this.BtnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(35)))), ((int)(((byte)(126)))));
-            this.BtnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnNuevo.FlatAppearance.BorderSize = 0;
-            this.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNuevo.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNuevo.ForeColor = System.Drawing.Color.White;
-            this.BtnNuevo.Location = new System.Drawing.Point(22, 41);
-            this.BtnNuevo.Name = "BtnNuevo";
-            this.BtnNuevo.Size = new System.Drawing.Size(160, 40);
-            this.BtnNuevo.TabIndex = 1;
-            this.BtnNuevo.Text = "NUEVO";
-            this.BtnNuevo.UseVisualStyleBackColor = false;
-            this.BtnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
-            // 
             // adasdasd
             // 
             this.adasdasd.HeaderText = "Id_Dato_Financiero";
@@ -282,6 +240,49 @@
             this.Column7.ReadOnly = true;
             this.Column7.Width = 120;
             // 
+            // PanelActions
+            // 
+            this.PanelActions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
+            this.PanelActions.Controls.Add(this.BtnActivar);
+            this.PanelActions.Controls.Add(this.BtnNuevo);
+            this.PanelActions.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PanelActions.Location = new System.Drawing.Point(703, 0);
+            this.PanelActions.Name = "PanelActions";
+            this.PanelActions.Size = new System.Drawing.Size(200, 643);
+            this.PanelActions.TabIndex = 25;
+            // 
+            // BtnActivar
+            // 
+            this.BtnActivar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
+            this.BtnActivar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnActivar.FlatAppearance.BorderSize = 0;
+            this.BtnActivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnActivar.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActivar.ForeColor = System.Drawing.Color.White;
+            this.BtnActivar.Location = new System.Drawing.Point(22, 87);
+            this.BtnActivar.Name = "BtnActivar";
+            this.BtnActivar.Size = new System.Drawing.Size(160, 40);
+            this.BtnActivar.TabIndex = 3;
+            this.BtnActivar.Text = "ACTIVAR";
+            this.BtnActivar.UseVisualStyleBackColor = false;
+            this.BtnActivar.Click += new System.EventHandler(this.BtnActivar_Click);
+            // 
+            // BtnNuevo
+            // 
+            this.BtnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(35)))), ((int)(((byte)(126)))));
+            this.BtnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnNuevo.FlatAppearance.BorderSize = 0;
+            this.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNuevo.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNuevo.ForeColor = System.Drawing.Color.White;
+            this.BtnNuevo.Location = new System.Drawing.Point(22, 41);
+            this.BtnNuevo.Name = "BtnNuevo";
+            this.BtnNuevo.Size = new System.Drawing.Size(160, 40);
+            this.BtnNuevo.TabIndex = 1;
+            this.BtnNuevo.Text = "NUEVO";
+            this.BtnNuevo.UseVisualStyleBackColor = false;
+            this.BtnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
+            // 
             // FrmDatoFinaciero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,7 +312,7 @@
         private System.Windows.Forms.TextBox TxtBusqueda;
         private System.Windows.Forms.DataGridView DgvDatosFinancieros;
         private System.Windows.Forms.Panel PanelActions;
-        private System.Windows.Forms.Button BtnModificar;
+        private System.Windows.Forms.Button BtnActivar;
         private System.Windows.Forms.Button BtnNuevo;
         private System.Windows.Forms.DataGridViewTextBoxColumn adasdasd;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

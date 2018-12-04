@@ -1,5 +1,6 @@
 ﻿using CooperativaApp.Datos;
 using CooperativaApp.Entidades;
+using CooperativaApp.Comun;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -76,6 +77,7 @@ namespace CooperativaApp.Presentacion.Acciones
         {
             cbxTipo_Documento.SelectedIndex = 0;
             cbxTipo_De_Pago.SelectedIndex = 0;
+            txtUsuario.Text = FrmPrincipal.AccesoUsername;
         }
 
         private void Obtener_Cronogrma_De_Pago(object sender, DataGridViewCellEventArgs e)
@@ -104,6 +106,7 @@ namespace CooperativaApp.Presentacion.Acciones
                     txtCouta_Fija.Text = row["Cuota_Fija"].ToString();
                     txtId_Prestamo.Text = row["Id_Prestamo"].ToString();
                     txtTotal_Pagado.Text = row["Cuota_Fija"].ToString();
+                    txtSaldo_Capital.Text = row["Saldo_Capital"].ToString();
 
 
                 }
@@ -133,6 +136,22 @@ namespace CooperativaApp.Presentacion.Acciones
             bePago.Estado = "PAGADO";
             if (boPago.Agregar(bePago))
             {
+                Prestamo bePrestamo = new Prestamo();
+                DPrestamo boPrestamo = new DPrestamo();
+
+                bePrestamo.Id_Prestamo = Convert.ToInt32(txtId_Prestamo.Text);
+                bePrestamo.Saldo_Capital = Convert.ToDecimal(txtSaldo_Capital.Text);
+                bePrestamo.Estado = "";
+                if (boPrestamo.Actualizar_Saldo_Capital(bePrestamo))
+                {
+
+                }
+
+                
+
+
+
+                //ACTUALIZAR CRONOGRAMA DE PAGOS
                 CronogramaDePagos beCronograma = new CronogramaDePagos();
                 DCronogramaDePagos boCronograma = new DCronogramaDePagos();
 
@@ -145,6 +164,10 @@ namespace CooperativaApp.Presentacion.Acciones
 
                 if (boCronograma.Actualizar(beCronograma))
                 {
+                    if (boPrestamo.Actualizar_Estado(bePrestamo))
+                    {
+                        MessageBox.Show("Actualizadoestado");
+                    }
                     FrmPago Frm = Owner as FrmPago;
                     Frm.Listar();
                     this.Close();
@@ -156,6 +179,11 @@ namespace CooperativaApp.Presentacion.Acciones
             {
                 MessageBox.Show("A Ocurrido un error");
             }
+        }
+
+        private void Validar_Numero(object sender, KeyPressEventArgs e)
+        {
+            ClsValidaciones.Numeros(e);
         }
     }
 }

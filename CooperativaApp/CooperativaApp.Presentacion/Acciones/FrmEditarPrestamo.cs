@@ -105,8 +105,8 @@ namespace CooperativaApp.Presentacion.Acciones
     
 
             ///DATOS DE PRESTAMO
-            DateTime Fecha_De_Desembolso = Convert.ToDateTime(txtFecha_Desembolso.Text);
-            DateTime Fecha_De_Pago = Convert.ToDateTime(txtFecha_De_Pago.Text);
+            DateTime Fecha_De_Desembolso = Convert.ToDateTime(txtFecha_Desembolso.Value);
+            DateTime Fecha_De_Pago = Convert.ToDateTime(txtFecha_De_Pago.Value);
             double Monto = Convert.ToDouble(txtMonto.Text);
             int Cuotas = Convert.ToInt32(cbxNum_De_Cuotas.SelectedItem);
             TimeSpan dgr = Fecha_De_Pago - Fecha_De_Desembolso;
@@ -202,15 +202,15 @@ namespace CooperativaApp.Presentacion.Acciones
             bePrestamo.Id_Prestamo = FrmEditarPrestamo.Id_Prestamo;
             bePrestamo.Monto = Convert.ToDecimal(txtMonto.Text);
             bePrestamo.Num_De_Cuotas = Convert.ToInt32(cbxNum_De_Cuotas.SelectedItem);
-            bePrestamo.Fecha_De_Desembolso = Convert.ToDateTime(txtFecha_Desembolso.Text);
-            bePrestamo.Fecha_De_Pago = Convert.ToDateTime(txtFecha_De_Pago.Text);
+            bePrestamo.Fecha_De_Desembolso = Convert.ToDateTime(txtFecha_Desembolso.Value);
+            bePrestamo.Fecha_De_Pago = Convert.ToDateTime(txtFecha_De_Pago.Value);
             bePrestamo.Cuota_Base = Convert.ToDecimal(txtCuota_Base.Text);
             bePrestamo.Cuota_Fija = Convert.ToDecimal(txtCuota_Fija.Text);
             bePrestamo.Interes = Convert.ToDecimal(txtInteres.Text);
             bePrestamo.Interes_Diferido = Convert.ToDecimal(txtInteres_Diferido.Text);
             bePrestamo.Dias_De_Gracia = Convert.ToInt32(txtDias_De_Gracia.Text);
             bePrestamo.Saldo_Capital = Convert.ToDecimal(txtSaldo_Capital.Text);
-            bePrestamo.Usuario_Val = 1;
+            bePrestamo.Usuario_Val = FrmPrincipal.AccesoUsernameID;
             bePrestamo.Estado = "APROBADO";
             bePrestamo.Anexos = "";
             if (boPrestamo.Actualizar(bePrestamo))
@@ -337,42 +337,27 @@ namespace CooperativaApp.Presentacion.Acciones
                     beCronogramaDePagos.Cuota_Total = 0;
                     beCronogramaDePagos.Estado = "PENDIENTE";
 
-
-                    //beCronogramaDePagos.Num_Cuota = i;
-                    //beCronogramaDePagos.Fecha_De_Vencimiento = Fecha_De_Pago.AddMonths(i);
-                    //beCronogramaDePagos.Amortizacion = 1;
-                    //beCronogramaDePagos.Interes = 1;
-                    //beCronogramaDePagos.Interes_Diferido =1;
-                    //beCronogramaDePagos.Seg_Desgravamen =1;
-                    //beCronogramaDePagos.Seg_Multiriesgo = 1;
-                    //beCronogramaDePagos.ITF = 1;
-                    //beCronogramaDePagos.Otros = 1;
-                    //beCronogramaDePagos.Saldo_Capital = 1;
-                    //beCronogramaDePagos.Cuota_Fija = 1;
-                    //beCronogramaDePagos.Dias = Dias;
-                    //beCronogramaDePagos.Dias_Acumulados = Dias_Acumulados;
-                    //beCronogramaDePagos.Dias_Morosidad = 0;
-                    //beCronogramaDePagos.Monto_Morosidad = 0;
-                    //beCronogramaDePagos.Cuota_Total = 0;
-                    //beCronogramaDePagos.Estado = "PENDIENTE";
-
                     if (boCronogramaDePagos.Agregar(beCronogramaDePagos))
                     {
-                        MessageBox.Show("Actualizado");
+                        //MessageBox.Show("Actualizado");
                     }
                     else
                     {
-                        MessageBox.Show("error");
+                        //MessageBox.Show("error");
                     }
                     Interes_Diferido = 0;
                 }
 
 
-                
+                FrmPrincipal.Main.ChangeMessage("Se ha Modificado Exitasamente el prestamo.", "Success");
+                FrmPrestamos frmSocio = Owner as FrmPrestamos;
+                frmSocio.Listar();
+                this.Close();
+
             }
             else
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("A Ocurrido un error");
             }
 
 

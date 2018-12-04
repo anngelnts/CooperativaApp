@@ -1,5 +1,6 @@
 ﻿using CooperativaApp.Datos;
 using CooperativaApp.Entidades;
+using CooperativaApp.Comun;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,7 @@ namespace CooperativaApp.Presentacion.Acciones
             Dato_Financiero();
             cbxTipo_Documento.SelectedIndex = 0;
             cbxNum_De_Cuotas.SelectedIndex = 1;
+            txtUsuario.Text = FrmPrincipal.AccesoUsername;
         }
         public void Dato_Financiero()
         {
@@ -62,7 +64,7 @@ namespace CooperativaApp.Presentacion.Acciones
             bePrestamo.Id_Dato_Financiero = Convert.ToInt32(txtId_Dato_Financiero.Text);
             bePrestamo.Monto = Convert.ToDecimal(txtMonto.Text);
             bePrestamo.Num_De_Cuotas = Convert.ToInt32(cbxNum_De_Cuotas.SelectedItem);
-            bePrestamo.Usuario_Sol = 1;
+            bePrestamo.Usuario_Sol = FrmPrincipal.AccesoUsernameID;
             bePrestamo.Usuario_Val = 1;
             bePrestamo.Estado = "PENDIENTE";
             bePrestamo.Observaciones = txtDescripcion.Text;
@@ -149,6 +151,15 @@ namespace CooperativaApp.Presentacion.Acciones
         private void groupBox4_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void Validar_Numeros(object sender, KeyPressEventArgs e)
+        {
+            ClsValidaciones.Numeros(e);
+        }
+        private void Validar_Decimales(object sender, KeyPressEventArgs e)
+        {
+            ClsValidaciones.NumerosDecimales(e);
         }
     }
 }

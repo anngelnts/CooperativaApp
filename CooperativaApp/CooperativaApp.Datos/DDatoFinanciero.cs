@@ -39,6 +39,20 @@ namespace CooperativaApp.Datos
             Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Modify_Datos_Financieros", parameters);
             return Response;
         }
+
+        public bool Activar(int  Id_Dato_Financiero)
+        {
+            MYSQLParameter[] parameters = new MYSQLParameter[1];
+            parameters[0] = new MYSQLParameter("@Id_Dato_Financiero_", Id_Dato_Financiero, MySqlDbType.Int32);
+            Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Update_Activar_DatoFinanciero", parameters);
+            return Response;
+        }
+
+        public bool Anular_All()
+        {
+            Response = ConexionMySql.ExecuteProcedureNonQuery("USP_Update_Anular_DatosFinancieros");
+            return Response;
+        }
         public List<DatoFinanciero> Listar()
         {
             List<DatoFinanciero> List = new List<DatoFinanciero>();

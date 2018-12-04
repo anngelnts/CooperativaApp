@@ -1,5 +1,6 @@
 ﻿using CooperativaApp.Datos;
 using CooperativaApp.Entidades;
+using CooperativaApp.Comun;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,7 +39,7 @@ namespace CooperativaApp.Presentacion
         private void FrmSimuladorDePrestamo_Load(object sender, EventArgs e)
         {
             Dato_Financiero();
-            CbxNumeroCuotas.SelectedIndex = 3;
+            CbxNumeroCuotas.SelectedIndex = 1;
 
         }
 
@@ -179,6 +180,11 @@ namespace CooperativaApp.Presentacion
                 Interes_Diferido = 0;
             }
 
+        }
+
+        private void Validar_Decimal(object sender, KeyPressEventArgs e)
+        {
+            ClsValidaciones.NumerosDecimales(e);
         }
     }
 }

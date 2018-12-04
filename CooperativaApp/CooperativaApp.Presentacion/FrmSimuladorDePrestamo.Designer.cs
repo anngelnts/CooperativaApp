@@ -58,8 +58,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnSimular = new System.Windows.Forms.Button();
-            this.txtFecha_De_Pago = new System.Windows.Forms.MaskedTextBox();
-            this.txtFecha_Desembolso = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -79,6 +77,8 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtFecha_Desembolso = new System.Windows.Forms.DateTimePicker();
+            this.txtFecha_De_Pago = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -86,7 +86,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Controls.Add(this.txtTED);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label9);
@@ -110,6 +110,7 @@
             // 
             // txtTED
             // 
+            this.txtTED.Enabled = false;
             this.txtTED.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTED.Location = new System.Drawing.Point(255, 53);
             this.txtTED.Name = "txtTED";
@@ -138,6 +139,7 @@
             // 
             // txtOtros
             // 
+            this.txtOtros.Enabled = false;
             this.txtOtros.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOtros.Location = new System.Drawing.Point(698, 53);
             this.txtOtros.Name = "txtOtros";
@@ -146,6 +148,7 @@
             // 
             // txtTEM
             // 
+            this.txtTEM.Enabled = false;
             this.txtTEM.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTEM.Location = new System.Drawing.Point(145, 53);
             this.txtTEM.Name = "txtTEM";
@@ -164,6 +167,7 @@
             // 
             // TxtTEA
             // 
+            this.TxtTEA.Enabled = false;
             this.TxtTEA.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTEA.Location = new System.Drawing.Point(26, 53);
             this.TxtTEA.Name = "TxtTEA";
@@ -192,6 +196,7 @@
             // 
             // txtSegMultiriesgo
             // 
+            this.txtSegMultiriesgo.Enabled = false;
             this.txtSegMultiriesgo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSegMultiriesgo.Location = new System.Drawing.Point(576, 53);
             this.txtSegMultiriesgo.Name = "txtSegMultiriesgo";
@@ -200,6 +205,7 @@
             // 
             // txtITF
             // 
+            this.txtITF.Enabled = false;
             this.txtITF.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtITF.Location = new System.Drawing.Point(368, 53);
             this.txtITF.Name = "txtITF";
@@ -218,6 +224,7 @@
             // 
             // txtSegDesgravamen
             // 
+            this.txtSegDesgravamen.Enabled = false;
             this.txtSegDesgravamen.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSegDesgravamen.Location = new System.Drawing.Point(470, 53);
             this.txtSegDesgravamen.Name = "txtSegDesgravamen";
@@ -236,9 +243,9 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.BtnSimular);
             this.groupBox3.Controls.Add(this.txtFecha_De_Pago);
             this.groupBox3.Controls.Add(this.txtFecha_Desembolso);
+            this.groupBox3.Controls.Add(this.BtnSimular);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label3);
@@ -268,32 +275,11 @@
             this.BtnSimular.UseVisualStyleBackColor = false;
             this.BtnSimular.Click += new System.EventHandler(this.BtnSimular_Click);
             // 
-            // txtFecha_De_Pago
-            // 
-            this.txtFecha_De_Pago.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_De_Pago.Location = new System.Drawing.Point(513, 58);
-            this.txtFecha_De_Pago.Mask = "00/00/0000";
-            this.txtFecha_De_Pago.Name = "txtFecha_De_Pago";
-            this.txtFecha_De_Pago.Size = new System.Drawing.Size(111, 26);
-            this.txtFecha_De_Pago.TabIndex = 129;
-            this.txtFecha_De_Pago.Text = "01062016";
-            this.txtFecha_De_Pago.ValidatingType = typeof(System.DateTime);
-            // 
-            // txtFecha_Desembolso
-            // 
-            this.txtFecha_Desembolso.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_Desembolso.Location = new System.Drawing.Point(373, 55);
-            this.txtFecha_Desembolso.Mask = "00/00/0000";
-            this.txtFecha_Desembolso.Name = "txtFecha_Desembolso";
-            this.txtFecha_Desembolso.Size = new System.Drawing.Size(111, 26);
-            this.txtFecha_Desembolso.TabIndex = 128;
-            this.txtFecha_Desembolso.ValidatingType = typeof(System.DateTime);
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(511, 27);
+            this.label12.Location = new System.Drawing.Point(511, 35);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(126, 18);
             this.label12.TabIndex = 127;
@@ -303,7 +289,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(370, 28);
+            this.label17.Location = new System.Drawing.Point(367, 33);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(134, 18);
             this.label17.TabIndex = 125;
@@ -343,7 +329,7 @@
             "78",
             "84",
             "90"});
-            this.CbxNumeroCuotas.Location = new System.Drawing.Point(197, 55);
+            this.CbxNumeroCuotas.Location = new System.Drawing.Point(200, 57);
             this.CbxNumeroCuotas.Name = "CbxNumeroCuotas";
             this.CbxNumeroCuotas.Size = new System.Drawing.Size(150, 26);
             this.CbxNumeroCuotas.TabIndex = 26;
@@ -361,11 +347,13 @@
             // TxtMonto
             // 
             this.TxtMonto.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMonto.Location = new System.Drawing.Point(31, 54);
+            this.TxtMonto.Location = new System.Drawing.Point(30, 55);
             this.TxtMonto.Name = "TxtMonto";
             this.TxtMonto.Size = new System.Drawing.Size(150, 27);
             this.TxtMonto.TabIndex = 24;
             this.TxtMonto.Text = "20000";
+            this.TxtMonto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Decimal);
             // 
             // dataGridView1
             // 
@@ -490,6 +478,24 @@
             this.Column12.Name = "Column12";
             this.Column12.Width = 80;
             // 
+            // txtFecha_Desembolso
+            // 
+            this.txtFecha_Desembolso.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_Desembolso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_Desembolso.Location = new System.Drawing.Point(373, 56);
+            this.txtFecha_Desembolso.Name = "txtFecha_Desembolso";
+            this.txtFecha_Desembolso.Size = new System.Drawing.Size(120, 27);
+            this.txtFecha_Desembolso.TabIndex = 161;
+            // 
+            // txtFecha_De_Pago
+            // 
+            this.txtFecha_De_Pago.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_De_Pago.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_De_Pago.Location = new System.Drawing.Point(515, 57);
+            this.txtFecha_De_Pago.Name = "txtFecha_De_Pago";
+            this.txtFecha_De_Pago.Size = new System.Drawing.Size(120, 27);
+            this.txtFecha_De_Pago.TabIndex = 162;
+            // 
             // FrmSimuladorDePrestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -529,8 +535,6 @@
         public System.Windows.Forms.TextBox txtSegDesgravamen;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.MaskedTextBox txtFecha_De_Pago;
-        private System.Windows.Forms.MaskedTextBox txtFecha_Desembolso;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label3;
@@ -551,5 +555,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DateTimePicker txtFecha_De_Pago;
+        private System.Windows.Forms.DateTimePicker txtFecha_Desembolso;
     }
 }

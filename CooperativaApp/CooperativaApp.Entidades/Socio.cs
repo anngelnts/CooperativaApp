@@ -43,6 +43,8 @@ namespace CooperativaApp.Entidades
         public string Nivel { get; set; }
         public decimal Monto_Acumulado { get; set; }
         public string Estado { get; set; }
+        public string Usuario { get; set; }
+        public string Clave { get; set; }
         public DateTime Fecha_De_Registro { get; set; }
     }
 }

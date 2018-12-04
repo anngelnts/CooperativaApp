@@ -40,5 +40,23 @@ namespace CooperativaApp.Datos
             return data;
 
         }
+
+
+        public DataTable Seleccionar(int Id_Pago)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                MYSQLParameter[] parameters = new MYSQLParameter[1];
+                parameters[0] = new MYSQLParameter("@Id_Pago_", Id_Pago, MySqlDbType.Int32);
+                data = ConexionMySql.ExecuteProcedureData("USP_Select_Pago", parameters);
+
+                return data;
+            }
+            catch
+            {
+                return data;
+            }
+        }
     }
 }

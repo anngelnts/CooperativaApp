@@ -24,16 +24,16 @@ namespace CooperativaApp.Presentacion
         {
             
         }
-        private void Listar()
+        public void Listar()
         {
             DDatoFinanciero bo = new DDatoFinanciero();
 
             //DataTable dtb = new DataTable();
             //dtb = NProveedor.Listar();
 
-
+            DgvDatosFinancieros.Rows.Clear();
             //DgvDatosFinancieros.DataSource = bo.Listar();
-            DgvDatosFinancieros.ColumnCount = 8;
+            DgvDatosFinancieros.ColumnCount = 9;
 
 
             foreach (DatoFinanciero item in bo.Listar())
@@ -65,6 +65,32 @@ namespace CooperativaApp.Presentacion
             FrmNuevoDatoFinanciero frm = new FrmNuevoDatoFinanciero();
             AddOwnedForm(frm);
             frm.ShowDialog();
+        }
+
+        private void BtnActivar_Click(object sender, EventArgs e)
+        {
+            if (DgvDatosFinancieros.SelectedRows.Count > 0)
+            {
+                int rowindex = DgvDatosFinancieros.CurrentRow.Index;
+                if (rowindex != -1)
+                {
+                    DDatoFinanciero bo = new DDatoFinanciero();
+                    bo.Anular_All();
+                    if (bo.Activar(Convert.ToInt32(DgvDatosFinancieros.CurrentRow.Cells[0].Value)))
+                    {
+                        FrmPrincipal.Main.ChangeMessage("Se ha Activado el registro seleccionado.", "Success");
+                    }
+                    Listar();
+
+
+
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro");
+            }
         }
     }
 }

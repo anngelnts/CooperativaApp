@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CooperativaApp.Datos;
 using CooperativaApp.Entidades;
+using CooperativaApp.Comun;
+
 namespace CooperativaApp.Presentacion.Acciones
 {
     public partial class FrmNuevoDatoFinanciero : Form
@@ -39,15 +41,23 @@ namespace CooperativaApp.Presentacion.Acciones
                 Estado = "ACTIVO"
             };
             DDatoFinanciero bo = new DDatoFinanciero();
+            bo.Anular_All();
             if (bo.Agregar(be))
             {
-                //Listar();
-                MessageBox.Show("registrado");
+                FrmPrincipal.Main.ChangeMessage("Se ha Registrado Exitasamente el dato financiero.", "Success");
+                FrmDatoFinaciero frmSocio = Owner as FrmDatoFinaciero;
+                frmSocio.Listar();
+                this.Close();
             }
             else
             {
-                MessageBox.Show("Erroe");
+                MessageBox.Show("A Ocurrido un error");
             }
+        }
+
+        private void Validar_Decimal(object sender, KeyPressEventArgs e)
+        {
+            ClsValidaciones.NumerosDecimales(e);
         }
     }
 }

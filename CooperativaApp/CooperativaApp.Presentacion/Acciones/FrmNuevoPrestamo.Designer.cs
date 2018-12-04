@@ -69,7 +69,7 @@
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGuardar.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardar.Location = new System.Drawing.Point(395, 446);
+            this.BtnGuardar.Location = new System.Drawing.Point(395, 460);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(150, 40);
             this.BtnGuardar.TabIndex = 23;
@@ -245,6 +245,7 @@
             this.txtNum_Documento.Name = "txtNum_Documento";
             this.txtNum_Documento.Size = new System.Drawing.Size(150, 27);
             this.txtNum_Documento.TabIndex = 116;
+            this.txtNum_Documento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Numeros);
             // 
             // label16
             // 
@@ -328,6 +329,7 @@
             // 
             // txtUsuario
             // 
+            this.txtUsuario.Enabled = false;
             this.txtUsuario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(668, 54);
             this.txtUsuario.Name = "txtUsuario";
@@ -393,6 +395,7 @@
             this.txtMonto.TabIndex = 24;
             this.txtMonto.Text = "0.00";
             this.txtMonto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Decimales);
             // 
             // FrmNuevoPrestamo
             // 

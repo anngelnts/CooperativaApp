@@ -58,6 +58,9 @@
             this.TxtTEA.Name = "TxtTEA";
             this.TxtTEA.Size = new System.Drawing.Size(150, 27);
             this.TxtTEA.TabIndex = 29;
+            this.TxtTEA.Text = "0.00";
+            this.TxtTEA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtTEA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Decimal);
             // 
             // BtnGuardar
             // 
@@ -92,6 +95,9 @@
             this.txtITF.Name = "txtITF";
             this.txtITF.Size = new System.Drawing.Size(150, 27);
             this.txtITF.TabIndex = 37;
+            this.txtITF.Text = "0.00";
+            this.txtITF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtITF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Decimal);
             // 
             // label5
             // 
@@ -110,6 +116,9 @@
             this.txtSegDesgravamen.Name = "txtSegDesgravamen";
             this.txtSegDesgravamen.Size = new System.Drawing.Size(150, 27);
             this.txtSegDesgravamen.TabIndex = 35;
+            this.txtSegDesgravamen.Text = "0.00";
+            this.txtSegDesgravamen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSegDesgravamen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Decimal);
             // 
             // label1
             // 
@@ -128,6 +137,10 @@
             this.txtOtros.Name = "txtOtros";
             this.txtOtros.Size = new System.Drawing.Size(150, 27);
             this.txtOtros.TabIndex = 39;
+            this.txtOtros.Tag = "0.00";
+            this.txtOtros.Text = "0.00";
+            this.txtOtros.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtOtros.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Decimal);
             // 
             // label3
             // 
@@ -146,6 +159,9 @@
             this.txtSegMultiriesgo.Name = "txtSegMultiriesgo";
             this.txtSegMultiriesgo.Size = new System.Drawing.Size(150, 27);
             this.txtSegMultiriesgo.TabIndex = 41;
+            this.txtSegMultiriesgo.Text = "0.00";
+            this.txtSegMultiriesgo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSegMultiriesgo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Decimal);
             // 
             // FrmNuevoDatoFinanciero
             // 

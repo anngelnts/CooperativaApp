@@ -1,5 +1,6 @@
 ﻿using CooperativaApp.Datos;
 using CooperativaApp.Entidades;
+using CooperativaApp.Comun;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,7 +50,7 @@ namespace CooperativaApp.Presentacion.Acciones
             txtNum_Documento.Text = beSocio.Num_Documento;
             txtNombres.Text = beSocio.Nombres;
             txtApellidos.Text = beSocio.Apellidos;
-            txtFecha_Nacimiento.Text = beSocio.Fecha_De_Nacimiento.ToString(); ;
+            txtFecha_Nacimiento.Value = Convert.ToDateTime(beSocio.Fecha_De_Nacimiento);
             cbxSexo.SelectedItem = beSocio.Sexo;
             cbxEstado_Civil.SelectedItem = beSocio.Estado_Civil;
             txtProfesion.Text = beSocio.Profesion;
@@ -78,6 +79,9 @@ namespace CooperativaApp.Presentacion.Acciones
             txtMonto_Total_Acumulado.Text = beSocio.Monto_Acumulado.ToString();
             cbxEstado.SelectedItem = beSocio.Estado;
             cbxNivel.SelectedItem = beSocio.Nivel;
+
+            txtUsuario.Text = beSocio.Usuario;
+            txtClave.Text = beSocio.Clave;
         }
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
@@ -136,6 +140,10 @@ namespace CooperativaApp.Presentacion.Acciones
             beSocio.Monto_Acumulado = Convert.ToDecimal(txtMonto_Total_Acumulado.Text);
             beSocio.Estado = cbxEstado.SelectedItem.ToString();
             beSocio.Nivel = cbxNivel.SelectedItem.ToString();
+            beSocio.Usuario = txtUsuario.Text != "" ? txtUsuario.Text : txtNum_Documento.Text;
+            beSocio.Clave = txtClave.Text != "" ?  txtClave.Text : txtNum_Documento.Text;
+
+            
 
             if (F_Id_Socio == 0)
             {
@@ -168,6 +176,17 @@ namespace CooperativaApp.Presentacion.Acciones
 
             
 
+
+        }
+
+        private void Validar_Numero(object sender, KeyPressEventArgs e)
+        {
+            ClsValidaciones.Numeros(e);
+           
+        }
+        private void Validar_Decimales(object sender, KeyPressEventArgs e)
+        {
+            ClsValidaciones.NumerosDecimales(e);
 
         }
     }

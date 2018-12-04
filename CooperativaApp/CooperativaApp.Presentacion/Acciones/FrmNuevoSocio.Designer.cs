@@ -31,6 +31,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.tab_DatosPersonales = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtFecha_Nacimiento = new System.Windows.Forms.DateTimePicker();
             this.label27 = new System.Windows.Forms.Label();
             this.txtProfesion = new System.Windows.Forms.TextBox();
             this.cbxNivel_De_Instruccion = new System.Windows.Forms.ComboBox();
@@ -64,6 +65,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.txtFecha_De_Ingreso = new System.Windows.Forms.DateTimePicker();
             this.label28 = new System.Windows.Forms.Label();
             this.txtCargo = new System.Windows.Forms.TextBox();
             this.cbxCentro_De_Trabajo = new System.Windows.Forms.ComboBox();
@@ -88,6 +90,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.txtDireccion_Empresa = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.txtFecha_De_Registro = new System.Windows.Forms.DateTimePicker();
             this.label32 = new System.Windows.Forms.Label();
             this.cbxEstado = new System.Windows.Forms.ComboBox();
             this.cbxNivel = new System.Windows.Forms.ComboBox();
@@ -96,9 +99,10 @@
             this.txtMonto_Total_Acumulado = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.BtnGuardar = new System.Windows.Forms.Button();
-            this.txtFecha_Nacimiento = new System.Windows.Forms.DateTimePicker();
-            this.txtFecha_De_Ingreso = new System.Windows.Forms.DateTimePicker();
-            this.txtFecha_De_Registro = new System.Windows.Forms.DateTimePicker();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtClave = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.tab_DatosPersonales.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -155,6 +159,15 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "DATOS PERSONALES";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txtFecha_Nacimiento
+            // 
+            this.txtFecha_Nacimiento.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_Nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_Nacimiento.Location = new System.Drawing.Point(391, 114);
+            this.txtFecha_Nacimiento.Name = "txtFecha_Nacimiento";
+            this.txtFecha_Nacimiento.Size = new System.Drawing.Size(120, 27);
+            this.txtFecha_Nacimiento.TabIndex = 117;
             // 
             // label27
             // 
@@ -339,6 +352,7 @@
             this.txtNum_Documento.Name = "txtNum_Documento";
             this.txtNum_Documento.Size = new System.Drawing.Size(150, 27);
             this.txtNum_Documento.TabIndex = 66;
+            this.txtNum_Documento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Numero);
             // 
             // label2
             // 
@@ -535,6 +549,15 @@
             this.tabPage3.Text = "DATOS LABORALES";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // txtFecha_De_Ingreso
+            // 
+            this.txtFecha_De_Ingreso.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_De_Ingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_De_Ingreso.Location = new System.Drawing.Point(474, 52);
+            this.txtFecha_De_Ingreso.Name = "txtFecha_De_Ingreso";
+            this.txtFecha_De_Ingreso.Size = new System.Drawing.Size(120, 27);
+            this.txtFecha_De_Ingreso.TabIndex = 118;
+            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -629,6 +652,7 @@
             this.txtIngreso_Mensual_Neto.TabIndex = 106;
             this.txtIngreso_Mensual_Neto.Text = "0.00";
             this.txtIngreso_Mensual_Neto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtIngreso_Mensual_Neto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Decimales);
             // 
             // label22
             // 
@@ -768,6 +792,10 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label34);
+            this.tabPage4.Controls.Add(this.label33);
+            this.tabPage4.Controls.Add(this.txtClave);
+            this.tabPage4.Controls.Add(this.txtUsuario);
             this.tabPage4.Controls.Add(this.txtFecha_De_Registro);
             this.tabPage4.Controls.Add(this.label32);
             this.tabPage4.Controls.Add(this.cbxEstado);
@@ -784,11 +812,20 @@
             this.tabPage4.Text = "DATOS DE COOPERATIVA";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // txtFecha_De_Registro
+            // 
+            this.txtFecha_De_Registro.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha_De_Registro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtFecha_De_Registro.Location = new System.Drawing.Point(330, 49);
+            this.txtFecha_De_Registro.Name = "txtFecha_De_Registro";
+            this.txtFecha_De_Registro.Size = new System.Drawing.Size(128, 27);
+            this.txtFecha_De_Registro.TabIndex = 119;
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(459, 21);
+            this.label32.Location = new System.Drawing.Point(621, 21);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(55, 18);
             this.label32.TabIndex = 114;
@@ -806,9 +843,9 @@
             "ACTIVO",
             "INACTIVO",
             "FALLECIDO"});
-            this.cbxEstado.Location = new System.Drawing.Point(684, 48);
+            this.cbxEstado.Location = new System.Drawing.Point(770, 48);
             this.cbxEstado.Name = "cbxEstado";
-            this.cbxEstado.Size = new System.Drawing.Size(193, 26);
+            this.cbxEstado.Size = new System.Drawing.Size(128, 26);
             this.cbxEstado.TabIndex = 113;
             // 
             // cbxNivel
@@ -823,16 +860,16 @@
             "NIVEL 1",
             "NIVEL 2",
             "NIVEL 3"});
-            this.cbxNivel.Location = new System.Drawing.Point(462, 47);
+            this.cbxNivel.Location = new System.Drawing.Point(624, 49);
             this.cbxNivel.Name = "cbxNivel";
-            this.cbxNivel.Size = new System.Drawing.Size(193, 26);
+            this.cbxNivel.Size = new System.Drawing.Size(128, 26);
             this.cbxNivel.TabIndex = 112;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(681, 21);
+            this.label31.Location = new System.Drawing.Point(767, 21);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(71, 18);
             this.label31.TabIndex = 111;
@@ -842,31 +879,32 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(240, 21);
+            this.label30.Location = new System.Drawing.Point(473, 21);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(195, 18);
+            this.label30.Size = new System.Drawing.Size(125, 18);
             this.label30.TabIndex = 109;
-            this.label30.Text = "Monto Total Acumulado :";
+            this.label30.Text = "Monto  Acum. :";
             // 
             // txtMonto_Total_Acumulado
             // 
             this.txtMonto_Total_Acumulado.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonto_Total_Acumulado.Location = new System.Drawing.Point(243, 47);
+            this.txtMonto_Total_Acumulado.Location = new System.Drawing.Point(476, 49);
             this.txtMonto_Total_Acumulado.Name = "txtMonto_Total_Acumulado";
-            this.txtMonto_Total_Acumulado.Size = new System.Drawing.Size(193, 27);
+            this.txtMonto_Total_Acumulado.Size = new System.Drawing.Size(128, 27);
             this.txtMonto_Total_Acumulado.TabIndex = 108;
             this.txtMonto_Total_Acumulado.Text = "0.00";
             this.txtMonto_Total_Acumulado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMonto_Total_Acumulado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar_Decimales);
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(30, 21);
+            this.label29.Location = new System.Drawing.Point(327, 21);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(155, 18);
+            this.label29.Size = new System.Drawing.Size(123, 18);
             this.label29.TabIndex = 107;
-            this.label29.Text = "Fecha De Registro :";
+            this.label29.Text = "F. De Registro :";
             // 
             // BtnGuardar
             // 
@@ -884,32 +922,43 @@
             this.BtnGuardar.UseVisualStyleBackColor = false;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
-            // txtFecha_Nacimiento
+            // txtUsuario
             // 
-            this.txtFecha_Nacimiento.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_Nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtFecha_Nacimiento.Location = new System.Drawing.Point(391, 114);
-            this.txtFecha_Nacimiento.Name = "txtFecha_Nacimiento";
-            this.txtFecha_Nacimiento.Size = new System.Drawing.Size(120, 27);
-            this.txtFecha_Nacimiento.TabIndex = 117;
+            this.txtUsuario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(33, 48);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(128, 27);
+            this.txtUsuario.TabIndex = 120;
+            this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtFecha_De_Ingreso
+            // txtClave
             // 
-            this.txtFecha_De_Ingreso.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_De_Ingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtFecha_De_Ingreso.Location = new System.Drawing.Point(474, 52);
-            this.txtFecha_De_Ingreso.Name = "txtFecha_De_Ingreso";
-            this.txtFecha_De_Ingreso.Size = new System.Drawing.Size(120, 27);
-            this.txtFecha_De_Ingreso.TabIndex = 118;
+            this.txtClave.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClave.Location = new System.Drawing.Point(177, 48);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(128, 27);
+            this.txtClave.TabIndex = 121;
+            this.txtClave.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtFecha_De_Registro
+            // label33
             // 
-            this.txtFecha_De_Registro.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha_De_Registro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtFecha_De_Registro.Location = new System.Drawing.Point(33, 46);
-            this.txtFecha_De_Registro.Name = "txtFecha_De_Registro";
-            this.txtFecha_De_Registro.Size = new System.Drawing.Size(114, 27);
-            this.txtFecha_De_Registro.TabIndex = 119;
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(30, 21);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(76, 18);
+            this.label33.TabIndex = 122;
+            this.label33.Text = "Usuario :";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(174, 21);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(61, 18);
+            this.label34.TabIndex = 123;
+            this.label34.Text = "Clave :";
             // 
             // FrmNuevoSocio
             // 
@@ -1007,5 +1056,9 @@
         private System.Windows.Forms.DateTimePicker txtFecha_Nacimiento;
         private System.Windows.Forms.DateTimePicker txtFecha_De_Ingreso;
         private System.Windows.Forms.DateTimePicker txtFecha_De_Registro;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        public System.Windows.Forms.TextBox txtClave;
+        public System.Windows.Forms.TextBox txtUsuario;
     }
 }
