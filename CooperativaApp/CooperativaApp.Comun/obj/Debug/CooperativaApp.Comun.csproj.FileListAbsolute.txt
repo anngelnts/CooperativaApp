@@ -72,3 +72,12 @@ C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.C
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csproj.CopyComplete
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.dll
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.pdb
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Comun\bin\Debug\CooperativaApp.Comun.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Comun\bin\Debug\CooperativaApp.Comun.pdb
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Comun\bin\Debug\Google.Protobuf.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Comun\bin\Debug\MySql.Data.xml
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Comun\obj\Debug\CooperativaApp.Comun.pdb

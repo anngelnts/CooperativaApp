@@ -46,6 +46,7 @@
     <Compile Include="ClsValidaciones.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="ConexionMySql.cs" />
+    <Compile Include="EmailHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLParameter.cs" />
     <Compile Include="MYSQLParameter.cs" />

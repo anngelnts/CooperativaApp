@@ -54,6 +54,9 @@
     <Compile Include="DPago.cs" />
     <Compile Include="DPrestamo.cs" />
     <Compile Include="DSocio.cs" />
+    <Compile Include="DTipoUsuario.cs" />
+    <Compile Include="DToken.cs" />
+    <Compile Include="DUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

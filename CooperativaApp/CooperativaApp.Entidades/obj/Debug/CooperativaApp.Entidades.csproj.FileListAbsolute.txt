@@ -49,3 +49,9 @@ C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.E
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csproj.CoreCompileInputs.cache
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.pdb
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb

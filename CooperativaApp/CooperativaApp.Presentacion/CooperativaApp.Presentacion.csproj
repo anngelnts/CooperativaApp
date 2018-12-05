@@ -55,6 +55,7 @@
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -68,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acciones\FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmChangePassword.designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Acciones\FrmCronogramaDePago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +153,12 @@
     <Compile Include="Acciones\FrmNuevoSocio.Designer.cs">
       <DependentUpon>FrmNuevoSocio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Acciones\FrmUsuarioCU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acciones\FrmUsuarioCU.designer.cs">
+      <DependentUpon>FrmUsuarioCU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Acciones\FrmVerPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +225,12 @@
     <Compile Include="FrmPago.Designer.cs">
       <DependentUpon>FrmPago.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerfil.designer.cs">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrestamos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,9 +255,24 @@
     <Compile Include="FrmSocio.Designer.cs">
       <DependentUpon>FrmSocio.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTipoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoUsuario.designer.cs">
+      <DependentUpon>FrmTipoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requerido.cs" />
+    <EmbeddedResource Include="Acciones\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmCronogramaDePago.resx">
       <DependentUpon>FrmCronogramaDePago.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +312,9 @@
     <EmbeddedResource Include="Acciones\FrmNuevoSocio.resx">
       <DependentUpon>FrmNuevoSocio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Acciones\FrmUsuarioCU.resx">
+      <DependentUpon>FrmUsuarioCU.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Acciones\FrmVerPago.resx">
       <DependentUpon>FrmVerPago.cs</DependentUpon>
     </EmbeddedResource>
@@ -314,6 +351,9 @@
     <EmbeddedResource Include="FrmPago.resx">
       <DependentUpon>FrmPago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerfil.resx">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrestamos.resx">
       <DependentUpon>FrmPrestamos.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,6 +365,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSocio.resx">
       <DependentUpon>FrmSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoUsuario.resx">
+      <DependentUpon>FrmTipoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -408,6 +454,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="IconC.ico" />
+    <None Include="Resources\icon-xs-usuarios-light.png" />
     <None Include="Resources\icon-xs-h-pagos-light.png" />
     <None Include="Resources\icon-xs-aportes-light.png" />
     <None Include="Resources\icon-xs-datos-light.png" />

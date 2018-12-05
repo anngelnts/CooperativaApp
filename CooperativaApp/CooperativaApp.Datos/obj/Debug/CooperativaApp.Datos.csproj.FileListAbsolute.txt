@@ -116,3 +116,17 @@ C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.D
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CopyComplete
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
 C:\Users\dvans\Desktop\coperativa\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Datos.pdb
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\Google.Protobuf.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Comun.pdb
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\CooperativaApp.Entidades.pdb
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\bin\Debug\MySql.Data.xml
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.dll
+C:\Users\Lenovo\Desktop\Cooperativ4\CooperativaApp\CooperativaApp\CooperativaApp.Datos\obj\Debug\CooperativaApp.Datos.pdb

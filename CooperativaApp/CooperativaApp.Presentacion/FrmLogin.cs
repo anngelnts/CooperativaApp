@@ -1,4 +1,8 @@
-﻿using MaterialSkin;
+﻿using CooperativaApp.Comun;
+using CooperativaApp.Datos;
+using CooperativaApp.Entidades;
+using MaterialSkin;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -80,16 +84,73 @@ namespace CooperativaApp.Presentacion
             }
             else
             {
-                Login(TxtUsername.Text, TxtPassword.Text);
+                Login(TxtUsername.Text.ToLower(), TxtPassword.Text);
             }
         }
         
         private void Login(string Username, string Password)
         {
-            MessageBox.Show("Welcome", "Cooperativa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            FrmPrincipal frm = new FrmPrincipal();
-            frm.Show();
-            Hide();
+            DUsuario bo = new DUsuario();
+            Usuario be = bo.LoginUsuario(Username, Password);
+            if (be.Username != Username)
+            {
+                MessageBox.Show("Usuario y/o Contraseña Incorrecto", "Cooperativa", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (be.Password != Password)
+            {
+                MessageBox.Show("Usuario y/o Contraseña Incorrecto", "Cooperativa", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (be.Estado != "Activo")
+            {
+                MessageBox.Show("Usuario sin Acceso", "Cooperativa", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            else
+            {
+                //Registrar Token
+                RegistrarToken(be.Username, DToken.GenerateToken());
+                //Ingresar Token
+                string respuesta = Interaction.InputBox("Ingrese Token", "Token", "", -1, -1);
+                if (string.IsNullOrEmpty(respuesta))
+                {
+                    MessageBox.Show("Ingrese Token", "Cooperativa", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    //Validar Token
+                    if (ValidarToken(be.Username, respuesta))
+                    {
+                        //Obtener ID
+                        FrmPrincipal.AccesoUsername = be.Username;
+                        FrmPrincipal.AccesoUsernameID = be.Id_Usuario;
+                        FrmPrincipal frm = new FrmPrincipal();
+                        frm.Show();
+                        Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Token Incorrecto", "Cooperativa", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+        }
+
+        private void RegistrarToken(string Username, string Token)
+        {
+            Token be = new Token
+            {
+                Usuario = Username,
+                Tokn = Token
+            };
+            DToken bo = new DToken();
+            if (!bo.Agregar(be)) bo.Modificar(be);
+
+            EmailHelper.Send(Username, Token);
+        }
+
+        private bool ValidarToken(string Username, string Token)
+        {
+            DToken bo = new DToken();
+            return bo.ValidarToken(Username, Token);
         }
     }
 }

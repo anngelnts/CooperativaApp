@@ -203,10 +203,8 @@ namespace CooperativaApp.Presentacion
  
         private void PbbConfiguracion_Click(object sender, EventArgs e)
         {
-            ChangeHeaderTitle("Configuración");
-           
-            OpenForm(new FrmConfiguracion());
-
+            //ChangeHeaderTitle("Configuración");
+            //OpenForm(new FrmConfiguracion());
         }
 
         private void btnDatosFinancieros_Click(object sender, EventArgs e)
@@ -270,6 +268,19 @@ namespace CooperativaApp.Presentacion
             ChangeHeaderTitle("Aportes");
             MenuActive(sender);
             OpenForm(new FrmAportes());
+        }
+
+        private void BtnUsuarios_Click(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Usuarios");
+            MenuActive(sender);
+            OpenForm(new FrmUsuarios());
+        }
+
+        private void PbbPerfil_Click(object sender, EventArgs e)
+        {
+            ChangeHeaderTitle("Mi Perfil");
+            OpenForm(new FrmPerfil());
         }
     }
 }
