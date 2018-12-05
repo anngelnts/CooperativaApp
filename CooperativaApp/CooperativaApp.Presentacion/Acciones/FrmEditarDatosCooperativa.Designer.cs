@@ -84,6 +84,8 @@
             this.TxtSepelioTitular.Name = "TxtSepelioTitular";
             this.TxtSepelioTitular.Size = new System.Drawing.Size(150, 27);
             this.TxtSepelioTitular.TabIndex = 63;
+            this.TxtSepelioTitular.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtSepelioTitular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSepelioTitular_KeyPress);
             // 
             // label1
             // 
@@ -102,6 +104,8 @@
             this.TxtSepelioFamiliar.Name = "TxtSepelioFamiliar";
             this.TxtSepelioFamiliar.Size = new System.Drawing.Size(150, 27);
             this.TxtSepelioFamiliar.TabIndex = 61;
+            this.TxtSepelioFamiliar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtSepelioFamiliar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSepelioFamiliar_KeyPress);
             // 
             // label4
             // 
@@ -120,6 +124,8 @@
             this.TxtFondoSepelio.Name = "TxtFondoSepelio";
             this.TxtFondoSepelio.Size = new System.Drawing.Size(150, 27);
             this.TxtFondoSepelio.TabIndex = 59;
+            this.TxtFondoSepelio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtFondoSepelio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtFondoSepelio_KeyPress);
             // 
             // label5
             // 
@@ -138,6 +144,8 @@
             this.TxtAportacion.Name = "TxtAportacion";
             this.TxtAportacion.Size = new System.Drawing.Size(150, 27);
             this.TxtAportacion.TabIndex = 57;
+            this.TxtAportacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtAportacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtAportacion_KeyPress);
             // 
             // BtnModificar
             // 

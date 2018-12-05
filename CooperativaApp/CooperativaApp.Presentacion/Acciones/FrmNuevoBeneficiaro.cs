@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,9 +55,9 @@ namespace CooperativaApp.Presentacion.Acciones
                 Requerido.MostrarMensaje(Requerido.EsAlfabeticoValido(TxtParentescoBeneficiario.Text), "El parentesco solo debe contener letras.") &&
                 Requerido.MostrarMensaje(Requerido.EsAlfabeticoValido(TxtApellidoBeneficiario.Text), "El apellido solo debe contener letras.") &&
                 Requerido.MostrarMensaje(Requerido.EsAlfabeticoValido(TxtNombreBeneficiario.Text), "El nombre solo debe contener letras.") &&
-                Requerido.MostrarMensaje(Requerido.EsEnteroValido(TxtCelularBeneficiario.Text,9), "El celular es de 9 digitos.") &&
-                Requerido.MostrarMensaje(Requerido.EsEnteroValido(TxtTelefonoBeneficiario.Text,9), "El telefono es de 9 digitos.") &&
-                Requerido.MostrarMensaje(Requerido.EsEnteroValido(TxtDocumentoBeneficiario.Text,new int[] { 8,11 }), "El Numero de documento puede ser de 8 u 11 digitos segun corresponda.")
+                Requerido.MostrarMensaje(Requerido.EsEnteroValido(TxtCelularBeneficiario.Text, 9), "El celular es de 9 digitos.") &&
+                Requerido.MostrarMensaje(Requerido.EsEnteroValido(TxtTelefonoBeneficiario.Text, 9), "El telefono es de 9 digitos.") &&
+                Requerido.MostrarMensaje(Requerido.EsEnteroValido(TxtDocumentoBeneficiario.Text, new int[] { 8, 11 }), "El Numero de documento puede ser de 8 u 11 digitos segun corresponda.")
             )
             {
                 Beneficiario Be = new Beneficiario();
@@ -71,7 +72,13 @@ namespace CooperativaApp.Presentacion.Acciones
                 Be.Telefono = TxtTelefonoBeneficiario.Text;
                 Be.Num_Documento = TxtDocumentoBeneficiario.Text;
                 Be.Estado = CmbEstadoBeneficiario.SelectedItem.ToString();
-                Bo.Agregar(Be);
+                if (Bo.Agregar(Be))
+                {
+                    MessageBox.Show("Se agrego correctamente.");
+                    FrmBeneficiario frm = Owner as FrmBeneficiario;
+                    frm.Listar();
+                    Close();
+                }
             }
 
 
@@ -86,6 +93,19 @@ namespace CooperativaApp.Presentacion.Acciones
             CmbTipoBeneficiario.SelectedIndex = 0;
             CmbTipoDocumentoBeneficiario.SelectedIndex = 0;
             CargarDatosPrincipalesSocio();
+        }
+
+        private void TxtDocumentoBeneficiario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            CultureInfo cc = System.Threading.Thread.CurrentThread.CurrentCulture;
+            if (char.IsNumber(e.KeyChar)  || e.KeyChar == (Char)8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

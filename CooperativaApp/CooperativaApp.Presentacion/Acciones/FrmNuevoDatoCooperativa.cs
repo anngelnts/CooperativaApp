@@ -36,7 +36,13 @@ namespace CooperativaApp.Presentacion.Acciones
                 Be.Fondo_De_Sepelio = Convert.ToDecimal(TxtFondoSepelio.Text);
                 Be.Sepelio_Titular = Convert.ToDecimal(TxtSepelioTitular.Text);
                 Be.Sepelio_Familiar = Convert.ToDecimal(TxtSepelioFamiliar.Text);
-                Bo.Agregar(Be);
+                if (Bo.Agregar(Be))
+                {
+                    MessageBox.Show("Se agrego correctamente.");
+                    FrmDatosCooperativa frm = Owner as FrmDatosCooperativa;
+                    frm.Listar();
+                    Close();
+                }
             }
         }
     }

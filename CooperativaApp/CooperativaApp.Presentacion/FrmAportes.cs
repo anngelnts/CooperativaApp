@@ -27,6 +27,18 @@ namespace CooperativaApp.Presentacion
             try
             {
                 DgvAportes.Columns[0].Visible = false;
+                DgvAportes.Columns[1].HeaderText = "N° Boleta";
+                DgvAportes.Columns[2].HeaderText = "Id Socio";
+                DgvAportes.Columns[3].HeaderText = "Observacion";
+                DgvAportes.Columns[4].HeaderText = "Id Dato Cooperativa";
+                DgvAportes.Columns[5].HeaderText = "Monto Aporte";
+                DgvAportes.Columns[6].HeaderText = "Monto Fond. Sepelio";
+                DgvAportes.Columns[7].HeaderText = "Otros";
+                DgvAportes.Columns[8].HeaderText = "Monto Total";
+                DgvAportes.Columns[9].HeaderText = "Otros";
+                DgvAportes.Columns[10].HeaderText = "Estado";
+                DgvAportes.Columns[11].HeaderText = "Id Usuario";
+                DgvAportes.Columns[12].HeaderText = "Fec. Registro";
             }
             catch
             {

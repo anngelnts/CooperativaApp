@@ -24,14 +24,24 @@ namespace CooperativaApp.Presentacion
             FrmBeneficiario.NumeroDocumentoSocio = NumeroDocumentoSocio;
         }
 
-        private void Listar()
+        public void Listar()
         {
             DBeneficiario Bo = new DBeneficiario();
             DgvBeneficiario.DataSource = Bo.Listar(IdSocio);
             try
             {
                 DgvBeneficiario.Columns[0].Visible = false;
-                DgvBeneficiario.Rows[0].Selected = true;
+                DgvBeneficiario.Columns[1].HeaderText = "Id Socio";
+                DgvBeneficiario.Columns[2].HeaderText = "Tipo Doc.";
+                DgvBeneficiario.Columns[3].HeaderText = "N° Documento";
+                DgvBeneficiario.Columns[4].HeaderText = "Apellidos";
+                DgvBeneficiario.Columns[5].HeaderText = "Nombres";
+                DgvBeneficiario.Columns[6].HeaderText = "Celular";
+                DgvBeneficiario.Columns[7].HeaderText = "Telefono";
+                DgvBeneficiario.Columns[8].HeaderText = "Tipo de Benef.";
+                DgvBeneficiario.Columns[9].HeaderText = "Parentesco";
+                DgvBeneficiario.Columns[10].HeaderText = "Estado";
+                DgvBeneficiario.Columns[11].HeaderText = "Fec. Registro";
             }
             catch
             {

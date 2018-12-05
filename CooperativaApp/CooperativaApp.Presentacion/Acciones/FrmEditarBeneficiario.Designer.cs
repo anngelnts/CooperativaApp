@@ -77,6 +77,7 @@
             // 
             // TxtApellidoSocio
             // 
+            this.TxtApellidoSocio.Enabled = false;
             this.TxtApellidoSocio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtApellidoSocio.Location = new System.Drawing.Point(340, 54);
             this.TxtApellidoSocio.Name = "TxtApellidoSocio";
@@ -95,6 +96,7 @@
             // 
             // TxtDocumentoSocio
             // 
+            this.TxtDocumentoSocio.Enabled = false;
             this.TxtDocumentoSocio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDocumentoSocio.Location = new System.Drawing.Point(9, 54);
             this.TxtDocumentoSocio.Name = "TxtDocumentoSocio";
@@ -103,6 +105,7 @@
             // 
             // TxtNombreSocio
             // 
+            this.TxtNombreSocio.Enabled = false;
             this.TxtNombreSocio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombreSocio.Location = new System.Drawing.Point(156, 54);
             this.TxtNombreSocio.Name = "TxtNombreSocio";

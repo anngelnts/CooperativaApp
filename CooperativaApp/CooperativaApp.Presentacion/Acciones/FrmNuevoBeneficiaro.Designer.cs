@@ -312,6 +312,7 @@
             this.TxtDocumentoBeneficiario.Name = "TxtDocumentoBeneficiario";
             this.TxtDocumentoBeneficiario.Size = new System.Drawing.Size(150, 27);
             this.TxtDocumentoBeneficiario.TabIndex = 121;
+            this.TxtDocumentoBeneficiario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDocumentoBeneficiario_KeyPress);
             // 
             // groupBox2
             // 

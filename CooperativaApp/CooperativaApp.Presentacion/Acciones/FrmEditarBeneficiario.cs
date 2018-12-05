@@ -72,7 +72,14 @@ namespace CooperativaApp.Presentacion.Acciones
                 Be.Telefono = TxtTelefonoBeneficiario.Text;
                 Be.Num_Documento = TxtDocumentoBeneficiario.Text;
                 Be.Estado = CmbEstadoBeneficiario.SelectedItem.ToString();
-                Bo.Modificar(Be);
+                if (Bo.Modificar(Be))
+                {
+                    MessageBox.Show("Se modifico correctamente.");
+                    FrmBeneficiario frm = Owner as FrmBeneficiario;
+                    frm.Listar();
+                    Close();
+                }
+
             }
 
 

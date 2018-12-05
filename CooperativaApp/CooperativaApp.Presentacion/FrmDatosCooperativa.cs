@@ -20,11 +20,23 @@ namespace CooperativaApp.Presentacion
             InitializeComponent();
         }
 
-        private void Listar()
+        public void Listar()
         {
             DDatosDeCooperativa Bo = new DDatosDeCooperativa();
             DgvDatosCooperativa.DataSource = Bo.Listar();
-            DgvDatosCooperativa.Columns[0].Visible = false;
+            try
+            {
+                DgvDatosCooperativa.Columns[0].Visible = false;
+                DgvDatosCooperativa.Columns[1].HeaderText = "Fondo Sepelio";
+                DgvDatosCooperativa.Columns[2].HeaderText = "Aportacion";
+                DgvDatosCooperativa.Columns[3].HeaderText = "Sepelio Titular";
+                DgvDatosCooperativa.Columns[4].HeaderText = "Sepelio Familiar";
+                DgvDatosCooperativa.Columns[5].HeaderText = "Estado";
+                DgvDatosCooperativa.Columns[6].HeaderText = "Fec. Registro";
+            }
+            catch (Exception)
+            {
+            }
         }
 
         private void BtnNuevo_Click(object sender, EventArgs e)
