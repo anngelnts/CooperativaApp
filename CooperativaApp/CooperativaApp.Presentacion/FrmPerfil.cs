@@ -80,7 +80,7 @@ namespace CooperativaApp.Presentacion
                 BtnGuardar.Enabled = false;
                 BtnModificar.Enabled = true;
                 HabilitarCampos(true);
-                //FrmPrincipal.Main.CargarPerfilBasico();
+                FrmPrincipal.Main.CargarPerfilBasico();
             }
             else
             {

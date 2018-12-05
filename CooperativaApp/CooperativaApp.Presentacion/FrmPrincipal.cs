@@ -1,4 +1,6 @@
-﻿using MaterialSkin;
+﻿using CooperativaApp.Datos;
+using CooperativaApp.Entidades;
+using MaterialSkin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,8 +38,26 @@ namespace CooperativaApp.Presentacion
             ChangeHeaderTitle("Dashboard");
             OpenForm(new FrmDashboard());
             FechaSistema();
-        }
+            CargarPerfilBasico();
 
+        }
+        public void CargarPerfilBasico()
+        {
+            try
+            {
+                DUsuario boUsuario = new DUsuario();
+                if (boUsuario.Seleccionar(AccesoUsernameID) != null)
+                {
+                    Usuario item = boUsuario.Seleccionar(AccesoUsernameID);
+                    LblUNombre.Text = item.Nombre;
+                    LblUDescripcion.Text = item.TipoUsuario;
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Error al obtener datos");
+            }
+        }
         public void OpenForm(object formulario)
         {
             if (PanelContainer.Controls.Count > 0)

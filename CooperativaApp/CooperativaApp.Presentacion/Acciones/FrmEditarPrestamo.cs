@@ -22,6 +22,7 @@ namespace CooperativaApp.Presentacion.Acciones
         public static int Id_Prestamo =0;
         private void FrmEditarPrestamo_Load(object sender, EventArgs e)
         {
+           
             
 
             Datos_De_Prestamo(FrmEditarPrestamo.Id_Prestamo);
@@ -74,10 +75,20 @@ namespace CooperativaApp.Presentacion.Acciones
             {
                
             }
-     
+
+            if (txtEstado.Text == "PENDIENTE")
+            {
+                BtnGenerarPrestamo.Visible = true;
+                btnGuardar.Visible = true;
+                btnGuardar.Enabled = false;
+            }
+            else
+            {
+                BtnGenerarPrestamo.Visible = false;
+                btnGuardar.Visible = false;
+            }
 
 
-            
         }
 
         private void BtnGenerarPrestamo_Click(object sender, EventArgs e)
@@ -192,6 +203,8 @@ namespace CooperativaApp.Presentacion.Acciones
             txtSaldo_Capital.Text = Monto.ToString("N2");
             txtInteres_Diferido.Text = Interes_Diferido.ToString("N2");
             txtDias_De_Gracia.Text = Dias_De_Gracia.ToString();
+
+            btnGuardar.Enabled = true;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

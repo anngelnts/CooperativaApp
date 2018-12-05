@@ -18,7 +18,7 @@ namespace CooperativaApp.Comun
                 //Creando objeto MailMessage
                 MailMessage email = new MailMessage();
                 email.To.Add(new MailAddress(Destino));
-                email.From = new MailAddress("angel@rjdisenadores.com");
+                email.From = new MailAddress("soporte@coopacsalud.com");
                 email.Subject = "COOPERATIVA TOKEN " + DateTime.Now.ToString("dd/MM/yyyy - hh:mm:ss") + "";
                 email.Body = "Tu Token es: <b>" + Token + "</b>";
                 email.IsBodyHtml = true;
@@ -29,7 +29,7 @@ namespace CooperativaApp.Comun
                 smtp.Port = 587;
                 smtp.EnableSsl = false;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new NetworkCredential("angel@rjdisenadores.com", "147852369");
+                smtp.Credentials = new NetworkCredential("soporte@coopacsalud.com", "admin123");
                 //Enviar Correo Electronico
                 smtp.Send(email);
                 email.Dispose();
