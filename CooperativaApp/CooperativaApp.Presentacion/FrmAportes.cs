@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -87,6 +88,58 @@ namespace CooperativaApp.Presentacion
             {
                 MessageBox.Show("Seleccione un registro");
             }
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            if (TxtNumeroDocumentoSocioABuscar.Text != "" )
+            {
+                try
+                {
+                    DAportes Bo = new DAportes();
+                    DgvAportes.DataSource = Bo.BuscarAportesPorNumeroDocumento(TxtNumeroDocumentoSocioABuscar.Text);
+                    DgvAportes.Columns[0].Visible = false;
+                    DgvAportes.Columns[1].HeaderText = "N° Boleta";
+                    DgvAportes.Columns[2].HeaderText = "Id Socio";
+                    DgvAportes.Columns[3].HeaderText = "Observacion";
+                    DgvAportes.Columns[4].HeaderText = "Id Dato Cooperativa";
+                    DgvAportes.Columns[5].HeaderText = "Monto Aporte";
+                    DgvAportes.Columns[6].HeaderText = "Monto Fond. Sepelio";
+                    DgvAportes.Columns[7].HeaderText = "Otros";
+                    DgvAportes.Columns[8].HeaderText = "Monto Total";
+                    DgvAportes.Columns[9].HeaderText = "Otros";
+                    DgvAportes.Columns[10].HeaderText = "Estado";
+                    DgvAportes.Columns[11].HeaderText = "Id Usuario";
+                    DgvAportes.Columns[12].HeaderText = "Fec. Registro";
+                }
+                catch
+                {
+                }
+            }
+            else
+            {
+                MessageBox.Show("Para buscar debe colocar un numero de documento");
+            }
+
+            
+        }
+
+        private void TxtNumeroDocumentoSocioABuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            CultureInfo cc = System.Threading.Thread.CurrentThread.CurrentCulture;
+            if (char.IsNumber(e.KeyChar) ||  e.KeyChar == (Char)8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void BtnListarTodo_Click(object sender, EventArgs e)
+        {
+            Listar();
         }
     }
 }

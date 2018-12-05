@@ -60,6 +60,7 @@
             this.BtnListarTodo.TabIndex = 36;
             this.BtnListarTodo.Text = "Todos";
             this.BtnListarTodo.UseVisualStyleBackColor = false;
+            this.BtnListarTodo.Visible = false;
             // 
             // label8
             // 
@@ -70,6 +71,7 @@
             this.label8.Size = new System.Drawing.Size(143, 14);
             this.label8.TabIndex = 35;
             this.label8.Text = "Búsqueda por Código";
+            this.label8.Visible = false;
             // 
             // BtnBuscar
             // 
@@ -87,6 +89,7 @@
             this.BtnBuscar.TabIndex = 34;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBuscar.Visible = false;
             // 
             // TxtBusqueda
             // 
@@ -97,6 +100,7 @@
             this.TxtBusqueda.Name = "TxtBusqueda";
             this.TxtBusqueda.Size = new System.Drawing.Size(181, 27);
             this.TxtBusqueda.TabIndex = 33;
+            this.TxtBusqueda.Visible = false;
             // 
             // DgvDatosCooperativa
             // 

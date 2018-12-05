@@ -61,3 +61,9 @@ C:\Users\dvans\Desktop\cooperativa2\CooperativaApp\CooperativaApp\CooperativaApp
 C:\Users\dvans\Desktop\cooperativa2\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csproj.CoreCompileInputs.cache
 C:\Users\dvans\Desktop\cooperativa2\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
 C:\Users\dvans\Desktop\cooperativa2\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb
+C:\Users\dvans\Desktop\coopfin\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.dll
+C:\Users\dvans\Desktop\coopfin\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\bin\Debug\CooperativaApp.Entidades.pdb
+C:\Users\dvans\Desktop\coopfin\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csprojAssemblyReference.cache
+C:\Users\dvans\Desktop\coopfin\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\dvans\Desktop\coopfin\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.dll
+C:\Users\dvans\Desktop\coopfin\CooperativaApp\CooperativaApp\CooperativaApp.Entidades\obj\Debug\CooperativaApp.Entidades.pdb

@@ -98,5 +98,10 @@ namespace CooperativaApp.Presentacion
         {
             Listar();
         }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

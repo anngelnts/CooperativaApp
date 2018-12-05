@@ -162,6 +162,7 @@
             this.BtnListarTodo.TabIndex = 34;
             this.BtnListarTodo.Text = "Todos";
             this.BtnListarTodo.UseVisualStyleBackColor = false;
+            this.BtnListarTodo.Visible = false;
             // 
             // label8
             // 
@@ -172,6 +173,7 @@
             this.label8.Size = new System.Drawing.Size(143, 14);
             this.label8.TabIndex = 33;
             this.label8.Text = "Búsqueda por Código";
+            this.label8.Visible = false;
             // 
             // BtnBuscar
             // 
@@ -189,6 +191,8 @@
             this.BtnBuscar.TabIndex = 32;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBuscar.Visible = false;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // TxtBusqueda
             // 
@@ -199,6 +203,7 @@
             this.TxtBusqueda.Name = "TxtBusqueda";
             this.TxtBusqueda.Size = new System.Drawing.Size(354, 27);
             this.TxtBusqueda.TabIndex = 31;
+            this.TxtBusqueda.Visible = false;
             // 
             // FrmBeneficiario
             // 

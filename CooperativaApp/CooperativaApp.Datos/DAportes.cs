@@ -80,5 +80,19 @@ namespace CooperativaApp.Datos
                 return null;
             }
         }
+        public DataTable BuscarAportesPorNumeroDocumento(string NumeroDocumento)
+        {
+            try
+            {
+                MYSQLParameter[] parameters = new MYSQLParameter[1];
+                parameters[0] = new MYSQLParameter("@NumeroDocumento", NumeroDocumento, MySqlDbType.VarChar);
+                return ConexionMySql.ExecuteProcedureData("BuscarAportesDeSocioPorDocumento", parameters);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("[Error al Ejecutar USP_ToList_Aporte]");
+                return null;
+            }
+        }
     }
 }
